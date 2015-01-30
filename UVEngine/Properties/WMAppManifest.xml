@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en" />
+  <Languages xmlns="">
+    <Language code="zh-Hans" />
+    <Language code="en-US" />
+    <Language code="zh-CN" />
+  </Languages>
+  <App xmlns="" ProductID="{14205072-b8d2-476c-a1c7-37bde5c0e985}" Title="@AppResLib.dll,-100" RuntimeType="Silverlight" Version="2.1.0.6" Genre="apps.normal" Author="Light Studio" Description="" Publisher="Light Studio" PublisherID="{ef4d06ed-a8ce-495e-b873-1c4bab735b82}">
+    <IconPath IsRelative="true" IsResource="false">Assets\Icon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+      <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+      <Capability Name="ID_CAP_PUSH_NOTIFICATION" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
+      <Capability Name="ID_CAP_REMOVABLE_STORAGE" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" ActivationPolicy="Resume" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="UVEngineToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\Icon.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Icon.png</BackgroundImageURI>
+          <Title>@AppResLib.dll,-200</Title>
+          <BackContent>
+          </BackContent>
+          <BackBackgroundImageURI>
+          </BackBackgroundImageURI>
+          <BackTitle>
+          </BackTitle>
+          <LargeBackgroundImageURI IsRelative="true" IsResource="false">Assets\IconWide.png</LargeBackgroundImageURI>
+          <LargeBackContent />
+          <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">
+          </LargeBackBackgroundImageURI>
+          <DeviceLockImageURI>
+          </DeviceLockImageURI>
+          <HasLarge>True</HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <FileTypeAssociation TaskID="_default" Name="UVEngine" NavUriFragment="fileToken=%s">
+        <SupportedFileTypes>
+          <FileType ContentType="application/nsa">.nsa</FileType>
+          <FileType ContentType="application/dat">.dat</FileType>
+          <FileType ContentType="application/dat">.___</FileType>
+          <FileType ContentType="application/ttf">.ttf</FileType>
+          <FileType ContentType="application/package">.uvp</FileType>
+          <FileType ContentType="application/res">.uveres</FileType>
+          <FileType ContentType="application/inf">.uveinf</FileType>
+          <FileType ContentType="application/uvm">.uvm</FileType>
+        </SupportedFileTypes>
+      </FileTypeAssociation>
+      <Protocol Name="uve" NavUriFragment="encodedLaunchUri=%s" TaskID="_default" />
+    </Extensions>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+    <FunctionalCapabilities>
+      <FunctionalCapability Name="ID_FUNCCAP_EXTEND_MEM" />
+    </FunctionalCapabilities>
+  </App>
+</Deployment>

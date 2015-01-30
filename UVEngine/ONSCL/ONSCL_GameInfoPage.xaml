@@ -1,0 +1,73 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="UVEngine.ONSCL_GameInfoPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="144"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Universal Visualnovel Engine" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Name="GameNameTextblock" Text="" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Image Name="IconImage" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="200"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="200,0,0,0" Text="{Binding Path=resource.GameCompany, Source={StaticResource LocalizedStrings}}"/>
+            <TextBlock Name="CompanyTextblock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Company" VerticalAlignment="Top" Margin="200,27,0,0"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="200,54,0,0" Text="{Binding Path=resource.GamePort, Source={StaticResource LocalizedStrings}}"/>
+            <TextBlock Name="MakerTextblock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Maker" VerticalAlignment="Top" Margin="200,81,0,0"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="200,108,0,0" Text="{Binding Path=resource.GameSize, Source={StaticResource LocalizedStrings}}"/>
+            <TextBlock Name="SizeTextblock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Size" VerticalAlignment="Top" Margin="200,135,0,0"/>
+            <toolkit:PerformanceProgressBar Name="Deleting" Margin="0,449,0,132" ></toolkit:PerformanceProgressBar>
+            <RadioButton Name="ratio" GroupName="visualsettings" Content="{Binding Path=resource.normal, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,247,0,0"/>
+            <RadioButton Name="wide" GroupName="visualsettings" Content="{Binding Path=resource.wide, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,319,0,0"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=resource.vsetting, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Margin="10,200,0,0" Height="47" Width="190" FontSize="24"/>
+        </Grid>
+        <Grid Grid.Row="2">
+
+            <Button Content="{Binding Path=resource.pintostart, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="228" Click="PIN" Margin="0,72,0,0"/>
+            <Button Content="{Binding Path=resource.back, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="228" Click="Back" Margin="242,72,0,0"/>
+            <Button Content="{Binding Path=resource.delete, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="228" Click="Delete" Margin="242,0,0,0"/>
+            <Button Content="{Binding Path=resource.run, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="228" Click="Run" Margin="0,0,0,0"/>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

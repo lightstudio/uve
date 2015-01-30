@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="libjpeg-9.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Sources\jaricom.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jcapimin.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jcapistd.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jcarith.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jccoefct.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jccolor.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jcdctmgr.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jchuff.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jcinit.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jcmainct.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jcmarker.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jcmaster.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jcomapi.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jcparam.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jcprepct.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jcsample.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jctrans.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdapimin.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdapistd.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdarith.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdatadst.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdatasrc.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdcoefct.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdcolor.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jddctmgr.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdhuff.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdinput.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdmainct.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdmarker.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdmaster.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdmerge.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdpostct.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdsample.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jdtrans.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jerror.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jfdctflt.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jfdctfst.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jfdctint.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jidctflt.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jidctfst.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jmem-android.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jmemmgr.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jquant1.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jquant2.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jutils.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\jidctint.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libjpeg-9.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source.def" />
+  </ItemGroup>
+</Project>

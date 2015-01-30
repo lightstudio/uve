@@ -1,0 +1,763 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="aboutus" xml:space="preserve">
+    <value>关于我们</value>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>UVE游戏中心</value>
+  </data>
+  <data name="backup" xml:space="preserve">
+    <value>存档备份</value>
+  </data>
+  <data name="blog" xml:space="preserve">
+    <value>我们的开发者博客（简体中文）
+http://uve-project.ml</value>
+  </data>
+  <data name="changeBackground" xml:space="preserve">
+    <value>更换主界面背景图片</value>
+  </data>
+  <data name="codeplex" xml:space="preserve">
+    <value>ONS/NS游戏转换工具（简体中文与英文）
+http://uve.codeplex.com</value>
+  </data>
+  <data name="detailedInfo" xml:space="preserve">
+    <value>如果你有任何疑问，请点击”关于“</value>
+  </data>
+  <data name="exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="fileclear" xml:space="preserve">
+    <value>文件清理</value>
+  </data>
+  <data name="friends" xml:space="preserve">
+    <value>好友</value>
+  </data>
+  <data name="GameCompany" xml:space="preserve">
+    <value>制作公司：</value>
+  </data>
+  <data name="GameList" xml:space="preserve">
+    <value>游戏列表</value>
+  </data>
+  <data name="GameName" xml:space="preserve">
+    <value>游戏名：</value>
+  </data>
+  <data name="GamePort" xml:space="preserve">
+    <value>制作/移植：</value>
+  </data>
+  <data name="GameSize" xml:space="preserve">
+    <value>游戏大小：</value>
+  </data>
+  <data name="import" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="Intro" xml:space="preserve">
+    <value>UVE引擎含有ONScripter-jh兼容层，可以实现大部分ONScripter的功能，兼容大部分ONScripter游戏。关于ONScripter-jh，请访问以下网址以获取相关信息：https://bitbucket.org/jh10001/onscripter-jh </value>
+  </data>
+  <data name="latest" xml:space="preserve">
+    <value>最新公告</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>在线</value>
+  </data>
+  <data name="onlinePlayer" xml:space="preserve">
+    <value>在线玩家</value>
+  </data>
+  <data name="openxlive" xml:space="preserve">
+    <value>OpenXLive中心</value>
+  </data>
+  <data name="performancetest" xml:space="preserve">
+    <value>性能测试</value>
+  </data>
+  <data name="rate" xml:space="preserve">
+    <value>为本应用评分</value>
+  </data>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+  <data name="settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="agecomfirm" xml:space="preserve">
+    <value>在使用并注册本服务前，请确认你已经年满13岁。</value>
+  </data>
+  <data name="askbenchmark" xml:space="preserve">
+    <value>你似乎是第一次进入程序，是否进行性能测试？</value>
+  </data>
+  <data name="errormessage" xml:space="preserve">
+    <value>错误提示</value>
+  </data>
+  <data name="exitcomfirm" xml:space="preserve">
+    <value>再按一次返回键退出程序</value>
+  </data>
+  <data name="firstUse" xml:space="preserve">
+    <value>本应用程序由Light Studio开发，欢迎使用！
+初次使用请查看“关于我们”内的详细信息以获得使用说明以及相关协议。</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>消息</value>
+  </data>
+  <data name="networkerror" xml:space="preserve">
+    <value>网络出错啦！
+OpenXLive是在线功能，必须连接互联网才能使用的说。。~</value>
+  </data>
+  <data name="notify" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="pushenabled" xml:space="preserve">
+    <value>推送通知已经开启</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>测试</value>
+  </data>
+  <data name="disk" xml:space="preserve">
+    <value>磁盘</value>
+  </data>
+  <data name="diskscore" xml:space="preserve">
+    <value>磁盘性能分数：</value>
+  </data>
+  <data name="flo" xml:space="preserve">
+    <value>浮点</value>
+  </data>
+  <data name="floatscore" xml:space="preserve">
+    <value>浮点运算分数：</value>
+  </data>
+  <data name="integer" xml:space="preserve">
+    <value>整数</value>
+  </data>
+  <data name="integerscore" xml:space="preserve">
+    <value>整数运算分数：</value>
+  </data>
+  <data name="nothing" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="now" xml:space="preserve">
+    <value>正在进行：</value>
+  </data>
+  <data name="perftest" xml:space="preserve">
+    <value>性能测试</value>
+  </data>
+  <data name="perftestexittip" xml:space="preserve">
+    <value>正在进行性能测试，真的要退出吗？可能会产生一些临时文件。</value>
+  </data>
+  <data name="perftotal" xml:space="preserve">
+    <value>性能测试总分数：</value>
+  </data>
+  <data name="singleprogress" xml:space="preserve">
+    <value>单项进度：</value>
+  </data>
+  <data name="starttest" xml:space="preserve">
+    <value>开始测试</value>
+  </data>
+  <data name="stoptest" xml:space="preserve">
+    <value>停止测试</value>
+  </data>
+  <data name="str" xml:space="preserve">
+    <value>CLR性能综合</value>
+  </data>
+  <data name="strcutscore" xml:space="preserve">
+    <value>CLR综合分数：</value>
+  </data>
+  <data name="testfinished" xml:space="preserve">
+    <value>测试完毕</value>
+  </data>
+  <data name="totalprogress" xml:space="preserve">
+    <value>全部进度：</value>
+  </data>
+  <data name="warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="back" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="comfirmdelete" xml:space="preserve">
+    <value>确实要删除这个游戏吗</value>
+  </data>
+  <data name="comfirminfo" xml:space="preserve">
+    <value>确认信息</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="deleting" xml:space="preserve">
+    <value>正在删除这个游戏，现在退出可能导致删除不完全。
+是否要退出？</value>
+  </data>
+  <data name="pintostart" xml:space="preserve">
+    <value>固定到开始菜单</value>
+  </data>
+  <data name="reservesave" xml:space="preserve">
+    <value>是否保留存档？</value>
+  </data>
+  <data name="run" xml:space="preserve">
+    <value>运行</value>
+  </data>
+  <data name="tileerror" xml:space="preserve">
+    <value>你似乎已经固定了这个Tile~~~当然不能再固定了……
+以下为错误消息:</value>
+  </data>
+  <data name="tip" xml:space="preserve">
+    <value>提醒</value>
+  </data>
+  <data name="appconfig" xml:space="preserve">
+    <value>程序配置文件</value>
+  </data>
+  <data name="appsettings" xml:space="preserve">
+    <value>UVE设置</value>
+  </data>
+  <data name="benchremain" xml:space="preserve">
+    <value>跑分残留文件</value>
+  </data>
+  <data name="cache" xml:space="preserve">
+    <value>垃圾文件</value>
+  </data>
+  <data name="fc_text_1" xml:space="preserve">
+    <value>抱歉，UVEngine目前遇到致命问题，需要关闭。
+错误描述：</value>
+  </data>
+  <data name="fc_text_2" xml:space="preserve">
+    <value>
+如果你想帮我们修正这个问题，请记下上述错误描述（或使用截屏），并使用以下方式联系我们，告诉我们如何再现这个问题：
+发送电子邮件：uve@ligstd.com
+留下博客评论：http://uveproject.ml </value>
+  </data>
+  <data name="file" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="folder" xml:space="preserve">
+    <value>文件夹</value>
+  </data>
+  <data name="gamefolder" xml:space="preserve">
+    <value>游戏文件夹</value>
+  </data>
+  <data name="gamesavefile" xml:space="preserve">
+    <value>游戏存档文件</value>
+  </data>
+  <data name="importantfile" xml:space="preserve">
+    <value>重要文件</value>
+  </data>
+  <data name="listerror" xml:space="preserve">
+    <value>加载列表时发生错误：</value>
+  </data>
+  <data name="notfrommarket" xml:space="preserve">
+    <value>你使用的不是正版软件！开发者需要你的支持。点击确定前往商城查看本应用，取消则关闭此应用</value>
+  </data>
+  <data name="openxliveconfig" xml:space="preserve">
+    <value>OpenXLive配置文件</value>
+  </data>
+  <data name="otherfolder" xml:space="preserve">
+    <value>其他文件/文件夹</value>
+  </data>
+  <data name="piccache" xml:space="preserve">
+    <value>图片缓存</value>
+  </data>
+  <data name="platformdata" xml:space="preserve">
+    <value>平台数据</value>
+  </data>
+  <data name="sdinserted" xml:space="preserve">
+    <value>你的设备已经装入外置存储，是否要开启外置存储上的数据读取？（注意：当前版本暂时不支持使用SD卡上面的游戏数据）</value>
+  </data>
+  <data name="selectyoursave" xml:space="preserve">
+    <value>选择你的存档文件</value>
+  </data>
+  <data name="shared" xml:space="preserve">
+    <value>共享目录</value>
+  </data>
+  <data name="sharedusage" xml:space="preserve">
+    <value>用于存储磁贴图片等</value>
+  </data>
+  <data name="systemfolder" xml:space="preserve">
+    <value>系统文件夹</value>
+  </data>
+  <data name="trailversion" xml:space="preserve">
+    <value>是否先查看试用版？</value>
+  </data>
+  <data name="aboutfileclear" xml:space="preserve">
+    <value>本功能仅供删除部分垃圾文件，比如未解压完成的temp.zip，或者删除游戏时删除失败的残留文件，请不要乱删东西，否则会丢失数据的说……</value>
+  </data>
+  <data name="analyzing" xml:space="preserve">
+    <value>正在分析文件</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="confirmdelete" xml:space="preserve">
+    <value>确实要删除这个文件/文件夹吗</value>
+  </data>
+  <data name="currprog" xml:space="preserve">
+    <value>当前游戏包：</value>
+  </data>
+  <data name="extandimp" xml:space="preserve">
+    <value>解压与导入</value>
+  </data>
+  <data name="impall" xml:space="preserve">
+    <value>全部导入</value>
+  </data>
+  <data name="imp_t_1" xml:space="preserve">
+    <value>请在照片库（手机或存储卡的Pictures文件夹）中建立一个名为UVE的文件夹，并将想要导入的图片全部复制到该文件夹</value>
+  </data>
+  <data name="imp_t_2" xml:space="preserve">
+    <value>，这些图片将在下面的列表中显示，并可以一次性全部导入。</value>
+  </data>
+  <data name="imp_t_3" xml:space="preserve">
+    <value>在部分情况下，可能要重新启动手机才能够看到复制进来的图片。手机剩余空间：</value>
+  </data>
+  <data name="imp_t_4" xml:space="preserve">
+    <value>以下为识别的图片包：</value>
+  </data>
+  <data name="launch" xml:space="preserve">
+    <value>正在启动功能</value>
+  </data>
+  <data name="nopicfound" xml:space="preserve">
+    <value>在UVE文件夹内没有找到图片</value>
+  </data>
+  <data name="okay" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="openfile" xml:space="preserve">
+    <value>打开文件</value>
+  </data>
+  <data name="really" xml:space="preserve">
+    <value>真的要取消吗？</value>
+  </data>
+  <data name="removing" xml:space="preserve">
+    <value>正在删除文件，离开此页后将继续删除。</value>
+  </data>
+  <data name="rootdirectory" xml:space="preserve">
+    <value>根目录</value>
+  </data>
+  <data name="selectandimp" xml:space="preserve">
+    <value>选择导入</value>
+  </data>
+  <data name="selectImp" xml:space="preserve">
+    <value>选择导入</value>
+  </data>
+  <data name="totalprog" xml:space="preserve">
+    <value>总进度：</value>
+  </data>
+  <data name="availableram" xml:space="preserve">
+    <value>本程序可用RAM：</value>
+  </data>
+  <data name="clearall" xml:space="preserve">
+    <value>清除所有应用程序数据</value>
+  </data>
+  <data name="clearallsettings" xml:space="preserve">
+    <value>恢复默认设置</value>
+  </data>
+  <data name="clearconfirm" xml:space="preserve">
+    <value>你真的要清除全部信息吗？</value>
+  </data>
+  <data name="clearwarning" xml:space="preserve">
+    <value>此操作将会彻底清除：
+1.导入到程序内部的游戏
+2.所有游戏存档
+3.这个应用的设置信息
+4.OpenXLive登录记录
+5.自定义的背景图片
+6.所有程序缓存
+
+它将不会清除：
+1.SD卡内的游戏本体
+2.Skydrive备份的游戏档案
+3.OpenXLive的在线资料
+4.这个程序本身。
+
+你确实要清除吗？</value>
+  </data>
+  <data name="confirmagain" xml:space="preserve">
+    <value>再次确认</value>
+  </data>
+  <data name="currentram" xml:space="preserve">
+    <value>RAM使用状况</value>
+  </data>
+  <data name="currentusingram" xml:space="preserve">
+    <value>当前正在使用：</value>
+  </data>
+  <data name="detectedfolders" xml:space="preserve">
+    <value>已识别以下文件夹</value>
+  </data>
+  <data name="extenabled" xml:space="preserve">
+    <value>扩展存储已经启用。请使用PC连接手机，并在SD卡根目录下创建一个名为ADV的文件夹，将支持SD卡存储的游戏包放在该文件夹目录下的指定文件夹内，并勾选此选项。请注意，本功能由于微软限制，仅支持完全打包的游戏与脚本，并且当前仍在测试，暂未开放使用。</value>
+  </data>
+  <data name="general" xml:space="preserve">
+    <value>常用</value>
+  </data>
+  <data name="hidedebug" xml:space="preserve">
+    <value>隐藏调试数据</value>
+  </data>
+  <data name="hidedebug_description" xml:space="preserve">
+    <value>关闭后将在屏幕上显示性能数据，包括屏幕绘制帧率，RAM使用率等</value>
+  </data>
+  <data name="maximumram" xml:space="preserve">
+    <value>此次运行最多使用的RAM：</value>
+  </data>
+  <data name="nosd" xml:space="preserve">
+    <value>你的手机不支持扩展存储，或者未插入存储卡</value>
+  </data>
+  <data name="phonestorage" xml:space="preserve">
+    <value>手机存储</value>
+  </data>
+  <data name="pushhasstarted" xml:space="preserve">
+    <value>推送通知已经开启</value>
+  </data>
+  <data name="pushswitch" xml:space="preserve">
+    <value>及时获取最新信息</value>
+  </data>
+  <data name="readfromsd" xml:space="preserve">
+    <value>从存储卡读取游戏数据</value>
+  </data>
+  <data name="sdcard" xml:space="preserve">
+    <value>存储卡</value>
+  </data>
+  <data name="sdnotenabled" xml:space="preserve">
+    <value>扩展存储未启用。请使用PC连接手机，并在SD卡根目录下创建一个名为ADV的文件夹，将支持SD卡存储的游戏包放在该文件夹目录下的指定文件夹内，并勾选此选项。请注意，本功能由于微软限制，仅支持完全打包的游戏与脚本，并且当前仍在测试，暂未开放使用。</value>
+  </data>
+  <data name="storage" xml:space="preserve">
+    <value>存储</value>
+  </data>
+  <data name="storageleft" xml:space="preserve">
+    <value>手机剩余空间：</value>
+  </data>
+  <data name="totalram" xml:space="preserve">
+    <value>机身总RAM：</value>
+  </data>
+  <data name="usedstorage" xml:space="preserve">
+    <value>UVE游戏共占用了空间：</value>
+  </data>
+  <data name="willremove" xml:space="preserve">
+    <value>应用程序将会自动清除所有数据并退出。这个过程可能需要一些时间。</value>
+  </data>
+  <data name="notenoughspacefortest" xml:space="preserve">
+    <value>你的磁盘剩余空间不足以测试磁盘性能，将会跳过这一步。</value>
+  </data>
+  <data name="willrestart" xml:space="preserve">
+    <value>应用程序将会关闭以完成这些改变。请重新打开UVE以完成这一过程。</value>
+  </data>
+  <data name="extVideo" xml:space="preserve">
+    <value>使用系统播放器播放视频</value>
+  </data>
+  <data name="logOutput" xml:space="preserve">
+    <value>日志文件记录</value>
+  </data>
+  <data name="passwdmes" xml:space="preserve">
+    <value>请输入你的密码
+如果你输入错误，或取消输入，程序将直接退出。</value>
+  </data>
+  <data name="passwdreq" xml:space="preserve">
+    <value>需要密码</value>
+  </data>
+  <data name="quickshare" xml:space="preserve">
+    <value>快速分享</value>
+  </data>
+  <data name="quicksharedesc" xml:space="preserve">
+    <value>启用此功能后，你将可以在此软件的任何界面完全按下相机键以截取屏幕并快速分享至于OpenXLive绑定的社交网站，如微博等。
+请注意，不要使用本功能分享不合法或者不合适的内容。否则引起的任何问题请自行承担。</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="setpasswdreq" xml:space="preserve">
+    <value>密码保护</value>
+  </data>
+  <data name="passwordsaved" xml:space="preserve">
+    <value>密码已保存！</value>
+  </data>
+  <data name="setopacity" xml:space="preserve">
+    <value>主界面菜单栏半透明</value>
+  </data>
+  <data name="aboutInfo" xml:space="preserve">
+    <value>UVE游戏引擎，由Light Studio制作。
+目前工作进度及目标：
+ONScripter兼容层——已完成
+ONScripter-jh兼容层——已完成（此版本）
+UVE Next原生脚本语言——计划中
+Kirikiri兼容层——计划中
+目前大部分ONScripter游戏可以运行，请访问我们的网站以获取使用指南和相关工具（PC端）
+开源工具：http://uve.codeplex.com/
+电子邮件：uve@ligstd.com
+网站：http://uveproject.ml （简体中文）
+本软件为开源软件，使用请严格遵循GPLv2开源协议，源代码可由UVEngine官方主页（http://uve-project.ml/），Light Studio社区（https://user.ligstd.com/）或Github（https://github.com/lightstudio/uve）获得。
+鸣谢：
+
+本软件使用了以下开源库：
+
+ONScripter-jh (GPLv2)
+源代码：https://bitbucket.org/jh10001/onscripter-jh
+特别感谢jh10001在UVE 2.1的开发过程中给予的大力支持。
+
+本软件动态链接了以下第三方库：
+
+用于解码OGG音频：
+libogg (BSD)
+libvorbis (BSD)
+
+用于解码OMV特效：
+libtheora (BSD)
+
+用于图像处理：
+libjpeg
+libpng
+
+用于解压缩：
+zlib
+
+用于2D渲染：
+DirectX Toolkit (Ms-PL)
+SharpDX (MIT)
+
+Silverlight界面效果：
+Coding4Fun (Ms-PL)
+Windows Phone Toolkit (Ms-PL)
+
+在线游戏系统：
+OpenXLive</value>
+  </data>
+  <data name="reviewinstore" xml:space="preserve">
+    <value>在商店中查找本应用</value>
+  </data>
+  <data name="confirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="exitconfirm_0" xml:space="preserve">
+    <value>直接退出</value>
+  </data>
+  <data name="exitconfirm_1" xml:space="preserve">
+    <value>双击后退键退出</value>
+  </data>
+  <data name="exitconfirm_2" xml:space="preserve">
+    <value>消息框提示退出</value>
+  </data>
+  <data name="exitconfirm_choose" xml:space="preserve">
+    <value>请选择退出确认的呈现方式：</value>
+  </data>
+  <data name="exit_cf_mesbox" xml:space="preserve">
+    <value>真的要退出？</value>
+  </data>
+  <data name="openxliveproblem" xml:space="preserve">
+    <value>OpenXLive服务没有正常开启，是否没有连接到网络？</value>
+  </data>
+  <data name="backupcomplete" xml:space="preserve">
+    <value>备份完成</value>
+  </data>
+  <data name="cloudbackup" xml:space="preserve">
+    <value>云存档备份</value>
+  </data>
+  <data name="clouddesc" xml:space="preserve">
+    <value>请先点击登陆，授权本应用访问你的Skydrive。
+“备份”操作将打包现有的所有存档，将其上传到SkyDrive中，并覆盖之前备份的存档。
+“恢复”操作将从SkyDrive中下载所有备份的档案并还原，并覆盖掉本地存档，如果已经存在。</value>
+  </data>
+  <data name="compressionerror" xml:space="preserve">
+    <value>压缩错误 :</value>
+  </data>
+  <data name="dobackup" xml:space="preserve">
+    <value>备份</value>
+  </data>
+  <data name="dorecover" xml:space="preserve">
+    <value>恢复</value>
+  </data>
+  <data name="downloaded" xml:space="preserve">
+    <value>下载成功，正在解压</value>
+  </data>
+  <data name="mustsignin" xml:space="preserve">
+    <value>你必须要登陆才能使用这个功能……</value>
+  </data>
+  <data name="restorecompleted" xml:space="preserve">
+    <value>解压完成，存档恢复成功</value>
+  </data>
+  <data name="exitwitherror" xml:space="preserve">
+    <value>脚本引擎意外退出，返回值：</value>
+  </data>
+  <data name="forcefull" xml:space="preserve">
+    <value>强制全屏</value>
+  </data>
+  <data name="normal" xml:space="preserve">
+    <value>正常缩放(4:3)</value>
+  </data>
+  <data name="videoplaybackerror" xml:space="preserve">
+    <value>视频播放错误：</value>
+  </data>
+  <data name="vsetting" xml:space="preserve">
+    <value>显示设定</value>
+  </data>
+  <data name="wide" xml:space="preserve">
+    <value>宽屏缩放 (16:9)</value>
+  </data>
+  <data name="donate" xml:space="preserve">
+    <value>捐赠</value>
+  </data>
+  <data name="donatedesc" xml:space="preserve">
+    <value>为了开发这样一款应用，我们在以下设备和服务上花费了许多金钱：
+微软App Hub
+Lumia 930
+Lumia 920
+Lumia 820
+Lumia 638
+Lumia 520
+HTC 8x
+HTC 8s
+Samsung ATIV S
+但是我们仍然发布了一个完整的免费版本因为我们希望每个WP8用户能够与安卓，iOs用户一样免费的使用这样的一款应用。如果你愿意为我们捐赠一些，我们会非常高兴，因为你能帮助我们筹集继续开发的资金，并且能够让我们一直保持免费。请使用“捐赠”按钮来查看更多详细的信息，或者点击继续，如果你现在不想捐赠。</value>
+  </data>
+  <data name="donatetext1" xml:space="preserve">
+    <value> 帮助我们做得更好</value>
+  </data>
+  <data name="donatetext2" xml:space="preserve">
+    <value>          并保持免费！</value>
+  </data>
+  <data name="nomoredisplay" xml:space="preserve">
+    <value>不再显示此页面（捐赠用户可使用）</value>
+  </data>
+  <data name="showdonate" xml:space="preserve">
+    <value>显示捐赠页面</value>
+  </data>
+  <data name="thanks" xml:space="preserve">
+    <value>谢谢你的捐赠，我们很快将收到。</value>
+  </data>
+  <data name="_continue" xml:space="preserve">
+    <value>继续</value>
+  </data>
+  <data name="buyinstore" xml:space="preserve">
+    <value>商店购买捐赠版(￥12,仅单次)</value>
+  </data>
+  <data name="donatedirectly" xml:space="preserve">
+    <value>直接捐赠</value>
+  </data>
+  <data name="donatemethoddesc" xml:space="preserve">
+    <value>我们提供两种方便的捐赠方式</value>
+  </data>
+  <data name="gotostore" xml:space="preserve">
+    <value>前往商店查看</value>
+  </data>
+  <data name="inapppurchase" xml:space="preserve">
+    <value>使用应用内购买捐赠(￥6每次)</value>
+  </data>
+  <data name="spacenotenough" xml:space="preserve">
+    <value>磁盘空间不足</value>
+  </data>
+  <data name="thanksdonation" xml:space="preserve">
+    <value>谢谢你的捐赠</value>
+  </data>
+  <data name="traditionalimport" xml:space="preserve">
+    <value>传统导入方法</value>
+  </data>
+</root>

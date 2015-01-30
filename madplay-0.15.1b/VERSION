@@ -1,0 +1,5 @@
+0.15.1b
+configure.ac:24
+version.h:27
+abxtest:27
+msvc++/config.h:243,249,269

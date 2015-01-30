@@ -1,0 +1,131 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:list="clr-namespace:List"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" 
+    xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+    x:Class="UVEngine.MainPage"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.Resources>
+            <list:GameLists x:Key="GameLists"/>
+        </Grid.Resources>
+        <phone:Panorama Name="panorama" SelectionChanged="Panorama_SelectionChanged" Title="{Binding Path=resource.ApplicationTitle, Source={StaticResource LocalizedStrings}}">
+            <phone:PanoramaItem Name="gameListItem" Header="{Binding Path=resource.GameList, Source={StaticResource LocalizedStrings}}">
+                <Grid>
+                    <ListBox x:Name="listBox" ItemsSource="{StaticResource GameLists}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Height="120">
+                                    <Image Source="{Binding IconUri}" Margin="0,0,319,0"/>
+                                    <TextBlock Text="{Binding Path=resource.GameName, Source={StaticResource LocalizedStrings}}" Margin="101,0,196,93"/>
+                                    <TextBlock Text="{Binding GameName}" Margin="224,0,0,93"/>
+                                    <TextBlock Text="{Binding Path=resource.GameCompany, Source={StaticResource LocalizedStrings}}" Margin="101,27,196,63"/>
+                                    <TextBlock Text="{Binding Company}" Margin="224,27,0,63"/>
+                                    <TextBlock Text="{Binding Path=resource.GamePort, Source={StaticResource LocalizedStrings}}" Margin="101,57,196,36"/>
+                                    <TextBlock Text="{Binding GameMaker}" Margin="224,57,0,36"/>
+                                    <TextBlock Text="{Binding Path=resource.GameSize, Source={StaticResource LocalizedStrings}}" Margin="101,84,196,10"/>
+                                    <TextBlock Text="{Binding GameSize}" Margin="224,84,0,0"/>
+                                    <TextBlock ManipulationDelta="Delta" ManipulationCompleted="SelectGame" Opacity="0" Text="{Binding FolderName}" Margin="0,0,0,0"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem Name="Online" Header="{Binding Path=resource.Online, Source={StaticResource LocalizedStrings}}">
+                <Grid>
+                    <StackPanel Margin="0,4,16,0" Orientation="Vertical" VerticalAlignment="Top">
+                        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                            <Image ManipulationDelta="Delta" ManipulationCompleted="Skydrive" Source="Icon\Skydrive.png" Width="173" Height="173" Margin="12,0,0,0"></Image>
+                            <Image ManipulationDelta="Delta" ManipulationCompleted="Announcement" Source="openxlive\game64.jpg" Width="173" Height="173" Margin="12,0,0,0"></Image>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                            <TextBlock Name="backupText" Text="{Binding Path=resource.backup, Source={StaticResource LocalizedStrings}}" Width="173" Margin="12,0,0,0"></TextBlock>
+                            <TextBlock Name="latestNews" Text="{Binding Path=resource.latest, Source={StaticResource LocalizedStrings}}" Width="173" Margin="12,0,0,0"></TextBlock>
+                        </StackPanel>
+                        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0">
+
+                            <Image ManipulationDelta="Delta" ManipulationCompleted="Player" Source="openxlive\lb64.jpg" Width="173" Height="173" Margin="12,0,0,0"></Image>
+                            <Image ManipulationDelta="Delta" ManipulationCompleted="Friends" Source="openxlive\pop64.jpg" Width="173" Height="173" Margin="12,0,0,0"></Image>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                            <TextBlock Name="onlinePlayer" Text="{Binding Path=resource.onlinePlayer, Source={StaticResource LocalizedStrings}}" Width="173" Margin="12,0,0,0"></TextBlock>
+                            <TextBlock Name="friends" Text="{Binding Path=resource.friends, Source={StaticResource LocalizedStrings}}" Width="173" Margin="12,0,0,0"></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem Margin="0,0,0,0" Header="{Binding Path=resource.aboutus, Source={StaticResource LocalizedStrings}}">
+                <Grid>
+                    <Grid Grid.Row="0">
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Universal Visualnovel Engine" VerticalAlignment="Top" Height="45" Width="420" FontSize="30" TextAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="By Light Studio" VerticalAlignment="Top" Margin="271,45,0,0"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,72,0,0" Height="267" Width="400">
+                    	<Run Text="{Binding Path=resource.Intro, Source={StaticResource LocalizedStrings}}"/>
+                    	<LineBreak/>
+                    	<Run Text="{Binding Path=resource.codeplex, Source={StaticResource LocalizedStrings}}"/>
+                    	<LineBreak/>
+                    	<Run Text="{Binding Path=resource.blog, Source={StaticResource LocalizedStrings}}"/>
+                    	<LineBreak/>
+                    	<Run Text="{Binding Path=resource.detailedInfo, Source={StaticResource LocalizedStrings}}"/>
+                        </TextBlock>
+                    </Grid>
+                    <Button Content="{Binding Path=resource.rate, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,339,0,0" Width="210" Click="Button_Click_2"/>
+                    <Button Content="{Binding Path=resource.about, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,339,0,0" Width="210" Click="About"/>
+
+                </Grid>
+            </phone:PanoramaItem>
+        </phone:Panorama>
+    </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" Mode="Minimized">
+            
+            <shell:ApplicationBarIconButton IconUri="/Icon/add.png" Click="ApplicationBarIconButton_Click_1" Text="Import"></shell:ApplicationBarIconButton>
+            <shell:ApplicationBarIconButton IconUri="/Icon/feature.settings.png" Click="ApplicationBarIconButton_Click" Text="Settings"></shell:ApplicationBarIconButton>
+
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Tradition import method" Click="TImport"></shell:ApplicationBarMenuItem>
+                <shell:ApplicationBarMenuItem Text="Change background picture" Click="ApplicationBarMenuItem_Click_1"></shell:ApplicationBarMenuItem>
+                <shell:ApplicationBarMenuItem Text="Clear files" Click="ApplicationBarMenuItem_Click_3"></shell:ApplicationBarMenuItem>
+                <shell:ApplicationBarMenuItem Text="Performance test" Click="Test"></shell:ApplicationBarMenuItem>
+                <shell:ApplicationBarMenuItem Text="OpenXLive game center" Click="ApplicationBarMenuItem_Click_4"></shell:ApplicationBarMenuItem>
+                <!--<shell:ApplicationBarMenuItem Text="About" Click="ApplicationBarMenuItem_Click"></shell:ApplicationBarMenuItem>-->
+                <shell:ApplicationBarMenuItem Text="Exit" Click="ApplicationBarMenuItem_Click_2"></shell:ApplicationBarMenuItem>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+</phone:PhoneApplicationPage>

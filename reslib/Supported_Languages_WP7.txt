@@ -1,0 +1,28 @@
+Windows Phone 7.1 supported display languages
+
+Culture name			Culture code	DLL file name
+
+Chinese Simplified (PRC)	zh-CN		AppResLib.dll.0804.mui
+Chinese Traditional (Taiwan)	zh-TW		AppResLib.dll.0404.mui
+Czech (Czech Republic)		cs-CZ		AppResLib.dll.0405.mui
+Danish (Denmark)		da-DK		AppResLib.dll.0406.mui
+Dutch (Netherlands)		nl-NL		AppResLib.dll.0413.mui
+English (United Kingdom)	en-GB		AppResLib.dll.0809.mui
+English (United States)		en-US		AppResLib.dll.0409.mui
+Finnish (Finland)		fi-FI		AppResLib.dll.040b.mui
+French (France)			fr-FR		AppResLib.dll.040c.mui
+German (Germany)		de-DE		AppResLib.dll.0407.mui
+Greek (Greece)			el-GR		AppResLib.dll.0408.mui
+Hungarian (Hungary)		hu-HU		AppResLib.dll.040e.mui
+Indonesian (Indonesia)		id-ID		AppResLib.dll.0421.mui
+Italian (Italy)			it-IT		AppResLib.dll.0410.mui
+Japanese (Japan)		ja-JP		AppResLib.dll.0411.mui
+Korean (Korea)			ko-KR		AppResLib.dll.0412.mui
+Malay (Malaysia)		ms-MY		AppResLib.dll.043e.mui
+Norwegian (Norway)		nb-NO		AppResLib.dll.0414.mui
+Polish (Poland)			pl-PL		AppResLib.dll.0415.mui
+Portuguese (Brazil)		pt-BR		AppResLib.dll.0416.mui
+Portuguese (Portugal)		pt-PT		AppResLib.dll.0816.mui
+Russian (Russia)		ru-RU		AppResLib.dll.0419.mui
+Spanish (Spain)			es-ES		AppResLib.dll.0c0a.mui
+Swedish (Sweden)		sv-SE		AppResLib.dll.041d.mui

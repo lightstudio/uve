@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- The DLL files will be created in a directory named after your Project. -->
+<!-- If you need to, you can put multiple projects into one config file. -->
+
+<Projects>
+
+	<Project Name="UVEngine">
+		<Language Name="Neutral">
+			<AppTitle>UVE Games</AppTitle>
+			<TileText>UVE Games</TileText>
+		</Language>
+
+		<!-- US English and other localized versions -->
+	
+		<Language Name="English (United States)" LocaleID="0409">
+			<AppTitle>UVE Games</AppTitle>
+			<TileText>UVE Games</TileText>
+		</Language>
+	
+
+		<Language Name="Chinese Simplified (PRC)" LocaleID="0804">
+			<AppTitle>UVE游戏</AppTitle>
+			<TileText>UVE游戏</TileText>
+		</Language>
+
+	</Project>
+
+</Projects>

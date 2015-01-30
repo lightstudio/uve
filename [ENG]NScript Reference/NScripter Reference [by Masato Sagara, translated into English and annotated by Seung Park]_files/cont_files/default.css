@@ -1,0 +1,48 @@
+body {
+	font: 0.8em/normal Arial, Helvetica; margin: 10px; width: 200px; text-align: left; color: rgb(0, 0, 0); font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255);
+}
+p {
+	margin: 0.4em 0px 0.8em; padding: 0px; width: 200px; line-height: 1.1em; font-size: 100%;
+}
+td {
+	padding-right: 3px; padding-left: 3px; font-size: 80%;
+}
+table {
+	margin: 10px 0px; padding: 3px; width: 150px;
+}
+a {
+	padding: 0px; font-size: 1em; text-decoration: none;
+}
+a:link {
+	color: rgb(102, 102, 255);
+}
+a:visited {
+	color: rgb(117, 96, 204);
+}
+a:hover {
+	color: rgb(88, 9, 255); text-decoration: underline;
+}
+hr {
+	border-style: solid; border-color: rgb(102, 102, 255); margin: 0em 0px; width: 200px; height: 1px; max-height: 1px; background-color: rgb(102, 102, 255);
+}
+img {
+	
+}
+address {
+	margin: 0.5em 0px 0.5em 20px; font-size: 100%; font-style: normal;
+}
+h1 {
+	margin: 0px; padding: 8px 10px 5px 40px; border: 1px solid rgb(0, 0, 0); width: 200px; height: 40px; text-align: right; color: rgb(255, 255, 255); font-size: 18pt; font-weight: bold; background-image: url("title.gif"); background-repeat: no-repeat; background-color: rgb(204, 204, 255);
+}
+h2 {
+	margin: 15px 3px 12px; padding: 6px 0px 4px 5px; width: 200px; color: rgb(102, 102, 255); font-size: 180%; font-weight: bold; border-right-color: rgb(153, 153, 204); border-bottom-color: rgb(153, 153, 204); border-left-color: rgb(102, 102, 255); border-right-width: 2px; border-bottom-width: 2px; border-left-width: 10px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; background-repeat: no-repeat; background-color: rgb(221, 221, 255);
+}
+h3 {
+	margin: 10px 15px; padding: 3px; border: 1px solid rgb(102, 102, 255); width: 170px; color: rgb(255, 0, 0); font-size: 100%; font-weight: bold; background-color: rgb(255, 255, 255);
+}
+h4 {
+	margin: 15px 10px 5px; padding: 8px 3px 6px; width: 65px; text-align: center; color: rgb(255, 255, 255); font-size: 120%; font-weight: bold; vertical-align: middle; border-right-color: rgb(51, 51, 153); border-bottom-color: rgb(51, 51, 153); border-right-width: 2px; border-bottom-width: 2px; border-right-style: solid; border-bottom-style: solid; background-color: rgb(102, 102, 204);
+}
+strong {
+	background-position: left; margin: 0px 0px 10px; padding: 2px 0px 0px 10px; font-size: 10pt; background-image: url("arrow.gif"); background-repeat: no-repeat;
+}

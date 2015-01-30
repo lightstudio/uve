@@ -1,0 +1,1182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0055)http://nscripter.insani.org/reference/meirei/meirei.htm -->
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=x-sjis"> 
+<META http-equiv="Content-Style-Type" content="text/css"> 
+<META name="GENERATOR" content="MSHTML 10.00.9200.16578"> <TITLE></TITLE> <LINK 
+href="meirei_files/default.css" rel="stylesheet" type="text/css"> </HEAD> 
+<BODY class="page" text="#000000" topmargin="20" leftmargin="20" bgcolor="#ffffff" 
+link="#9933ff" alink="#cc99ff" vlink="#ff66ff" marginwidth="0" marginheight="0">
+<H2>Function Categorization Table</H2>
+<TABLE border="0">
+  <TBODY>
+  <TR>
+    <TD width="75" bgcolor="#ffcccc"><FONT size="2">Predefined 
+Syntax</FONT></TD>
+    <TD><FONT size="2">Keywords or labels with predefined 
+  functions</FONT></TD></TR>
+  <TR>
+    <TD width="75" bgcolor="#ffffcc"><FONT size="2">F Commands</FONT></TD>
+    <TD><FONT size="2">Commands that may only be used in the definition 
+      block</FONT></TD></TR>
+  <TR>
+    <TD width="75" bgcolor="#ccffff"><FONT size="2">E Commands</FONT></TD>
+    <TD><FONT size="2">Commands that may only be used in the program 
+      block</FONT></TD></TR>
+  <TR>
+    <TD width="75" bgcolor="#ccffcc"><FONT size="2">F/E Commands</FONT></TD>
+    <TD><FONT size="2">Commands that may be used in the program or the 
+      definition block</FONT></TD></TR>
+  <TR>
+    <TD width="75" bgcolor="#ccccff"><FONT size="2">Special 
+    Characters</FONT></TD>
+    <TD><FONT size="2">Special characters that may be used as command 
+      substitutes within displayed text blocks</FONT></TD></TR></TBODY></TABLE>
+<H5>Game Start/Reset/Quit</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffcccc"><A href="http://nscripter.insani.org/reference/meirei/define.htm"><STRONG>*define</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffcccc">label denoting the start of 
+      the definition block</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffcccc"><A href="http://nscripter.insani.org/reference/meirei/start.htm"><STRONG>*start</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffcccc">label denoting the start of 
+      the program block</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/game.htm" 
+      target="sc"><STRONG>game</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">end definition block and 
+      execute game</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/reset.htm" 
+      target="sc"><STRONG>reset</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">reset game</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/definereset.htm" 
+      target="sc"><STRONG>definereset</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">force total script 
+  reset</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/end.htm" 
+      target="sc"><STRONG>end</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">end game and close 
+  window</TD></TR></TBODY></TABLE>
+<H5>Syntax Markers</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffcccc"><A href="http://nscripter.insani.org/reference/meirei/syosiki01.htm"><STRONG>*</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffcccc">prefix for labels</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffcccc"><A href="http://nscripter.insani.org/reference/meirei/syosiki02.htm"><STRONG>;</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffcccc">prefix for comments</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffcccc"><A href="http://nscripter.insani.org/reference/meirei/syosiki03.htm"><STRONG>:</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffcccc">write and execute multiple 
+      commands on a line</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffcccc"><A href="http://nscripter.insani.org/reference/meirei/syosiki04.htm"><STRONG>%</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffcccc">prefix for numerical 
+      variables</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffcccc"><A href="http://nscripter.insani.org/reference/meirei/syosiki05.htm"><STRONG>$</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffcccc">prefix for character 
+      variables</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffcccc"><A href="http://nscripter.insani.org/reference/meirei/syosiki06.htm"><STRONG>?</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffcccc">prefix for array 
+    variables</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffcccc"><A href="http://nscripter.insani.org/reference/meirei/syosiki07.htm"><STRONG>~</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffcccc">destination point for 
+      jumpf/jumpb</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccccff"><A href="http://nscripter.insani.org/reference/insani/backquote.htm" 
+      target="sc"><STRONG>`</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccccff">allow 1-byte-character 
+      display</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccccff"><A href="http://nscripter.insani.org/reference/meirei/tokusyu04.htm" 
+      target="sc"><STRONG>/</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccccff">ignore 
+  linefeed</TD></TR></TBODY></TABLE>
+<H5>Text Window</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/setwindow.htm" 
+      target="sc"><STRONG>setwindow</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">set up text window and 
+      character display attributes</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/setwindow2.htm" 
+      target="sc"><STRONG>setwindow2</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">modify text window 
+      appearnace</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/textoff.htm" 
+      target="sc"><STRONG>textoff</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">hide text window</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/texton.htm" 
+      target="sc"><STRONG>texton</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">show text window</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/windoweffect.htm" 
+      target="sc"><STRONG>windoweffect</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">specify an effect for the 
+      text window</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/erasetextwindow.htm" 
+      target="sc"><STRONG>erasetextwindow</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">toggle text display at 
+      effect runtime</TD></TR></TBODY></TABLE>
+<H5>Text Display</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/defaultfont.htm" 
+      target="sc"><STRONG>defaultfont</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">specify default font</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccccff"><A href="http://nscripter.insani.org/reference/meirei/tokusyu05.htm" 
+      target="sc"><STRONG>!s</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccccff">designate character display 
+      speed</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccccff"><A href="http://nscripter.insani.org/reference/meirei/tokusyu06.htm" 
+      target="sc"><STRONG>#</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccccff">change character 
+color</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/textclear.htm" 
+      target="sc"><STRONG>textclear</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">clear displayed text</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/locate.htm" 
+      target="sc"><STRONG>locate</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">change the position of 
+      characters without changing the position of the text window</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/puttext.htm" 
+      target="sc"><STRONG>puttext</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">write out little 
+      indications (after if statements, for instance)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/br.htm" 
+      target="sc"><STRONG>br</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">insert a carriage return 
+      into the displayed text</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/textspeed.htm" 
+      target="sc"><STRONG>textspeed</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">change text display 
+  speed</TD></TR></TBODY></TABLE>
+<H5>Click Wait</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccccff"><A href="http://nscripter.insani.org/reference/meirei/tokusyu01.htm" 
+      target="sc"><STRONG>@</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccccff">enter click wait 
+state</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccccff"><A href="http://nscripter.insani.org/reference/meirei/tokusyu02.htm" 
+      target="sc"><STRONG>\</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccccff">enter carriage return wait 
+      state</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/clickstr.htm" 
+      target="sc"><STRONG>clickstr</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">enter click wait state upon 
+      hitting the specified string</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccccff"><A href="http://nscripter.insani.org/reference/meirei/tokusyu03.htm" 
+      target="sc">_</A></TD>
+    <TD width="500" class="line" bgcolor="#ccccff">ignore the next click</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/linepage.htm" 
+      target="sc"><STRONG>linepage</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">wait for click at the end 
+      of line</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/clickvoice.htm" 
+      target="sc"><STRONG>clickvoice</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">play a specified sound at 
+      time of click</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/autoclick.htm" 
+      target="sc"><STRONG>autoclick</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">continue to progress even 
+      in the absence of a click</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/click.htm" 
+      target="sc"><STRONG>click</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">enter click wait state 
+      without displaying the click wait cursor</TD></TR></TBODY></TABLE>
+<H5>Cursor</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/setcursor.htm" 
+      target="sc"><STRONG>setcursor</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">specify graphic file for 
+      click wait cursor</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/abssetcursor.htm" 
+      target="sc"><STRONG>abssetcursor</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">lock mouse position and 
+      specify graphic file for click wait cursor</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/mousecursor.htm" 
+      target="sc"><STRONG>mousecursor</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">specify graphic file for 
+      general mouse cursor (presently NOT recommended)</TD></TR></TBODY></TABLE>
+<H5>Image Display</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/transmode.htm" 
+      target="sc"><STRONG>transmode</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">change alpha blend 
+      transparency mode</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/underline.htm" 
+      target="sc"><STRONG>underline</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">set ground line for 
+      standing images</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/bgalia.htm" 
+      target="sc"><STRONG>bgalia</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">set parameters for a 
+      nonstandard background</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/humanz.htm" 
+      target="sc"><STRONG>humanz</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">designate overlap priority 
+      for sprites and standing images</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/windowback.htm" 
+      target="sc"><STRONG>windowback</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">insert text window at the 
+      same position as the standing image(s)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/bg.htm" 
+      target="sc"><STRONG>bg</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">set background image</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/ld.htm" 
+      target="sc"><STRONG>ld</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">set standing image</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/cl.htm" 
+      target="sc"><STRONG>cl</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">erase specified standing 
+      image</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/tal.htm" 
+      target="sc"><STRONG>tal</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">modify standing image 
+      transparency</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/print.htm" 
+      target="sc"><STRONG>print</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">display all images, 
+      removing those that should not be present</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/lsp.htm" 
+      target="sc"><STRONG>lsp</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">load sprite into memory so 
+      that it may be displayed</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/lsph.htm" 
+      target="sc"><STRONG>lsph</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">load sprite into memory, 
+      overwriting the last invalid sprite</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/csp.htm" 
+      target="sc"><STRONG>csp</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">delete sprite from 
+  memory</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/vsp.htm" 
+      target="sc"><STRONG>vsp</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">toggle sprite display (must 
+      be loaded via lsp/lsph first)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/spstr.htm" 
+      target="sc"><STRONG>spstr</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">change the text string on a 
+      complex button by rewriting the text sprite</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/msp.htm" 
+      target="sc"><STRONG>msp</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">change sprite position 
+      (method 1)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/amsp.htm" 
+      target="sc"><STRONG>amsp</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">change sprite position 
+      (method 2)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/cell.htm" 
+      target="sc"><STRONG>cell</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">manually designate the cell 
+      of a sprite</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/blt.htm" 
+      target="sc"><STRONG>blt</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">blit image onto screen 
+      instantaneously</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/ofscpy.htm" 
+      target="sc"><STRONG>ofscpy</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">transfer an image drawn by 
+      blt onto the offscreen buffer</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/repaint.htm" 
+      target="sc"><STRONG>repaint</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">redraw 
+screen</TD></TR></TBODY></TABLE>
+<H5>Image Effects</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/effect.htm" 
+      target="sc"><STRONG>effect</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">designate effect</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/effectblank.htm" 
+      target="sc"><STRONG>effectblank</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">designate wait time after 
+      effect is over</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/effectcut.htm" 
+      target="sc"><STRONG>effectcut</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">toggle effect runtime 
+      during choice dialog</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/quake.htm" 
+      target="sc"><STRONG>quake</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">cause a quake effect 
+      onscreen</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/quakex.htm" 
+      target="sc"><STRONG>quakex</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">cause a horizontal shaking 
+      effect onscreen</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/quakey.htm" 
+      target="sc"><STRONG>quakey</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">cause a vertical shaking 
+      effect onscreen</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/monocro.htm" 
+      target="sc"><STRONG>monocro</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">make screen 
+monochrome</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/nega.htm" 
+      target="sc"><STRONG>nega</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">make screen 
+  negative</TD></TR></TBODY></TABLE>
+<H5>Characters/Numbers/Bar Display</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccccff"><A href="http://nscripter.insani.org/reference/meirei/tokusyu10.htm" 
+      target="sc"><STRONG>%</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccccff">display contents of 
+      numerical variable</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccccff"><A href="http://nscripter.insani.org/reference/meirei/tokusyu09.htm" 
+      target="sc"><STRONG>$</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccccff">display contents of 
+      character variable</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/bar.htm" 
+      target="sc"><STRONG>bar</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">create and display the 
+    bar</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/barclear.htm" 
+      target="sc" 　　　=""><STRONG>barclear</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">clear the bar display       
+        </TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/prnum.htm" 
+      target="sc"><STRONG>prnum</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">initialize a numerical 
+    label</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/prnumclear.htm" 
+      target="sc"><STRONG>prnumclear</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">clear a numerical 
+  label</TD></TR></TBODY></TABLE>
+<H5>Music/SFX Playback</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/cdfadeout.htm" 
+      target="sc"><STRONG>cdfadeout</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">designate CD-DA fadeout 
+    time</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/mp3fadeout.htm" 
+      target="sc"><STRONG>mp3fadeout</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">designate mp3 fadeout 
+    time</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/play.htm" 
+      target="sc"><STRONG>play</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">play CD-DA or MIDI</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/playonce.htm" 
+      target="sc"><STRONG>playonce</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">play specified CD-DA track 
+      or MIDI file only once</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/playstop.htm" 
+      target="sc"><STRONG>playstop</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">stop CD-DA or MIDI 
+    playback</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/wave.htm" 
+      target="sc"><STRONG>wave</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">play a WAV file only 
+  once</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/waveloop.htm" 
+      target="sc"><STRONG>waveloop</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">loop WAV file 
+playback</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/wavestop.htm" 
+      target="sc"><STRONG>wavestop</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">stop WAV file 
+playback</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/mp3.htm" 
+      target="sc"><STRONG>mp3</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">play specified mp3 file 
+      only once</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/mp3loop.htm" 
+      target="sc"><STRONG>mp3loop</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">loop mp3 file 
+playback</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/mp3save.htm" 
+      target="sc"><STRONG>mp3save</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">if game saved amidst mp3 
+      playback, when game is loaded, resume playback at that spot</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/dsound.htm" 
+      target="sc"><STRONG>dsound</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">declare that you are using 
+      DirectSound (not necessary in latest versions)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/dwave.htm" 
+      target="sc"><STRONG>dwave</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">play WAV file using 
+      DirectSound only once</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/dwaveloop.htm" 
+      target="sc"><STRONG>dwaveloop</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">loop WAV file using 
+      DirectSound</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/dwavestop.htm" 
+      target="sc"><STRONG>dwavestop</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">stop WAV file playback in 
+      DirectSound</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/dwaveload.htm" 
+      target="sc"><STRONG>dwaveload </STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">load WAV file into 
+  memory</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/dwaveplay.htm" 
+      target="sc"><STRONG>dwaveplay </STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">play a WAV file already in 
+      memory once</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/dwaveplayloop.htm" 
+      target="sc"><STRONG>dwaveplayloop</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">loop playback of a WAV file 
+      already in memory</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/stop.htm" 
+      target="sc"><STRONG>stop</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">stop all music 
+  playback</TD></TR></TBODY></TABLE>
+<H5>Movie Playback</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/avi.htm" 
+      target="sc"><STRONG>avi</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">playback an AVI file</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/mpegplay.htm" 
+      target="sc"><STRONG>mpegplay</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">playback an MPEG 
+  file</TD></TR></TBODY></TABLE>
+<H5>Choices</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/selectcolor.htm" 
+      target="sc"><STRONG>selectcolor</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">designate choice text 
+    color</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/selectvoice.htm" 
+      target="sc"><STRONG>selectvoice</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">designate sound to play 
+      upon choice select</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/select.htm" 
+      target="sc"><STRONG>select</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">set up a choice</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/selgosub.htm" 
+      target="sc"><STRONG>selgosub</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">set up a choice that jumps 
+      to a subroutine</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/selnum.htm" 
+      target="sc"><STRONG>selnum</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">display chosen choice and 
+      add its result to the specified numerical variable</TD></TR></TBODY></TABLE>
+<H5>Jump</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/goto.htm" 
+      target="sc"><STRONG>goto</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">jump to designated 
+  label</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/skip.htm" 
+      target="sc"><STRONG>skip</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">skip the next x lines of 
+      script</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/gosub.htm" 
+      target="sc"><STRONG>gosub</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">call a subroutine</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/return.htm" 
+      target="sc"><STRONG>return</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">return from a 
+  subroutine</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/jumpf.htm" 
+      target="sc"><STRONG>jumpf</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">jump to the position of the 
+      next ~ symbol</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/jumpb.htm" 
+      target="sc"><STRONG>jumpb</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">jump to the position of the 
+      last ~ symbol</TD></TR></TBODY></TABLE>
+<H5>Jump to Flag on Click</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/trap.htm" 
+      target="sc"><STRONG>trap</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">jump to specified label on 
+      left click</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/lr_trap.htm" 
+      target="sc"><STRONG>lr_trap</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">jump to specified label on 
+      left or right click</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/trap2.htm" 
+      target="sc"><STRONG>trap2</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">jump to specified label on 
+      left click when 「skip to next choice」 is set</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/lr_trap2.htm" 
+      target="sc"><STRONG>lr_trap2</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">jump to specified label on 
+      left or right click when 「skip to next choice」 is set</TD></TR></TBODY></TABLE>
+<H5>Image Buttons</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/btndef.htm" 
+      target="sc"><STRONG>btndef</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">load button graphic file 
+      into memory.</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/btn.htm" 
+      target="sc"><STRONG>btn</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">initialize image as button 
+      (method 1)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/btnwait.htm" 
+      target="sc"><STRONG>btnwait</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">display image button and 
+      put it in click wait state (method 1)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/btnwait2.htm" 
+      target="sc"><STRONG>btnwait2</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">display image button and 
+      put it in click wait state (method 2)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/spbtn.htm" 
+      target="sc"><STRONG>spbtn</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">designate sprite as image 
+      button</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/getbtntimer.htm" 
+      target="sc"><STRONG>getbtntimer</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">acquire how much time has 
+      passed since we have entered btnwait into a numerical variable</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/btntime.htm" 
+      target="sc"><STRONG>btntime</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">create a time restraint for 
+      image button functionality</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/exbtn.htm" 
+      target="sc"><STRONG>exbtn</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">create a complex 
+      (composite) button</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/exbtn_d.htm" 
+      target="sc"><STRONG>exbtn_d</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">specify cursor behavior on 
+      utilization of a complex button</TD></TR></TBODY></TABLE>
+<H5>Wait/Timer</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccccff"><A href="http://nscripter.insani.org/reference/meirei/tokusyu07.htm" 
+      target="sc"><STRONG>!d</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccccff">wait for the specified 
+    time</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccccff"><A href="http://nscripter.insani.org/reference/meirei/tokusyu08.htm" 
+      target="sc"><STRONG>!w</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccccff">wait for the specified 
+      time, ignoring clicks</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/delay.htm" 
+      target="sc"><STRONG>delay</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">cause a time delay (method 
+      1)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/wait.htm" 
+      target="sc"><STRONG>wait</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">cause a time delay (method 
+      2)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/resettimer.htm" 
+      target="sc"><STRONG>resettimer</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">reset internal timer</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/waittimer.htm" 
+      target="sc"><STRONG>waittimer</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">wait until specified time 
+      (as counted by the internal time) elapses</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/gettimer.htm" 
+      target="sc"><STRONG>gettimer</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">get value of internal 
+    timer</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/spwait.htm" 
+      target="sc"><STRONG>spwait</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">wait until the designated 
+      sprite number's animation has ended</TD></TR></TBODY></TABLE>
+<H5>Variable Manipulation/Calculations</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/stralias.htm" 
+      target="sc"><STRONG>stralias</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">create a character string 
+      alias/filename alias</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/numalias.htm" 
+      target="sc"><STRONG>numalias</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">create a numerical variable 
+      alias</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/intlimit.htm" 
+      target="sc"><STRONG>intlimit</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">set maximum and minimum for 
+      numerical variables</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/dim.htm" 
+      target="sc"><STRONG>dim</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">declare an array 
+  variable</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/mov.htm" 
+      target="sc"><STRONG>mov</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">load a value into a 
+      numerical or character variable</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/movn.htm" 
+      target="sc"><STRONG>mov3～mov10</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">load a value into multiple 
+      numerical or character variables</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/movl.htm" 
+      target="sc"><STRONG>movl</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">load an entire line into an 
+      array</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/add.htm" 
+      target="sc"><STRONG>add</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">add numbers</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/sub.htm" 
+      target="sc"><STRONG>sub</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">subtract numbers</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/inc.htm" 
+      target="sc"><STRONG>inc</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">increment variable</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/dec.htm" 
+      target="sc"><STRONG>dec</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">decrement variable</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/mul.htm" 
+      target="sc"><STRONG>mul</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">multiply numbers</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/div.htm" 
+      target="sc"><STRONG>div</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">divide numbers</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/mod.htm" 
+      target="sc"><STRONG>mod</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">mod (note that this is a 
+      programmatic mod, not a true modulo)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/rnd.htm" 
+      target="sc"><STRONG>rnd</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">create a random number 
+      (method 1)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/rnd2.htm" 
+      target="sc"><STRONG>rnd2</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">create a random number 
+      (method 2)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/itoa.htm" 
+      target="sc"><STRONG>itoa</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">change a numerical variable 
+      into a character or character string</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/atoi.htm" 
+      target="sc"><STRONG>atoi</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">change a character variable 
+      into a number</TD></TR></TBODY></TABLE>
+<H5>Conditional Expressions/Loops</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/if.htm" 
+      target="sc"><STRONG>if</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">if(conditional statement) { 
+      commands }</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/notif.htm" 
+      target="sc"><STRONG>notif</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">if (!(conditional 
+      statement)) { commands }</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/cmp.htm" 
+      target="sc"><STRONG>cmp</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">compare character 
+    variables</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/fchk.htm" 
+      target="sc"><STRONG>fchk</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">check whether specified 
+      image tag has been read or not</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/lchk.htm" 
+      target="sc"><STRONG>lchk</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">check whether specified 
+      label has been read or not</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/for.htm" 
+      target="sc"><STRONG>for～next</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">loop commands</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/break.htm" 
+      target="sc"><STRONG>break</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">break out of a for 
+  loop</TD></TR></TBODY></TABLE>
+<H5>Right-Click Functionality</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/rmenu.htm" 
+      target="sc"><STRONG>rmenu</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">initialize and display a 
+      menu upon right click</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/menusetwindow.htm" 
+      target="sc"><STRONG>menusetwindow</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">initialize window for right 
+      click menu</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/savename.htm" 
+      target="sc"><STRONG>savename</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">specify save filename for 
+      right click menu</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/menuselectcolor.htm" 
+      target="sc"><STRONG>menuselectcolor</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">specify color for right 
+      click menu text</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/menuselectvoice.htm" 
+      target="sc"><STRONG>menuselectvoice</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">specify system sound for 
+      right click menu</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/rlookback.htm" 
+      target="sc"><STRONG>rlookback</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">jump to Log Mode upon right 
+      click</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/roff.htm" 
+      target="sc"><STRONG>roff</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">ignore right clicks</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/rmode.htm" 
+      target="sc"><STRONG>rmode</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">toggle availability of 
+      right clicks on and off</TD></TR></TBODY></TABLE>
+<H5>Log Mode</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/lookbackbutton.htm" 
+      target="sc"><STRONG>lookbackbutton</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">specify image button for 
+      entry into Log Mode</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/lookbackcolor.htm" 
+      target="sc"><STRONG>lookbackcolor</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">designate text color for 
+      Log Mode</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/lookbackvoice.htm" 
+      target="sc"><STRONG>lookbackvoice</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">play a sound on page 
+      up/page down in Log Mode</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/lookbackflush.htm" 
+      target="sc"><STRONG>lookbackflush</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">clear Log 
+Mode</TD></TR></TBODY></TABLE>
+<H5>Skip Mode</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/kidokuskip.htm" 
+      target="sc"><STRONG>kidokuskip</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">turn Skip Mode on</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/mode_wave_demo.htm" 
+      target="sc"><STRONG>mode_wave_demo</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">play WAVE files even when 
+      「skip to next choice」 is specified</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/skipoff.htm" 
+      target="sc"><STRONG>skipoff</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">turn Skip Mode 
+  off</TD></TR></TBODY></TABLE>
+<H5>File Access Logs/Global Variables</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/filelog.htm" 
+      target="sc"><STRONG>filelog</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">attempt to create/utilize 
+      file access log</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/globalon.htm" 
+      target="sc"><STRONG>globalon</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">allow for use of global 
+      variables</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/labellog.htm" 
+      target="sc"><STRONG>labellog</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">access log of 
+  labels</TD></TR></TBODY></TABLE>
+<H5>Save/Load</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/savenumber.htm" 
+      target="sc"><STRONG>savenumber</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">modify limit of number of 
+      saves</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/savegame.htm" 
+      target="sc"><STRONG>savegame</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">save game in designated 
+      save file</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/loadgame.htm" 
+      target="sc"><STRONG>loadgame</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">load game from designated 
+      save file</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/savefileexist.htm" 
+      target="sc"><STRONG>savefileexist</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">check whether save file 
+      exists or not</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/saveon.htm" 
+      target="sc"><STRONG>saveon</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">enter save dialog</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/saveoff.htm" 
+      target="sc"><STRONG>saveoff</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">escape from save 
+  dialog</TD></TR></TBODY></TABLE>
+<H5>Additional Functions</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/mesbox.htm" 
+      target="sc"><STRONG>mesbox</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">create a message box</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/inputstr.htm" 
+      target="sc"><STRONG>inputstr</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">wait for character input by 
+      player (method 1)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/input.htm" 
+      target="sc"><STRONG>input</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">wait for character input by 
+      player (method 2)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/clickpos.htm" 
+      target="sc"><STRONG>clickpos</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">get coordinates of cursor 
+      on click</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/systemcall.htm" 
+      target="sc"><STRONG>systemcall</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">perform an action listed in 
+      the right click menu</TD></TR></TBODY></TABLE>
+<H5>Mode Customization Functions</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/automode.htm" 
+      target="sc"><STRONG>automode</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">allow for use of Auto 
+    Mode</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/automode_time.htm" 
+      target="sc"><STRONG>automode_time</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">specify character delay 
+      time in Auto Mode when sounds are not being played</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/defvoicecol.htm" 
+      target="sc"><STRONG>defvoicevol</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">set default volume for 
+      voices (new command)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/defsevol.htm" 
+      target="sc"><STRONG>defsevol</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">set default volume for 
+    SFX</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/defmp3vol.htm" 
+      target="sc"><STRONG>defmp3vol</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">set default volume for mp3 
+      files</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/mode_saya.htm" 
+      target="sc"><STRONG>mode_saya</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">allow for use of the mode 
+      seen in the doujin game "Saya ~Labyrinth of Immorality~".</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/automode.htm" 
+      target="sc"><STRONG>mode_ext</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">allow for use of the Auto 
+      Mode utilized by "Gin'iro"</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/mode800.htm" 
+      target="sc"><STRONG>mode800</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">set screen size to 
+    800x600</TD></TR></TBODY></TABLE>
+<H5>Plugins/Archives</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/soundpressplgin.htm" 
+      target="sc"><STRONG>soundpressplgin</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">load compressed audio 
+      functionality via plugin/dll (nowadays one can just use the DirectSound 
+      commands)</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/spi.htm" 
+      target="sc"><STRONG>spi</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">load compressed image 
+      functionality via plugin/dll</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/arc.htm" 
+      target="sc"><STRONG>arc</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">use specified archive</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/nsa.htm" 
+      target="sc"><STRONG>nsa</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">turn NSA archive access 
+    on</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/nsadir.htm" 
+      target="sc"><STRONG>nsadir</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">designate folder where NSA 
+      archives are located</TD></TR></TBODY></TABLE>
+<H5>Console</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/versionstr.htm" 
+      target="sc"><STRONG>versionstr</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">modify version string</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/caption.htm" 
+      target="sc"><STRONG>caption</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">modify window 
+  title</TD></TR></TBODY></TABLE>
+<H5>Data Parsing</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/date.htm" 
+      target="sc"><STRONG>date</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">Get year, month, and 
+  day</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/time.htm" 
+      target="sc"><STRONG>time</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">get current time by hours, 
+      minutes, and seconds</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/savetime.htm" 
+      target="sc"><STRONG>savetime</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">get the date that the 
+      specified savefile was saved on</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/getversion.htm" 
+      target="sc"><STRONG>getversion</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">get the version string of 
+      the current NScripter build</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/getreg.htm" 
+      target="sc"><STRONG>getreg</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">get a value from the 
+      Windows registry</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffcc"><A href="http://nscripter.insani.org/reference/meirei/getini.htm" 
+      target="sc"><STRONG>getini</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffcc">read an ini 
+  file</TD></TR></TBODY></TABLE>
+<H5>Menubar Functions</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/killmenu.htm" 
+      target="sc"><STRONG>killmenu</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">erase menubar</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><A href="http://nscripter.insani.org/reference/meirei/defaultspeed.htm" 
+      target="sc"><STRONG>defaultspeed</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">designate text display 
+      speed as selectable on the menubar</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccccff"><A href="http://nscripter.insani.org/reference/meirei/tokusyu11.htm" 
+      target="sc"><STRONG>!sd</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccccff">use the text display speed 
+      handed down by the defaultspeed command</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/menu_full.htm" 
+      target="sc"><STRONG>menu_full</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">enter fullscreen mode</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/menu_window.htm" 
+      target="sc"><STRONG>menu_window</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">enter window mode</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/menu_click_def.htm" 
+      target="sc"><STRONG>menu_click_def</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">enter default menubar 
+      operation mode</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><A href="http://nscripter.insani.org/reference/meirei/menu_click_page.htm" 
+      target="sc"><STRONG>menu_click_page</STRONG></A></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">enter a mode in which menu 
+      displays with every page</TD></TR></TBODY></TABLE>
+<H5>System Customization Functions</H5>
+<TABLE class="line" border="0" cellspacing="0" cellpadding="3">
+  <TBODY>
+  <TR>
+    <TD width="100" class="line" 
+    bgcolor="#ffcccc"><STRONG>*customsel</STRONG></TD>
+    <TD width="500" class="line" bgcolor="#ffcccc">a label that interacts with 
+      the csel command</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ffffcc"><STRONG>textgosub         
+      </STRONG></TD>
+    <TD width="500" class="line" bgcolor="#ffffcc">generally used to provide a 
+      popup text during click wait state within system customization</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><STRONG>csel</STRONG></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">delineate choices within 
+      system customization</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><STRONG>cselbtn</STRONG></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">create buttons with choice 
+      text</TD></TR>
+  <TR>
+    <TD width="100" class="line" 
+    bgcolor="#ccffff"><STRONG>getcselnum</STRONG></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">get number of csel choice 
+      branches</TD></TR>
+  <TR>
+    <TD width="100" class="line" 
+bgcolor="#ccffff"><STRONG>cselgoto</STRONG></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">jump to a label created by 
+      csel</TD></TR>
+  <TR>
+    <TD width="100" class="line" 
+    bgcolor="#ccffff"><STRONG>textbtnwait</STRONG></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">enter click wait state as 
+      defined by customwait</TD></TR>
+  <TR>
+    <TD width="100" class="line" 
+      bgcolor="#ccffff"><STRONG>selectbtnwait</STRONG></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">enter click wait state as 
+      defined by customsel</TD></TR>
+  <TR>
+    <TD width="100" class="line" bgcolor="#ccffff"><STRONG>texec</STRONG></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">delete text while waiting 
+      for repagination</TD></TR>
+  <TR>
+    <TD width="100" class="line" 
+      bgcolor="#ccffff"><STRONG>getcursorpos</STRONG></TD>
+    <TD width="500" class="line" bgcolor="#ccffff">get current position of 
+      text cursor</TD></TR></TBODY></TABLE></BODY></HTML>

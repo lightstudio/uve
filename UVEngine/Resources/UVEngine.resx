@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+  <data name="about" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="aboutus" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="backup" xml:space="preserve">
+    <value>Save data backup</value>
+  </data>
+  <data name="blog" xml:space="preserve">
+    <value>Our Developer Blog(CHS)
+http://uve-project.ml</value>
+  </data>
+  <data name="changeBackground" xml:space="preserve">
+    <value>Change background picture</value>
+  </data>
+  <data name="codeplex" xml:space="preserve">
+    <value>ONS/NS Convert Tool(CHS and English)
+http://uve.codeplex.com</value>
+  </data>
+  <data name="detailedInfo" xml:space="preserve">
+    <value>If you have any problems, Please click "About" .</value>
+  </data>
+  <data name="exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="fileclear" xml:space="preserve">
+    <value>File Management</value>
+  </data>
+  <data name="friends" xml:space="preserve">
+    <value>Friends</value>
+  </data>
+  <data name="GameCompany" xml:space="preserve">
+    <value>Company:</value>
+  </data>
+  <data name="GameList" xml:space="preserve">
+    <value>Games</value>
+  </data>
+  <data name="GameName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="GamePort" xml:space="preserve">
+    <value>Author:</value>
+  </data>
+  <data name="GameSize" xml:space="preserve">
+    <value>Size:</value>
+  </data>
+  <data name="import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="Intro" xml:space="preserve">
+    <value>UVEngine contains ONScripter-jh Compatible Layer, with which you can use most of the ONScripter features. Please visit the following sites to get specific information : https://bitbucket.org/jh10001/onscripter-jh</value>
+  </data>
+  <data name="latest" xml:space="preserve">
+    <value>Latest News</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="onlinePlayer" xml:space="preserve">
+    <value>Online Players</value>
+  </data>
+  <data name="openxlive" xml:space="preserve">
+    <value>OpenXLive Game Center</value>
+  </data>
+  <data name="performancetest" xml:space="preserve">
+    <value>Performance Test</value>
+  </data>
+  <data name="rate" xml:space="preserve">
+    <value>Rate for us</value>
+  </data>
+  <data name="settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>UVE Game Center</value>
+  </data>
+  <data name="agecomfirm" xml:space="preserve">
+    <value>Before using this service, please confirm that your age is more than 13.</value>
+  </data>
+  <data name="askbenchmark" xml:space="preserve">
+    <value>It seems to be your first time to run the application. Do you want to have a performance test for your phone?</value>
+  </data>
+  <data name="errormessage" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="exitcomfirm" xml:space="preserve">
+    <value>Press back again to exit</value>
+  </data>
+  <data name="firstUse" xml:space="preserve">
+    <value>This application is developed by Light Studio.
+Please read our terms of use in the "About" page before using the application.</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="networkerror" xml:space="preserve">
+    <value>There is an error with the Internet connection.
+OpenXLive is an online feature. You must connect to the Internet to use it.</value>
+  </data>
+  <data name="notify" xml:space="preserve">
+    <value>notify</value>
+  </data>
+  <data name="pushenabled" xml:space="preserve">
+    <value>Push service enabled</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="disk" xml:space="preserve">
+    <value>Disk</value>
+  </data>
+  <data name="diskscore" xml:space="preserve">
+    <value>Disk performance score:</value>
+  </data>
+  <data name="flo" xml:space="preserve">
+    <value>Float</value>
+  </data>
+  <data name="floatscore" xml:space="preserve">
+    <value>Float score:</value>
+  </data>
+  <data name="integer" xml:space="preserve">
+    <value>Integer</value>
+  </data>
+  <data name="integerscore" xml:space="preserve">
+    <value>Integer score:</value>
+  </data>
+  <data name="nothing" xml:space="preserve">
+    <value>nothing</value>
+  </data>
+  <data name="now" xml:space="preserve">
+    <value>Current:</value>
+  </data>
+  <data name="perftest" xml:space="preserve">
+    <value>Performance Test</value>
+  </data>
+  <data name="perftestexittip" xml:space="preserve">
+    <value>The device is being tested, do you like to exit ? It may have some files remained if you exit now.</value>
+  </data>
+  <data name="perftotal" xml:space="preserve">
+    <value>Total score</value>
+  </data>
+  <data name="singleprogress" xml:space="preserve">
+    <value>Single :</value>
+  </data>
+  <data name="starttest" xml:space="preserve">
+    <value>Begin</value>
+  </data>
+  <data name="stoptest" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="str" xml:space="preserve">
+    <value>CLR</value>
+  </data>
+  <data name="strcutscore" xml:space="preserve">
+    <value>CLR score :</value>
+  </data>
+  <data name="testfinished" xml:space="preserve">
+    <value>Test completed</value>
+  </data>
+  <data name="totalprogress" xml:space="preserve">
+    <value>Total :</value>
+  </data>
+  <data name="warning" xml:space="preserve">
+    <value>WARNING</value>
+  </data>
+  <data name="back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="comfirmdelete" xml:space="preserve">
+    <value>Do you really want to delete the game?</value>
+  </data>
+  <data name="comfirminfo" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>delete</value>
+  </data>
+  <data name="deleting" xml:space="preserve">
+    <value>The game is being removed. It may be not  completedly removed if you exit now. Do you still want to exit?</value>
+  </data>
+  <data name="error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="pintostart" xml:space="preserve">
+    <value>PIN to start</value>
+  </data>
+  <data name="reservesave" xml:space="preserve">
+    <value>Do you want to reserve the save files?</value>
+  </data>
+  <data name="run" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="tileerror" xml:space="preserve">
+    <value>You seem to have already pinned the game to start.
+Here comes the error message:</value>
+  </data>
+  <data name="tip" xml:space="preserve">
+    <value>Notice</value>
+  </data>
+  <data name="appconfig" xml:space="preserve">
+    <value>Config File</value>
+  </data>
+  <data name="appsettings" xml:space="preserve">
+    <value>UVE Settings</value>
+  </data>
+  <data name="benchremain" xml:space="preserve">
+    <value>The remain file of your last benchmark</value>
+  </data>
+  <data name="cache" xml:space="preserve">
+    <value>Cache file</value>
+  </data>
+  <data name="fc_text_1" xml:space="preserve">
+    <value>Sorry, We met some problems and UVE has to be closed.
+Error Description :</value>
+  </data>
+  <data name="fc_text_2" xml:space="preserve">
+    <value>
+If you want to help us solve this bug ,please capture this screen and contact us in the following way:
+Email: uve@ligstd.com</value>
+  </data>
+  <data name="file" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="folder" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="gamefolder" xml:space="preserve">
+    <value>Game Folder</value>
+  </data>
+  <data name="gamesavefile" xml:space="preserve">
+    <value>Game save file</value>
+  </data>
+  <data name="importantfile" xml:space="preserve">
+    <value>Important file</value>
+  </data>
+  <data name="listerror" xml:space="preserve">
+    <value>An error occured while loading the list :</value>
+  </data>
+  <data name="notfrommarket" xml:space="preserve">
+    <value>The copy of the application you installed is NOT purchased and installed from Windows Phone Store.
+We need your support to make the software better.
+Do you want to go to Windows Phone Store to see this application?</value>
+  </data>
+  <data name="openxliveconfig" xml:space="preserve">
+    <value>OpenXLive config file</value>
+  </data>
+  <data name="otherfolder" xml:space="preserve">
+    <value>Other Folder/File</value>
+  </data>
+  <data name="piccache" xml:space="preserve">
+    <value>Picture Cache</value>
+  </data>
+  <data name="platformdata" xml:space="preserve">
+    <value>Platform Data</value>
+  </data>
+  <data name="sdinserted" xml:space="preserve">
+    <value>External Storage has been inserted. Would you like to enable External Storage?(Notice : Current version does NOT support games in SD card )</value>
+  </data>
+  <data name="selectyoursave" xml:space="preserve">
+    <value>Please select your save file</value>
+  </data>
+  <data name="shared" xml:space="preserve">
+    <value>Shared Folder</value>
+  </data>
+  <data name="sharedusage" xml:space="preserve">
+    <value>To store tiles' pictures or etc.</value>
+  </data>
+  <data name="systemfolder" xml:space="preserve">
+    <value>System Folder</value>
+  </data>
+  <data name="trailversion" xml:space="preserve">
+    <value>Do you want to have a free trail first?</value>
+  </data>
+  <data name="aboutfileclear" xml:space="preserve">
+    <value>This feature is only provided for removing some files which you don't need any more, such as "temp.zip". Removing other files may cause your data damage.</value>
+  </data>
+  <data name="analyzing" xml:space="preserve">
+    <value>Analyzing the file</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="confirmdelete" xml:space="preserve">
+    <value>Are you sure to remove this folder/file?</value>
+  </data>
+  <data name="currprog" xml:space="preserve">
+    <value>Current :</value>
+  </data>
+  <data name="extandimp" xml:space="preserve">
+    <value>Extract and Import</value>
+  </data>
+  <data name="impall" xml:space="preserve">
+    <value>Import All</value>
+  </data>
+  <data name="imp_t_1" xml:space="preserve">
+    <value>Please set up a new folder in your phone's Pictures folder called "UVE" and copy all the png file you want to import to the</value>
+  </data>
+  <data name="imp_t_2" xml:space="preserve">
+    <value>of it. Those pictures will appear here and you can import them in one click.</value>
+  </data>
+  <data name="imp_t_3" xml:space="preserve">
+    <value>Sometimes you may have to restart the phone to see them appear here. Free space :</value>
+  </data>
+  <data name="imp_t_4" xml:space="preserve">
+    <value>Here are the files :</value>
+  </data>
+  <data name="launch" xml:space="preserve">
+    <value>Launching feature</value>
+  </data>
+  <data name="nopicfound" xml:space="preserve">
+    <value>No pictures found in UVE album</value>
+  </data>
+  <data name="okay" xml:space="preserve">
+    <value>Okay</value>
+  </data>
+  <data name="openfile" xml:space="preserve">
+    <value>Opening File</value>
+  </data>
+  <data name="quickImp" xml:space="preserve">
+    <value>Quick Import</value>
+  </data>
+  <data name="really" xml:space="preserve">
+    <value>Cancel ?</value>
+  </data>
+  <data name="removing" xml:space="preserve">
+    <value>Removing files now. Will continue removing after you leave this page.</value>
+  </data>
+  <data name="rootdirectory" xml:space="preserve">
+    <value>ROOT DIRECTORY</value>
+  </data>
+  <data name="selectandimp" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="selectImp" xml:space="preserve">
+    <value>Select Import</value>
+  </data>
+  <data name="totalprog" xml:space="preserve">
+    <value>Total :</value>
+  </data>
+  <data name="availableram" xml:space="preserve">
+    <value>Available RAM for this app :</value>
+  </data>
+  <data name="clearall" xml:space="preserve">
+    <value>Delete all files in UVE</value>
+  </data>
+  <data name="clearallsettings" xml:space="preserve">
+    <value>restore settings to default</value>
+  </data>
+  <data name="clearconfirm" xml:space="preserve">
+    <value>Are you sure to remove all files?</value>
+  </data>
+  <data name="clearwarning" xml:space="preserve">
+    <value>This operation will remove the following items permanly :
+1.All of the UVE games imported to phone.
+2.All of the save data of UVE games.
+3.The settings of this app.
+4.OpenXLive login session.
+5.Your background image.
+6.All the cache of this app.
+
+It will not remove :
+1.Games in SD card.
+2.Skydrive backups.
+3.OpenXLive online personal information.
+4.This app itself.
+
+Are you sure to remove all?</value>
+  </data>
+  <data name="confirmagain" xml:space="preserve">
+    <value>Confirm again</value>
+  </data>
+  <data name="currentram" xml:space="preserve">
+    <value>RAM usage</value>
+  </data>
+  <data name="currentusingram" xml:space="preserve">
+    <value>Currently using :</value>
+  </data>
+  <data name="detectedfolders" xml:space="preserve">
+    <value>Following Directories has been detected</value>
+  </data>
+  <data name="extenabled" xml:space="preserve">
+    <value>External Storage has been enabled. Please connect your phone to PC and set up a folder named "ADV" in the SD card root and put the game folders into this directory. Then please check this checkbox. NOTICE: because of the API limit of WP8, you must use the fully packaged scripts and games. Currently this feature is not enabled to public and these settings are only for feature preview.</value>
+  </data>
+  <data name="general" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="hidedebug" xml:space="preserve">
+    <value>Hide debug information</value>
+  </data>
+  <data name="hidedebug_description" xml:space="preserve">
+    <value>Uncheck this and you will see all performance information on the screen including fps count, RAM usage and etc.</value>
+  </data>
+  <data name="maximumram" xml:space="preserve">
+    <value>Maximum RAM that this app used :</value>
+  </data>
+  <data name="nosd" xml:space="preserve">
+    <value>Your phone does not support SD card or you haven't inserted one.</value>
+  </data>
+  <data name="phonestorage" xml:space="preserve">
+    <value>Phone Storage</value>
+  </data>
+  <data name="pushhasstarted" xml:space="preserve">
+    <value>Push notification has been enabled</value>
+  </data>
+  <data name="pushswitch" xml:space="preserve">
+    <value>Enable Push Notifications</value>
+  </data>
+  <data name="readfromsd" xml:space="preserve">
+    <value>Read game data from sd card</value>
+  </data>
+  <data name="sdcard" xml:space="preserve">
+    <value>SD Card</value>
+  </data>
+  <data name="sdnotenabled" xml:space="preserve">
+    <value>External Storage is not enabled. Please connect your phone to PC and set up a folder named "ADV" in the SD card root and put the game folders into this directory. Then please check this checkbox. NOTICE: because of the API limit of WP8, you must use the fully packaged scripts and games. Currently this feature is not enabled to public and these settings are only for feature preview.</value>
+  </data>
+  <data name="storage" xml:space="preserve">
+    <value>Storage</value>
+  </data>
+  <data name="storageleft" xml:space="preserve">
+    <value>Free space :</value>
+  </data>
+  <data name="totalram" xml:space="preserve">
+    <value>RAM size of this phone :</value>
+  </data>
+  <data name="usedstorage" xml:space="preserve">
+    <value>Disk space used by UVE :</value>
+  </data>
+  <data name="willremove" xml:space="preserve">
+    <value>Application will remove all the data and then exit automatically. it may take some time.</value>
+  </data>
+  <data name="willrestart" xml:space="preserve">
+    <value>UVE will close to apply these changes. Please restart UVE to complete the process.</value>
+  </data>
+  <data name="notenoughspacefortest" xml:space="preserve">
+    <value>Your disk space is not enough for testing disk performance. Will skip this step.</value>
+  </data>
+  <data name="extVideo" xml:space="preserve">
+    <value>Use system player to play video</value>
+  </data>
+  <data name="logOutput" xml:space="preserve">
+    <value>Write log file</value>
+  </data>
+  <data name="passwdmes" xml:space="preserve">
+    <value>Please enter your password.
+If you type the wrong password, the application will close.</value>
+  </data>
+  <data name="passwdreq" xml:space="preserve">
+    <value>Password Required</value>
+  </data>
+  <data name="passwordsaved" xml:space="preserve">
+    <value>Password saved!</value>
+  </data>
+  <data name="quickshare" xml:space="preserve">
+    <value>Quick Share</value>
+  </data>
+  <data name="quicksharedesc" xml:space="preserve">
+    <value>Enable this feature and you will be able to share what you are playing with a automatically done screen capture by full pressing the camera button in the application. Remember NOT to share anything illegal or unsuitable to the SNS service you use.</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="setopacity" xml:space="preserve">
+    <value>Application bar translucent</value>
+  </data>
+  <data name="setpasswdreq" xml:space="preserve">
+    <value>require a password to use the app</value>
+  </data>
+  <data name="aboutInfo" xml:space="preserve">
+    <value>UVE Game Engine is an application designed by Light Studio
+Currently we are working on:
+ONScripter Compatible Layer (Completed)
+ONScripter-jh Compatible Layer (Completed, Current Version)
+UVE Next Native Language (Planning)
+Kirikiri Compatible Layer (Planning)
+Most of the ONScripter/NScripter games can run on UVE now. For more information, please visit:
+Open source tools: http://uve.codeplex.com/
+Email: uve@ligstd.com
+Blog: http://uve-project.ml (Simplified Chinese)
+warining: This software (UVE, UVEngine, Universal Visualnovel Engine) is free software, please use it according to the rules specified by GNU General Public License version 2. Source codes are available at the following localtions:
+UVEngine HomePage（http://uve-project.ml/）
+Light Studio Official Forum（https://user.ligstd.com/）
+Github（https://github.com/lightstudio/uve）
+Thanks:
+
+The software used the following Open Source Libraries:
+
+ONScripter-jh (GPLv2)
+Source Code：https://bitbucket.org/jh10001/onscripter-jh
+Special Thanks to jh10001 for his vigorous support.
+
+The software used the following 3rd-party DLL Libraries :
+
+for decoding OGG audio :
+libogg (BSD)
+libvorbis (BSD)
+
+for decoding OMV effects :
+libtheora (BSD)
+
+for image decoding :
+libjpeg
+libpng
+
+for decompressing :
+zlib
+
+dynamic language : 
+IronRuby (Apache)
+
+for 2D Rendering :
+DirectX Toolkit (Ms-PL)
+SharpDX (MIT)
+
+Silverlight UI effects :
+Coding4Fun (Ms-PL)
+Windows Phone Toolkit (Ms-PL)
+
+Online game system :
+OpenXLive</value>
+  </data>
+  <data name="reviewinstore" xml:space="preserve">
+    <value>Review this app in store</value>
+  </data>
+  <data name="confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="exitconfirm_0" xml:space="preserve">
+    <value>Exit directly</value>
+  </data>
+  <data name="exitconfirm_1" xml:space="preserve">
+    <value>Press back button for two times</value>
+  </data>
+  <data name="exitconfirm_2" xml:space="preserve">
+    <value>Message box confirm</value>
+  </data>
+  <data name="exitconfirm_choose" xml:space="preserve">
+    <value>Please select a way for exit confirm :</value>
+  </data>
+  <data name="exit_cf_mesbox" xml:space="preserve">
+    <value>Would you like to exit ?</value>
+  </data>
+  <data name="openxliveproblem" xml:space="preserve">
+    <value>OpenXLive service is not running. Do you have an internet connection ?</value>
+  </data>
+  <data name="backupcomplete" xml:space="preserve">
+    <value>Backup completed!</value>
+  </data>
+  <data name="cloudbackup" xml:space="preserve">
+    <value>Cloud backup</value>
+  </data>
+  <data name="clouddesc" xml:space="preserve">
+    <value>Please sign in and authorize the app to access your SkyDrive first.
+"Backup" operation will pack up all the existed saves first and upload them to your SkyDrive and wipe all the backup data in the cloud.
+"Recover" operation will download your cloud backup from SkyDrive and recover them. Files will be overwritten if existed in the local storage.</value>
+  </data>
+  <data name="compressionerror" xml:space="preserve">
+    <value>Compression error :</value>
+  </data>
+  <data name="dobackup" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="dorecover" xml:space="preserve">
+    <value>Recover</value>
+  </data>
+  <data name="downloaded" xml:space="preserve">
+    <value>Download completed! Decompressing.</value>
+  </data>
+  <data name="mustsignin" xml:space="preserve">
+    <value>You must sign in first .</value>
+  </data>
+  <data name="restorecompleted" xml:space="preserve">
+    <value>Save data restored!</value>
+  </data>
+  <data name="exitwitherror" xml:space="preserve">
+    <value>Script engine exited with error code :</value>
+  </data>
+  <data name="forcefull" xml:space="preserve">
+    <value>force full screen</value>
+  </data>
+  <data name="normal" xml:space="preserve">
+    <value>normal (4:3)</value>
+  </data>
+  <data name="videoplaybackerror" xml:space="preserve">
+    <value>Video playback error :</value>
+  </data>
+  <data name="vsetting" xml:space="preserve">
+    <value>display properties</value>
+  </data>
+  <data name="wide" xml:space="preserve">
+    <value>wide screen (16:9)</value>
+  </data>
+  <data name="donate" xml:space="preserve">
+    <value>Donate</value>
+  </data>
+  <data name="donatedesc" xml:space="preserve">
+    <value>We've spent a lot of money on the following test devices and services:\nMicrosoft App Hub\nLumia 920\nLumia 820\nLumia 520\nHTC 8s\nSamsung ATIV S\nBut we still published a full free version because we wish everyone who uses WP8 can enjoy this software for free as Android or iOs users do. We would be really happy if you are willing to donate to us so that we can do better and keep updating the software for free. Use the "Donate" button to get more specific information, or continue if you don't want to donate now.</value>
+  </data>
+  <data name="donatetext1" xml:space="preserve">
+    <value> Help us do better</value>
+  </data>
+  <data name="donatetext2" xml:space="preserve">
+    <value>          and keep FREE!</value>
+  </data>
+  <data name="nomoredisplay" xml:space="preserve">
+    <value>Don't show again (Donate users only)</value>
+  </data>
+  <data name="_continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="showdonate" xml:space="preserve">
+    <value>show donate page</value>
+  </data>
+  <data name="thanks" xml:space="preserve">
+    <value>Thank you for your support. We will receive it soon.</value>
+  </data>
+  <data name="buyinstore" xml:space="preserve">
+    <value>Buy Donate version in store($1.99)</value>
+  </data>
+  <data name="donatedirectly" xml:space="preserve">
+    <value>Donate now</value>
+  </data>
+  <data name="donatemethoddesc" xml:space="preserve">
+    <value>There are two ways to donate to us</value>
+  </data>
+  <data name="gotostore" xml:space="preserve">
+    <value>Visit UVEngine in store</value>
+  </data>
+  <data name="inapppurchase" xml:space="preserve">
+    <value>Use in app purchase($0.99 every time)</value>
+  </data>
+  <data name="spacenotenough" xml:space="preserve">
+    <value>Available disk space not enough.</value>
+  </data>
+  <data name="thanksdonation" xml:space="preserve">
+    <value>Thanks for your donation</value>
+  </data>
+  <data name="traditionalimport" xml:space="preserve">
+    <value>Traditional import method</value>
+  </data>
+</root>

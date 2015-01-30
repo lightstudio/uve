@@ -1,0 +1,83 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="UVEngine.QuickImport"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="180"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel 包含应用程序的名称和页标题-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Universal Visualnovel Engine" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="{Binding Path=resource.quickImp,Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - 在此处放置其他内容-->
+        <StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,0,0,0">
+        		<Run Text="{Binding Path=resource.imp_t_1,Source={StaticResource LocalizedStrings}}"/>
+        		<Run FontWeight="Bold" Text="{Binding Path=resource.rootdirectory,Source={StaticResource LocalizedStrings}}">
+        			<Run.Foreground>
+        				<SolidColorBrush Color="#FF990D0D">
+        					<SolidColorBrush.RelativeTransform>
+        						<MatrixTransform Matrix="Identity"/>
+        					</SolidColorBrush.RelativeTransform>
+        					<SolidColorBrush.Transform>
+        						<MatrixTransform Matrix="Identity"/>
+        					</SolidColorBrush.Transform>
+        				</SolidColorBrush>
+        			</Run.Foreground>
+        		</Run>
+        		<Run Text="{Binding Path=resource.imp_t_2,Source={StaticResource LocalizedStrings}}"/>
+            </TextBlock>
+            <TextBlock Name="tip" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=resource.imp_t_3,Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Margin="0,0,0,0"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=resource.imp_t_4,Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Margin="0,0,0,0"/>
+            <ListBox Name="list" Margin="0,0,0,0">
+                <ListBoxItem>
+                    <TextBlock Name="items"></TextBlock>
+                </ListBoxItem>
+            </ListBox>
+
+        </StackPanel>
+        <Grid Grid.Row="2" Margin="0,30,0,0">
+            <Button Name="impButton" IsEnabled="False" Content="{Binding Path=resource.impall,Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="230" Click="Button_Click_1" Margin="240,77,0,0"/>
+            <Button Name="selButton" Content="{Binding Path=resource.selectandimp,Source={StaticResource LocalizedStrings}}" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Width="230" Click="Button_Click" Margin="10,77,0,0"/>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

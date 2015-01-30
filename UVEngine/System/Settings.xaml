@@ -1,0 +1,304 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="UVEngine.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:list="clr-namespace:List"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--枢轴控件-->
+        <phone:Pivot Title="Universal Visualnovel Engine">
+            <!--枢轴项一-->
+            <phone:PivotItem Header="{Binding Path=resource.general, Source={StaticResource LocalizedStrings}}">
+                <Grid>
+                    <ListBox>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <toolkit:ToggleSwitch x:Name="PushSwitch" Content="{Binding Path=resource.pushswitch, Source={StaticResource LocalizedStrings}}" Checked="Push_Checked" Unchecked="Push_Unchecked" Margin="0,0,0,0" FontSize="25" Width="460" />
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel>
+                                <CheckBox x:Name="showDebug" Checked="Debug_Checked" Unchecked="Debug_UnChecked" Content="{Binding Path=resource.hidedebug, Source={StaticResource LocalizedStrings}}"/>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel>
+                                <TextBlock TextWrapping="Wrap" Text="{Binding Path=resource.hidedebug_description, Source={StaticResource LocalizedStrings}}"/>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel>
+                                <TextBlock Margin="10,0,0,0" Text="语言/Language/言語" FontSize="32"></TextBlock>
+                                <RadioButton Name="Auto" GroupName="langselect" Content="Auto"></RadioButton>
+                                <RadioButton Name="CHS" GroupName="langselect" Content="简体中文" ></RadioButton>
+                                <RadioButton Name="ENG" GroupName="langselect" Content="English"></RadioButton>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel>
+                                <TextBlock Margin="10,0,0,0" Text="{Binding Path=resource.exitconfirm_choose, Source={StaticResource LocalizedStrings}}" FontSize="32"></TextBlock>
+                                <RadioButton Name="directExit" GroupName="exitcf" Content="{Binding Path=resource.exitconfirm_0, Source={StaticResource LocalizedStrings}}"></RadioButton>
+                                <RadioButton Name="presstwotimes" GroupName="exitcf" Content="{Binding Path=resource.exitconfirm_1, Source={StaticResource LocalizedStrings}}" ></RadioButton>
+                                <RadioButton Name="messageboxconfirm" GroupName="exitcf" Content="{Binding Path=resource.exitconfirm_2, Source={StaticResource LocalizedStrings}}"></RadioButton>
+                            </StackPanel>
+                        </ListBoxItem> 
+                        <ListBoxItem>
+                            <StackPanel>
+                                <CheckBox x:Name="externalVideo" Content="{Binding Path=resource.extVideo, Source={StaticResource LocalizedStrings}}"></CheckBox>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel>
+                                <CheckBox x:Name="logOutput" Content="{Binding Path=resource.logOutput, Source={StaticResource LocalizedStrings}}"></CheckBox>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel>
+                                <CheckBox x:Name="setOpacity" Content="{Binding Path=resource.setopacity, Source={StaticResource LocalizedStrings}}"></CheckBox>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel>
+                                <CheckBox x:Name="passwd" Content="{Binding Path=resource.setpasswdreq, Source={StaticResource LocalizedStrings}}"/>
+                                <PasswordBox  x:Name="passwdbox" Width="455"/>
+                                <Button Name="save" Content="{Binding Path=resource.save, Source={StaticResource LocalizedStrings}}" Click="Button_Click"/>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel>
+                                <CheckBox x:Name="quickshare" Content="{Binding Path=resource.quickshare, Source={StaticResource LocalizedStrings}}"/>
+                                <TextBlock TextWrapping="Wrap" Text="{Binding Path=resource.quicksharedesc, Source={StaticResource LocalizedStrings}}"/>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel>
+                                <CheckBox x:Name="showDonate" Content="{Binding Path=resource.showdonate, Source={StaticResource LocalizedStrings}}"/>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <!--<ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <CheckBox x:Name="bgmOut" Checked="Checked" Unchecked="UnChecked" Content="播放背景音乐"/>
+
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <CheckBox x:Name="mp3Out" Checked="Checked" Unchecked="UnChecked" Content="播放MP3音乐"/>
+
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <CheckBox x:Name="dwaveOut" Checked="Checked" Unchecked="UnChecked" Content="开启语音/效果音"/>
+
+                            </StackPanel>
+                        </ListBoxItem>
+
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <CheckBox x:Name="videoPlay" Checked="Checked" Unchecked="UnChecked" Content="播放视频"/>
+
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <CheckBox x:Name="textEffect" Checked="Checked" Unchecked="UnChecked" Content="开启文字效果"/>
+
+                            </StackPanel>
+                        </ListBoxItem>-->
+                    </ListBox>
+                </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="{Binding Path=resource.storage, Source={StaticResource LocalizedStrings}}">
+                <Grid>
+                    <ListBox>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <TextBlock Text="{Binding Path=resource.sdcard, Source={StaticResource LocalizedStrings}}" FontSize="36"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <CheckBox x:Name="extstorage" Checked="stChecked" Unchecked="stUnChecked" Content="{Binding Path=resource.readfromsd, Source={StaticResource LocalizedStrings}}"></CheckBox>
+                                <TextBlock Margin="10,0,0,10" Name="SDIntroduction" TextWrapping="Wrap" Text="{Binding Path=resource.sdnotenabled, Source={StaticResource LocalizedStrings}}"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <TextBlock Margin="10,0,0,10" Name="Exists" Text=""></TextBlock>
+                                <TextBlock Margin="10,0,0,10" Name="List"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <TextBlock Text="{Binding Path=resource.phonestorage, Source={StaticResource LocalizedStrings}}" FontSize="36"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <TextBlock Margin="10,0,0,10" Name="sp" Text="{Binding Path=resource.usedstorage, Source={StaticResource LocalizedStrings}}"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <TextBlock Margin="10,0,0,10" Name="rsp" Text="{Binding Path=resource.storageleft, Source={StaticResource LocalizedStrings}}"/>                        
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <Button Content="{Binding Path=resource.clearall, Source={StaticResource LocalizedStrings}}" Click="Button_Click_1"></Button>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <Button Content="{Binding Path=resource.clearallsettings, Source={StaticResource LocalizedStrings}}" Click="Button_Click_2"></Button>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <!--<ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <Button Name="extract" Content="解压未完全导入的游戏" Click="Button_Click">
+                                </Button>
+                            </StackPanel>
+                        </ListBoxItem>-->
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <TextBlock Text="{Binding Path=resource.currentram, Source={StaticResource LocalizedStrings}}" FontSize="36"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <TextBlock Margin="10,0,0,10" Text="{Binding Path=resource.totalram, Source={StaticResource LocalizedStrings}}"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <TextBlock Margin="10,0,0,10" Name="TotalRAM"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <TextBlock Margin="10,0,0,10" Text="{Binding Path=resource.availableram, Source={StaticResource LocalizedStrings}}"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <TextBlock Margin="10,0,0,10" Name="AvailableRAM"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <TextBlock Margin="10,0,0,10" Text="{Binding Path=resource.currentusingram, Source={StaticResource LocalizedStrings}}"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <TextBlock Margin="10,0,0,10" Name="NowUsingRAM"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <TextBlock Margin="10,0,0,10" Text="{Binding Path=resource.maximumram, Source={StaticResource LocalizedStrings}}"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <TextBlock Margin="10,0,0,10" Name="MaximumUsage"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                    </ListBox>
+                </Grid>
+            </phone:PivotItem>
+            <!--<phone:PivotItem Header="高级">
+                <Grid>
+                    <ListBox>
+                        <ListBoxItem>
+                            <StackPanel>
+                                <TextBlock TextWrapping="Wrap" Text="本页面所有内容均为高级设置，不推荐修改。如果修改后遇到问题，请还原默认设置（均勾选）。"/>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <ListBoxItem>
+                                    <StackPanel Margin="0,0,0,0">
+                                        <CheckBox x:Name="onsTrans" Checked="Checked" Unchecked="UnChecked" Content="ONS脚本动态修改"/>
+
+                                    </StackPanel>
+                                </ListBoxItem>
+                                <TextBlock TextWrapping="Wrap">
+                                	<Run Text="由于目前dwave的功能限制，若开启ONS脚本动态修改，将会自动将dwave后非wav"/>
+                                	<Run Text=",ogg"/>
+                                	<Run Text="的扩展名转换为"/>
+                                	<Run Text="ogg"/>
+                                	<Run Text="，方便游戏转换，移植者不必修改脚本，只需将其转换为指定格式即可。"/>
+                                </TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Margin="0,0,0,0">
+                                <CheckBox x:Name="audioBackground" Checked="Checked" Unchecked="UnChecked" Content="开启后台音频播放"/>
+
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel>
+                                <TextBlock TextWrapping="Wrap" Text="开启此项功能后，游戏将在后台运行本程序时继续播放背景音乐，并且可使用音量设置上的控制按钮控制播放/停止。"/>
+                            </StackPanel>
+                        </ListBoxItem>
+
+                        <ListBoxItem>
+                            <StackPanel>
+                                <CheckBox x:Name="allowError" Checked="Checked" Unchecked="UnChecked" Content="脚本容错"/>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel>
+                                <TextBlock TextWrapping="Wrap" Text="开启此功能，则脚本引擎将忽略一切非致命错误，并且不进行错误输出"/>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel>
+                                <CheckBox x:Name="useNative" Checked="Checked" Unchecked="UnChecked" Content="使用本机代码(C/C++)进行更多操作"/>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel>
+                                <TextBlock TextWrapping="Wrap" Text="使用更加高效的本机代码(C/C++)代替托管代码(C#)进行更多的操作（如立绘Alpha透明计算与复杂表达式判定），如果没有遇到兼容性问题导致程序崩溃，不建议关闭本功能，否则将造成性能低下。"/>
+                            </StackPanel>
+                        </ListBoxItem>
+
+                    </ListBox>
+                </Grid>
+            </phone:PivotItem>-->
+        </phone:Pivot>
+    </Grid>
+
+</phone:PhoneApplicationPage>

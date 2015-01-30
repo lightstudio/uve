@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\timidity\common.c" />
+    <ClCompile Include="..\..\timidity\ctrlmode.c" />
+    <ClCompile Include="..\..\timidity\filter.c" />
+    <ClCompile Include="..\..\timidity\instrum.c" />
+    <ClCompile Include="..\..\timidity\mix.c" />
+    <ClCompile Include="..\..\timidity\output.c" />
+    <ClCompile Include="..\..\timidity\playmidi.c" />
+    <ClCompile Include="..\..\timidity\readmidi.c" />
+    <ClCompile Include="..\..\timidity\resample.c" />
+    <ClCompile Include="..\..\timidity\sdl_a.c" />
+    <ClCompile Include="..\..\timidity\sdl_c.c" />
+    <ClCompile Include="..\..\timidity\tables.c" />
+    <ClCompile Include="..\..\timidity\timidity.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\timidity\common.h" />
+    <ClInclude Include="..\..\timidity\config.h" />
+    <ClInclude Include="..\..\timidity\ctrlmode.h" />
+    <ClInclude Include="..\..\timidity\filter.h" />
+    <ClInclude Include="..\..\timidity\instrum.h" />
+    <ClInclude Include="..\..\timidity\mix.h" />
+    <ClInclude Include="..\..\timidity\output.h" />
+    <ClInclude Include="..\..\timidity\playmidi.h" />
+    <ClInclude Include="..\..\timidity\readmidi.h" />
+    <ClInclude Include="..\..\timidity\resample.h" />
+    <ClInclude Include="..\..\timidity\tables.h" />
+    <ClInclude Include="..\..\timidity\timidity.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\native_midi\native_midi_common.c" />
+    <ClCompile Include="..\..\native_midi\native_midi_win32.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\native_midi\native_midi.h" />
+    <ClInclude Include="..\..\native_midi\native_midi_common.h" />
+  </ItemGroup>
+</Project>

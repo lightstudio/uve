@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>5fd0e509-b6ae-4f29-bd2a-4d2cc10f3aa0</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Info">
+      <UniqueIdentifier>{19e00fdb-acef-47ba-abe9-14ef855b1cb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{e83a5335-27f4-4c55-8243-2091b77bd6bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INI">
+      <UniqueIdentifier>{21031fce-36f1-4565-ac85-ba7e88ef65ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bzlib">
+      <UniqueIdentifier>{d3f2f51b-3ebb-4ec5-aae0-9165f64a39cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vorbis">
+      <UniqueIdentifier>{25a93409-bedd-48d7-a266-bfbcd544c669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX">
+      <UniqueIdentifier>{319f77af-386d-496c-ab5a-d24c32cc1eb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEBUG_PURPOSE">
+      <UniqueIdentifier>{f7950ca9-a82c-499a-bce5-1e478500f9e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ONS_20130411">
+      <UniqueIdentifier>{96c74ea1-f5f6-41ee-b3a9-5c70e9865bfa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UVEngineNative.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="UVEDelegate.cpp" />
+    <ClCompile Include="sjis2utf16.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicGameInfo.cpp">
+      <Filter>Info</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInfoEx.cpp">
+      <Filter>Info</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenFile.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="INIRead.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="INI.cpp">
+      <Filter>INI</Filter>
+    </ClCompile>
+    <ClCompile Include="INI_BASE.cpp">
+      <Filter>INI</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemLine.cpp">
+      <Filter>INI</Filter>
+    </ClCompile>
+    <ClCompile Include="SECTION.cpp">
+      <Filter>INI</Filter>
+    </ClCompile>
+    <ClCompile Include="blocksort.cpp">
+      <Filter>bzlib</Filter>
+    </ClCompile>
+    <ClCompile Include="bzip2.cpp">
+      <Filter>bzlib</Filter>
+    </ClCompile>
+    <ClCompile Include="bzlib.cpp">
+      <Filter>bzlib</Filter>
+    </ClCompile>
+    <ClCompile Include="compress.cpp">
+      <Filter>bzlib</Filter>
+    </ClCompile>
+    <ClCompile Include="crctable.cpp">
+      <Filter>bzlib</Filter>
+    </ClCompile>
+    <ClCompile Include="decompress.cpp">
+      <Filter>bzlib</Filter>
+    </ClCompile>
+    <ClCompile Include="huffman.cpp">
+      <Filter>bzlib</Filter>
+    </ClCompile>
+    <ClCompile Include="randtable.cpp">
+      <Filter>bzlib</Filter>
+    </ClCompile>
+    <ClCompile Include="spewG.cpp">
+      <Filter>bzlib</Filter>
+    </ClCompile>
+    <ClCompile Include="unzcrash.cpp">
+      <Filter>bzlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3DBase.cpp">
+      <Filter>DX</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3DContentProvider.cpp">
+      <Filter>DX</Filter>
+    </ClCompile>
+    <ClCompile Include="UVE_DX.cpp">
+      <Filter>DX</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationInfo.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectReader.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="DirtyRect.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="FontInfo.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="LUAHandler.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="NsaReader.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ONScripter.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ONScripter_animation.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ONScripter_command.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ONScripter_effect.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ONScripter_effect_breakup.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ONScripter_event.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ONScripter_file.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ONScripter_file2.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ONScripter_image.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ONScripter_lut.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="onscripter_main.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ONScripter_rmenu.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ONScripter_sound.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ONScripter_text.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="resize_image.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="SarReader.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptHandler.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptParser.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptParser_command.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="XDLRenderer.cpp">
+      <Filter>DX</Filter>
+    </ClCompile>
+    <ClCompile Include="IExternalStorageNative.cpp" />
+    <ClCompile Include="manifestEX.cpp" />
+    <ClCompile Include="ONScripterSettings.cpp" />
+    <ClCompile Include="UVEngineSettings.cpp" />
+    <ClCompile Include="NSGameSettings.cpp" />
+    <ClCompile Include="NativeCalls.cpp" />
+    <ClCompile Include="coding2utf16.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+    <ClCompile Include="gbk2utf16.cpp">
+      <Filter>ONS_20130411</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UVEngineNative.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="ICallBack.h" />
+    <ClInclude Include="UVEDelegate.h" />
+    <ClInclude Include="BasicGameInfo.h">
+      <Filter>Info</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInfoEx.h">
+      <Filter>Info</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenFile.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="INIRead.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="INI.h">
+      <Filter>INI</Filter>
+    </ClInclude>
+    <ClInclude Include="INI_BASE.h">
+      <Filter>INI</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemLine.h">
+      <Filter>INI</Filter>
+    </ClInclude>
+    <ClInclude Include="SECTION.h">
+      <Filter>INI</Filter>
+    </ClInclude>
+    <ClInclude Include="bzlib.h">
+      <Filter>bzlib</Filter>
+    </ClInclude>
+    <ClInclude Include="bzlib_private.h">
+      <Filter>bzlib</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXHelper.h">
+      <Filter>DX</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3DBase.h">
+      <Filter>DX</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicTimer.h">
+      <Filter>DX</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3DContentProvider.h">
+      <Filter>DX</Filter>
+    </ClInclude>
+    <ClInclude Include="UVE_DX.h">
+      <Filter>DX</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationInfo.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseReader.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonLink.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectReader.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="DirtyRect.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="FontInfo.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="LUAHandler.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="NsaReader.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="ONScripter.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="resize_image.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="SarReader.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptHandler.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptParser.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="str.h" />
+    <ClInclude Include="XDLRenderer.h">
+      <Filter>DX</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>DEBUG_PURPOSE</Filter>
+    </ClInclude>
+    <ClInclude Include="IExternalStorageNative.h" />
+    <ClInclude Include="INativeCalls.h" />
+    <ClInclude Include="manifestEX.h" />
+    <ClInclude Include="ONScripterSettings.h" />
+    <ClInclude Include="UVEngineSettings.h" />
+    <ClInclude Include="NSGameSettings.h" />
+    <ClInclude Include="sjis2utf16.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="coding2utf16.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="gbk2utf16.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>ONS_20130411</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

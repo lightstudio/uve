@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libid3tag", "..\..\libid3tag-0.15.1b\msvc++\libid3tag.vcxproj", "{87C9820E-4333-FBE2-1D4C-3549603E72E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2E6D32DE-5E02-A9A9-9174-1C7285F62F32} = {2E6D32DE-5E02-A9A9-9174-1C7285F62F32}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libmad", "..\..\libmad-0.15.1b\msvc++\libmad.vcxproj", "{F2B5F26B-F826-64D1-D807-84C31AD8B790}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libz", "..\..\libz-1.1.4\msvc++\libz.vcxproj", "{2E6D32DE-5E02-A9A9-9174-1C7285F62F32}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "madplay", "madplay.vcxproj", "{DFDCB87A-7D3B-13D1-C470-4530E94E3C8C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{87C9820E-4333-FBE2-1D4C-3549603E72E0} = {87C9820E-4333-FBE2-1D4C-3549603E72E0}
+		{F2B5F26B-F826-64D1-D807-84C31AD8B790} = {F2B5F26B-F826-64D1-D807-84C31AD8B790}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87C9820E-4333-FBE2-1D4C-3549603E72E0}.Debug|ARM.ActiveCfg = Debug|ARM
+		{87C9820E-4333-FBE2-1D4C-3549603E72E0}.Debug|ARM.Build.0 = Debug|ARM
+		{87C9820E-4333-FBE2-1D4C-3549603E72E0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{87C9820E-4333-FBE2-1D4C-3549603E72E0}.Debug|Win32.Build.0 = Debug|Win32
+		{87C9820E-4333-FBE2-1D4C-3549603E72E0}.Release|ARM.ActiveCfg = Release|ARM
+		{87C9820E-4333-FBE2-1D4C-3549603E72E0}.Release|ARM.Build.0 = Release|ARM
+		{87C9820E-4333-FBE2-1D4C-3549603E72E0}.Release|Win32.ActiveCfg = Release|Win32
+		{87C9820E-4333-FBE2-1D4C-3549603E72E0}.Release|Win32.Build.0 = Release|Win32
+		{F2B5F26B-F826-64D1-D807-84C31AD8B790}.Debug|ARM.ActiveCfg = Debug|ARM
+		{F2B5F26B-F826-64D1-D807-84C31AD8B790}.Debug|ARM.Build.0 = Debug|ARM
+		{F2B5F26B-F826-64D1-D807-84C31AD8B790}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F2B5F26B-F826-64D1-D807-84C31AD8B790}.Debug|Win32.Build.0 = Debug|Win32
+		{F2B5F26B-F826-64D1-D807-84C31AD8B790}.Release|ARM.ActiveCfg = Release|ARM
+		{F2B5F26B-F826-64D1-D807-84C31AD8B790}.Release|ARM.Build.0 = Release|ARM
+		{F2B5F26B-F826-64D1-D807-84C31AD8B790}.Release|Win32.ActiveCfg = Release|Win32
+		{F2B5F26B-F826-64D1-D807-84C31AD8B790}.Release|Win32.Build.0 = Release|Win32
+		{2E6D32DE-5E02-A9A9-9174-1C7285F62F32}.Debug|ARM.ActiveCfg = Debug|ARM
+		{2E6D32DE-5E02-A9A9-9174-1C7285F62F32}.Debug|ARM.Build.0 = Debug|ARM
+		{2E6D32DE-5E02-A9A9-9174-1C7285F62F32}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2E6D32DE-5E02-A9A9-9174-1C7285F62F32}.Debug|Win32.Build.0 = Debug|Win32
+		{2E6D32DE-5E02-A9A9-9174-1C7285F62F32}.Release|ARM.ActiveCfg = Release|ARM
+		{2E6D32DE-5E02-A9A9-9174-1C7285F62F32}.Release|ARM.Build.0 = Release|ARM
+		{2E6D32DE-5E02-A9A9-9174-1C7285F62F32}.Release|Win32.ActiveCfg = Release|Win32
+		{2E6D32DE-5E02-A9A9-9174-1C7285F62F32}.Release|Win32.Build.0 = Release|Win32
+		{DFDCB87A-7D3B-13D1-C470-4530E94E3C8C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{DFDCB87A-7D3B-13D1-C470-4530E94E3C8C}.Debug|ARM.Build.0 = Debug|ARM
+		{DFDCB87A-7D3B-13D1-C470-4530E94E3C8C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DFDCB87A-7D3B-13D1-C470-4530E94E3C8C}.Debug|Win32.Build.0 = Debug|Win32
+		{DFDCB87A-7D3B-13D1-C470-4530E94E3C8C}.Release|ARM.ActiveCfg = Release|ARM
+		{DFDCB87A-7D3B-13D1-C470-4530E94E3C8C}.Release|ARM.Build.0 = Release|ARM
+		{DFDCB87A-7D3B-13D1-C470-4530E94E3C8C}.Release|Win32.ActiveCfg = Release|Win32
+		{DFDCB87A-7D3B-13D1-C470-4530E94E3C8C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+LIBRARY libjpeg-9
+
+EXPORTS
+
+jpeg_calc_output_dimensions @1
+jpeg_CreateDecompress @2
+jpeg_destroy_decompress @3
+jpeg_finish_decompress @4
+jpeg_read_header @5
+jpeg_read_scanlines @6
+jpeg_resync_to_restart @7
+jpeg_start_decompress @8
+jpeg_std_error @9
