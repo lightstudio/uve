@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+  <Identity Name="14205072-b8d2-476c-a1c7-37bde5c0e985" Publisher="CN=Family" Version="2.1.1.0" />
+  <mp:PhoneIdentity PhoneProductId="b3d468fc-28f2-4912-a8ee-4c1b29b63882" PhonePublisherId="03d3d57c-434e-40f1-9604-37d63ab730da" />
+  <Properties>
+    <DisplayName>UVEngine</DisplayName>
+    <PublisherDisplayName>Light Studio</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="AGHost.exe" EntryPoint="MainPage.xaml">
+      <m3:VisualElements DisplayName="UVEngine" Square150x150Logo="Assets\SquareTile150x150.png" Square44x44Logo="Assets\Logo.png" Description="UVE（Universal Visualnovel Engine），基于Windows Phone平台的通用视觉小说引擎，具有ONScripter兼容层，力图在Windows Phone平台上提供与其他移动及桌面平台同样出色的游戏体验。" ForegroundText="light" BackgroundColor="#464646">
+        <m3:DefaultTile Square71x71Logo="Assets\SquareTile71x71.png">
+        </m3:DefaultTile>
+        <m3:SplashScreen Image="Assets\SplashScreen.png" />
+      </m3:VisualElements>
+    </Application>
+  </Applications>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>AgHostSvcs.dll</Path>
+        <ActivatableClass ActivatableClassId="AgHost.BackgroundTask" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+  <Capabilities>
+    <Capability Name="removableStorage" />
+    <Capability Name="picturesLibrary" />
+  </Capabilities>
+</Package>
