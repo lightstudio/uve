@@ -1,0 +1,7 @@
+D:\Projects\UVEngine\BGM\Bin\ARM\Debug\BGM.dll
+D:\Projects\UVEngine\BGM\Bin\ARM\Debug\BGM.pdb
+D:\Projects\UVEngine\BGM\Bin\ARM\Debug\OggDecode.dll
+D:\Projects\UVEngine\BGM\Bin\ARM\Debug\OggDecode.pdb
+D:\Projects\UVEngine\BGM\obj\ARM\Debug\BGM.csprojResolveAssemblyReference.cache
+D:\Projects\UVEngine\BGM\obj\ARM\Debug\BGM.dll
+D:\Projects\UVEngine\BGM\obj\ARM\Debug\BGM.pdb

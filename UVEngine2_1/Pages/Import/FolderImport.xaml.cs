@@ -22,7 +22,7 @@ namespace UVEngine2_1.Pages.Import
             }
         }
 
-        public async void ContinueFolderPicker(FolderPickerContinuationEventArgs args)
+        public void ContinueFolderPicker(FolderPickerContinuationEventArgs args)
         {
             StorageApplicationPermissions.FutureAccessList.Add(args.Folder);
         }

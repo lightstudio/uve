@@ -25,13 +25,10 @@ namespace UVEngine2_1.Classes
 
         private bool _autoNightMode;
         private ColorStates _colorState;
-        private bool _coverView;
         private Color _customColor;
         private int _customColorInt;
         private bool _debugOn;
         private bool _doubleExit;
-        private bool _landscapeView;
-        private bool _leftHanded;
         private string _password;
         private bool _passwordOn;
         private bool _quickSave;
@@ -44,7 +41,7 @@ namespace UVEngine2_1.Classes
             {
                 if (_colorState == value) return;
                 _colorState = value;
-                OnPropertyChanged("ColorState");
+                OnPropertyChanged();
             }
         }
 
@@ -57,7 +54,7 @@ namespace UVEngine2_1.Classes
                 if (_customColor == value) return;
                 _customColor = value;
                 CustomColorInt = Helpers.ColorConvert(value);
-                OnPropertyChanged("CustomColor");
+                OnPropertyChanged();
             }
         }
 
@@ -69,7 +66,7 @@ namespace UVEngine2_1.Classes
             {
                 if (_customColorInt == value) return;
                 _customColorInt = value;
-                OnPropertyChanged("CustomColorInt");
+                OnPropertyChanged();
             }
         }
 
@@ -81,31 +78,7 @@ namespace UVEngine2_1.Classes
             {
                 if (_autoNightMode == value) return;
                 _autoNightMode = value;
-                OnPropertyChanged("AutoNightMode");
-            }
-        }
-
-        [XmlElement("CoverView")]
-        public bool CoverView
-        {
-            get { return _coverView; }
-            set
-            {
-                if (_coverView == value) return;
-                _coverView = value;
-                OnPropertyChanged("CoverView");
-            }
-        }
-
-        [XmlElement("LandscapeView")]
-        public bool LandscapeView
-        {
-            get { return _landscapeView; }
-            set
-            {
-                if (_landscapeView == value) return;
-                _landscapeView = value;
-                OnPropertyChanged("LandscapeView");
+                OnPropertyChanged();
             }
         }
 
@@ -117,7 +90,7 @@ namespace UVEngine2_1.Classes
             {
                 if (_passwordOn == value) return;
                 _passwordOn = value;
-                OnPropertyChanged("PasswordOn");
+                OnPropertyChanged();
             }
         }
 
@@ -129,7 +102,7 @@ namespace UVEngine2_1.Classes
             {
                 if (_password == value) return;
                 _password = value;
-                OnPropertyChanged("Password");
+                OnPropertyChanged();
             }
         }
 
@@ -141,19 +114,7 @@ namespace UVEngine2_1.Classes
             {
                 if (_doubleExit == value) return;
                 _doubleExit = value;
-                OnPropertyChanged("DoubleExit");
-            }
-        }
-
-        [XmlElement("LeftHanded")]
-        public bool LeftHanded
-        {
-            get { return _leftHanded; }
-            set
-            {
-                if (_leftHanded == value) return;
-                _leftHanded = value;
-                OnPropertyChanged("LeftHanded");
+                OnPropertyChanged();
             }
         }
 
@@ -165,7 +126,7 @@ namespace UVEngine2_1.Classes
             {
                 if (_quickSave == value) return;
                 _quickSave = value;
-                OnPropertyChanged("QuickSave");
+                OnPropertyChanged();
             }
         }
 
@@ -177,7 +138,7 @@ namespace UVEngine2_1.Classes
             {
                 if (_debugOn == value) return;
                 _debugOn = value;
-                OnPropertyChanged("DebugOn");
+                OnPropertyChanged();
             }
         }
 
@@ -186,13 +147,12 @@ namespace UVEngine2_1.Classes
         [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
-            var handler = PropertyChanged;
-            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
         public static Settings Load()
         {
-            var settingsPath = ApplicationData.Current.LocalFolder.Path + "//System//Settings.xml";
+            var settingsPath = ApplicationData.Current.LocalCacheFolder.Path + "//System//Settings.xml";
             if (!File.Exists(settingsPath))
             {
                 var accentColor = (Color) Application.Current.Resources["SystemColorControlAccentColor"];
@@ -201,12 +161,9 @@ namespace UVEngine2_1.Classes
                     ColorState = ColorStates.System,
                     CustomColor = accentColor,
                     AutoNightMode = true,
-                    CoverView = true,
-                    LandscapeView = false,
                     PasswordOn = false,
                     Password = "",
                     DoubleExit = true,
-                    LeftHanded = false,
                     QuickSave = true,
                     DebugOn = false
                 };
@@ -221,7 +178,7 @@ namespace UVEngine2_1.Classes
 
         public void Save()
         {
-            var settingsPath = ApplicationData.Current.LocalFolder.Path + "//System//Settings.xml";
+            var settingsPath = ApplicationData.Current.LocalCacheFolder.Path + "//System//Settings.xml";
             var writer = new StreamWriter(settingsPath, false);
             var serializer = new XmlSerializer(typeof (Settings));
             serializer.Serialize(writer, this);

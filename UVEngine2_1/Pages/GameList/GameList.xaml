@@ -1,0 +1,68 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:es="clr-namespace:Microsoft.Expression.Shapes;assembly=Microsoft.Expression.Drawing"
+    xmlns:em="clr-namespace:Microsoft.Expression.Media;assembly=Microsoft.Expression.Drawing"
+    xmlns:gs="clr-namespace:UVEngine2_1.Controls.GameSelector"
+    xmlns:ham="clr-namespace:UVEngine2_1.Controls.Hamburger"
+    x:Class="UVEngine2_1.Pages.GameList.GameList"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+    <Grid x:Name="LayoutRoot" Background="#FBFBFB">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.0824*"/>
+            <RowDefinition Height="0.292*"/>
+            <RowDefinition Height="0.0649*"/>
+            <RowDefinition Height="0.0649*"/>
+            <RowDefinition Height="0.4958*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1375*"/>
+            <ColumnDefinition Width="0.4805*"/>
+            <ColumnDefinition Width="0.382*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Background="#0000FF"/>
+        <Border Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="3" Background="#000000"/>
+        <gs:GameSelector x:Name="Selector" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3"/>
+        <Button x:Name="ButtonStart" Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="3">
+            <Button.Resources>
+                <Style x:Key="StyleStart" TargetType="Button">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="{StaticResource PhoneForegroundBrush}"/>
+                    <Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>
+                    <Setter Property="BorderThickness" Value="{StaticResource PhoneBorderThickness}"/>
+                    <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiBold}"/>
+                    <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeMedium}"/>
+                    <Setter Property="Padding" Value="10,5,10,6"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <StackPanel Background="Transparent">
+                                    <es:RegularPolygon Fill="#0000FF" PointCount="3" Stretch="Fill" RenderTransformOrigin="0.5,0.5" MinWidth="100" Width="100" MinHeight="480" Height="100" HorizontalAlignment="Left">
+                                        <es:RegularPolygon.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </es:RegularPolygon.RenderTransform>
+                                    </es:RegularPolygon>
+                                </StackPanel>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <StaticResource ResourceKey="StyleStart"/>
+            </Button.Style>
+        </Button>
+        <Button Content="ButtonDebug" HorizontalAlignment="Center" Margin="0,-6,0,0" VerticalAlignment="Center" Click="Button_Click" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <ham:Hamburger Grid.Row="0" Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="2"></ham:Hamburger>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,5 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "zlib\zlib.vcxproj", "{60F89955-91C6-3A36-8000-13C592FEC2DF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libpng", "libpng\libpng.vcxproj", "{D6973076-9317-4EF2-A0B8-B7A18AC0713E}"
@@ -10,27 +12,43 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug Library|ARM = Debug Library|ARM
+		Debug Library|Win32 = Debug Library|Win32
 		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
 		Release Library|ARM = Release Library|ARM
+		Release Library|Win32 = Release Library|Win32
 		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Debug Library|ARM.ActiveCfg = Debug Library|ARM
 		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Debug Library|ARM.Build.0 = Debug Library|ARM
+		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Debug Library|Win32.ActiveCfg = Debug Library|Win32
+		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Debug Library|Win32.Build.0 = Debug Library|Win32
 		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Debug|ARM.ActiveCfg = Debug|ARM
 		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Debug|ARM.Build.0 = Debug|ARM
+		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Debug|Win32.Build.0 = Debug|Win32
 		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Release Library|ARM.ActiveCfg = Release Library|ARM
 		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Release Library|ARM.Build.0 = Release Library|ARM
+		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Release Library|Win32.ActiveCfg = Release Library|Win32
+		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Release Library|Win32.Build.0 = Release Library|Win32
 		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Release|ARM.ActiveCfg = Release|ARM
 		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Release|ARM.Build.0 = Release|ARM
+		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Release|Win32.ActiveCfg = Release|Win32
+		{60F89955-91C6-3A36-8000-13C592FEC2DF}.Release|Win32.Build.0 = Release|Win32
 		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Debug Library|ARM.ActiveCfg = Debug Library|ARM
 		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Debug Library|ARM.Build.0 = Debug Library|ARM
+		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Debug Library|Win32.ActiveCfg = Debug Library|Win32
 		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Debug|ARM.ActiveCfg = Debug|ARM
 		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Debug|ARM.Build.0 = Debug|ARM
+		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Debug|Win32.ActiveCfg = Debug|Win32
 		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Release Library|ARM.ActiveCfg = Release Library|ARM
 		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Release Library|ARM.Build.0 = Release Library|ARM
+		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Release Library|Win32.ActiveCfg = Release Library|Win32
 		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Release|ARM.ActiveCfg = Release|ARM
 		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Release|ARM.Build.0 = Release|ARM
+		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Release|Win32.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

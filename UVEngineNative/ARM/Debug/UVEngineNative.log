@@ -1,0 +1,189 @@
+﻿生成启动时间为 2015/8/2 20:28:32。
+     1>项目“D:\Projects\UVEngine\UVEngineNative\UVEngineNative.vcxproj”在节点 9 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /ID:\Projects\UVEngine\SDL\include /ID:\Projects\UVEngine\SDL_ttf /ID:\Projects\UVEngine\SDL_mixer /ID:\Projects\UVEngine\SDL_image /ID:\Projects\UVEngine\lua /ID:\Projects\UVEngine\SDL\src /ID:\Projects\UVEngine\UVEngineNative\ /I"Generated Files\\" /IARM\Debug\ /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _WINRT_DLL /D _WINDLL /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"pch.h" /Fp"ARM\Debug\UVEngineNative.pch" /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /FR"ARM\Debug\\" /Gd /TP /FU"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\lib\arm\platform.winmd" /FU"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata\Windows.winmd" /analyze- /errorReport:prompt pch.cpp
+         pch.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /ID:\Projects\UVEngine\SDL\include /ID:\Projects\UVEngine\SDL_ttf /ID:\Projects\UVEngine\SDL_mixer /ID:\Projects\UVEngine\SDL_image /ID:\Projects\UVEngine\lua /ID:\Projects\UVEngine\SDL\src /ID:\Projects\UVEngine\UVEngineNative\ /I"Generated Files\\" /IARM\Debug\ /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _WINRT_DLL /D _WINDLL /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"ARM\Debug\UVEngineNative.pch" /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /FR"ARM\Debug\\" /Gd /TP /FU"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\lib\arm\platform.winmd" /FU"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata\Windows.winmd" /analyze- /errorReport:prompt AnimationInfo.cpp BasicGameInfo.cpp BenchCPU.cpp BenchMem.cpp blocksort.cpp bzip2.cpp bzlib.cpp coding2utf16.cpp compress.cpp crctable.cpp decompress.cpp Direct3DBase.cpp Direct3DContentProvider.cpp DirectReader.cpp DirtyRect.cpp FontInfo.cpp GameInfoEx.cpp gbk2utf16.cpp huffman.cpp IExternalStorageNative.cpp ImageMeta.cpp INI.cpp INIRead.cpp INI_BASE.cpp ItemLine.cpp LUAHandler.cpp manifestEX.cpp NativeCalls.cpp NsaReader.cpp NSGameSettings.cpp ONScripter.cpp ONScripterSettings.cpp ONScripter_animation.cpp ONScripter_command.cpp ONScripter_effect.cpp ONScripter_effect_breakup.cpp ONScripter_event.cpp ONScripter_file.cpp ONScripter_file2.cpp ONScripter_image.cpp ONScripter_lut.cpp onscripter_main.cpp ONScripter_rmenu.cpp ONScripter_sound.cpp ONScripter_text.cpp OpenFile.cpp randtable.cpp resize_image.cpp SarReader.cpp ScriptHandler.cpp ScriptParser.cpp ScriptParser_command.cpp SECTION.cpp sjis2utf16.cpp spewG.cpp unzcrash.cpp UVEDelegate.cpp UVEngineNative.cpp UVEngineSettings.cpp UVE_DX.cpp XDLRenderer.cpp
+         AnimationInfo.cpp
+         BasicGameInfo.cpp
+         BenchCPU.cpp
+         BenchMem.cpp
+         blocksort.cpp
+         bzip2.cpp
+         bzlib.cpp
+         coding2utf16.cpp
+     1>coding2utf16.cpp(47): warning C4244: “=”: 从“uint16_t”转换到“unsigned char”，可能丢失数据
+         compress.cpp
+         crctable.cpp
+         decompress.cpp
+         Direct3DBase.cpp
+         Direct3DContentProvider.cpp
+         DirectReader.cpp
+         DirtyRect.cpp
+         FontInfo.cpp
+         GameInfoEx.cpp
+         gbk2utf16.cpp
+         huffman.cpp
+         IExternalStorageNative.cpp
+         ImageMeta.cpp
+         INI.cpp
+         INIRead.cpp
+     1>ImageMeta.cpp(123): warning C4244: “=”: 从“unsigned __int64”转换到“byte”，可能丢失数据
+     1>ImageMeta.cpp(124): warning C4244: “=”: 从“unsigned __int64”转换到“byte”，可能丢失数据
+     1>ImageMeta.cpp(125): warning C4244: “=”: 从“unsigned __int64”转换到“byte”，可能丢失数据
+         INI_BASE.cpp
+         ItemLine.cpp
+         LUAHandler.cpp
+         manifestEX.cpp
+         NativeCalls.cpp
+         NsaReader.cpp
+         NSGameSettings.cpp
+         ONScripter.cpp
+         ONScripterSettings.cpp
+         ONScripter_animation.cpp
+     1>ONScripter.cpp(85): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+     1>ONScripter.cpp(171): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+         ONScripter_command.cpp
+         ONScripter_effect.cpp
+         ONScripter_effect_breakup.cpp
+         ONScripter_event.cpp
+     1>ONScripter_command.cpp(169): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+         ONScripter_file.cpp
+         ONScripter_file2.cpp
+         ONScripter_image.cpp
+         ONScripter_lut.cpp
+     1>ONScripter_file.cpp(190): warning C4018: “<”: 有符号/无符号不匹配
+         onscripter_main.cpp
+         ONScripter_rmenu.cpp
+         ONScripter_sound.cpp
+         ONScripter_text.cpp
+         OpenFile.cpp
+         randtable.cpp
+         resize_image.cpp
+         SarReader.cpp
+     1>ONScripter_text.cpp(203): warning C4309: “参数”: 截断常量值
+     1>ONScripter_text.cpp(811): warning C4309: “参数”: 截断常量值
+     1>SarReader.cpp(70): warning C4018: “<”: 有符号/无符号不匹配
+         ScriptHandler.cpp
+         ScriptParser.cpp
+         ScriptParser_command.cpp
+     1>ScriptHandler.cpp(1010): warning C4309: “初始化”: 截断常量值
+         SECTION.cpp
+     1>ScriptParser.cpp(45): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+     1>ScriptParser.cpp(84): warning C4566: 由通用字符名称“\u30FB”表示的字符不能在当前代码页(936)中表示出来
+         sjis2utf16.cpp
+         spewG.cpp
+         unzcrash.cpp
+         UVEDelegate.cpp
+     1>sjis2utf16.cpp(23988): warning C4244: “=”: 从“unsigned short”转换到“unsigned char”，可能丢失数据
+         UVEngineNative.cpp
+         UVEngineSettings.cpp
+         UVE_DX.cpp
+         XDLRenderer.cpp
+     1>d:\projects\uvengine\uvenginenative\debug.h(55): warning C4101: “pitch”: 未引用的局部变量 (UVE_DX.cpp)
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\UVEngine\ARM\Debug\UVEngineNative\UVEngineNative.dll" /INCREMENTAL /NOLOGO D3D11.lib xaudio2.lib WindowsPhoneCore.lib RuntimeObject.lib PhoneAppModelHost.lib /NODEFAULTLIB:libcmt.lib /NODEFAULTLIB:msvcrt.lib /NODEFAULTLIB:ole32.lib /MANIFEST:NO /DEBUG /PDB:"D:\Projects\UVEngine\ARM\Debug\UVEngineNative\UVEngineNative.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /WINMD /WINMDFILE:"D:\Projects\UVEngine\ARM\Debug\UVEngineNative\UVEngineNative.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:ARM /DLL ARM\Debug\AnimationInfo.obj
+         ARM\Debug\BasicGameInfo.obj
+         ARM\Debug\BenchCPU.obj
+         ARM\Debug\BenchMem.obj
+         ARM\Debug\blocksort.obj
+         ARM\Debug\bzip2.obj
+         ARM\Debug\bzlib.obj
+         ARM\Debug\coding2utf16.obj
+         ARM\Debug\compress.obj
+         ARM\Debug\crctable.obj
+         ARM\Debug\decompress.obj
+         ARM\Debug\Direct3DBase.obj
+         ARM\Debug\Direct3DContentProvider.obj
+         ARM\Debug\DirectReader.obj
+         ARM\Debug\DirtyRect.obj
+         ARM\Debug\FontInfo.obj
+         ARM\Debug\GameInfoEx.obj
+         ARM\Debug\gbk2utf16.obj
+         ARM\Debug\huffman.obj
+         ARM\Debug\IExternalStorageNative.obj
+         ARM\Debug\ImageMeta.obj
+         ARM\Debug\INI.obj
+         ARM\Debug\INIRead.obj
+         ARM\Debug\INI_BASE.obj
+         ARM\Debug\ItemLine.obj
+         ARM\Debug\LUAHandler.obj
+         ARM\Debug\manifestEX.obj
+         ARM\Debug\NativeCalls.obj
+         ARM\Debug\NsaReader.obj
+         ARM\Debug\NSGameSettings.obj
+         ARM\Debug\ONScripter.obj
+         ARM\Debug\ONScripterSettings.obj
+         ARM\Debug\ONScripter_animation.obj
+         ARM\Debug\ONScripter_command.obj
+         ARM\Debug\ONScripter_effect.obj
+         ARM\Debug\ONScripter_effect_breakup.obj
+         ARM\Debug\ONScripter_event.obj
+         ARM\Debug\ONScripter_file.obj
+         ARM\Debug\ONScripter_file2.obj
+         ARM\Debug\ONScripter_image.obj
+         ARM\Debug\ONScripter_lut.obj
+         ARM\Debug\onscripter_main.obj
+         ARM\Debug\ONScripter_rmenu.obj
+         ARM\Debug\ONScripter_sound.obj
+         ARM\Debug\ONScripter_text.obj
+         ARM\Debug\OpenFile.obj
+         ARM\Debug\randtable.obj
+         ARM\Debug\resize_image.obj
+         ARM\Debug\SarReader.obj
+         ARM\Debug\ScriptHandler.obj
+         ARM\Debug\ScriptParser.obj
+         ARM\Debug\ScriptParser_command.obj
+         ARM\Debug\SECTION.obj
+         ARM\Debug\sjis2utf16.obj
+         ARM\Debug\spewG.obj
+         ARM\Debug\unzcrash.obj
+         ARM\Debug\UVEDelegate.obj
+         ARM\Debug\UVEngineNative.obj
+         ARM\Debug\pch.obj
+         ARM\Debug\UVEngineSettings.obj
+         ARM\Debug\UVE_DX.obj
+         ARM\Debug\XDLRenderer.obj
+         "D:\Projects\UVEngine\ARM\Debug\libjpeg-9\libjpeg-9.lib"
+         D:\Projects\UVEngine\libmad\msvc++\Debug\libmad.lib
+         D:\Projects\UVEngine\ARM\Debug\libogg_static.lib
+         D:\Projects\UVEngine\ARM\Debug\libvorbis_static.lib
+         D:\Projects\UVEngine\ARM\Debug\libvorbisfile_static.lib
+         D:\Projects\UVEngine\ARM\Debug\lua\lua.lib
+         D:\Projects\UVEngine\SDL_image\VisualC\ARM\Debug\SDL_image.lib
+         "D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL-WinPhone.lib"
+         D:\Projects\UVEngine\ARM\Debug\timidity\timidity.lib
+         D:\Projects\UVEngine\ARM\Debug\SDL_mixer\SDL_mixer.lib
+         D:\Projects\UVEngine\ARM\Debug\freetype\freetype.lib
+         D:\Projects\UVEngine\ARM\Debug\SDL_ttf\SDL_ttf.lib
+            Creating library D:\Projects\UVEngine\ARM\Debug\UVEngineNative\UVEngineNative.lib and object D:\Projects\UVEngine\ARM\Debug\UVEngineNative\UVEngineNative.exp
+     1>SDL_image.lib(zutil.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(zutil.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(trees.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(trees.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(inftrees.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(inftrees.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(inflate.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(inflate.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(inffast.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(inffast.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(deflate.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(deflate.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(crc32.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(crc32.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(adler32.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(adler32.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(pngwutil.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(pngwutil.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(pngwtran.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(pngwtran.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(pngwrite.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(pngwrite.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(pngwio.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(pngwio.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(pngtrans.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(pngtrans.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(pngset.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(pngset.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(pngrutil.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(pngrutil.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(pngrtran.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(pngrtran.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(pngrio.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(pngrio.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(pngread.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(pngread.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(pngmem.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(pngmem.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(pngget.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(pngget.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(pngerror.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(pngerror.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+     1>SDL_image.lib(png.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'SDL_image.lib(png.obj)' or at 'D:\Projects\UVEngine\ARM\Debug\UVEngineNative\vc110.pdb'; linking object as if no debug info
+         UVEngineNative.vcxproj -> D:\Projects\UVEngine\ARM\Debug\UVEngineNative\UVEngineNative.dll
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\bscmake.exe /nologo /o"D:\Projects\UVEngine\ARM\Debug\UVEngineNative\UVEngineNative.bsc" ARM\Debug\AnimationInfo.sbr ARM\Debug\BasicGameInfo.sbr ARM\Debug\BenchCPU.sbr ARM\Debug\BenchMem.sbr ARM\Debug\blocksort.sbr ARM\Debug\bzip2.sbr ARM\Debug\bzlib.sbr ARM\Debug\coding2utf16.sbr ARM\Debug\compress.sbr ARM\Debug\crctable.sbr ARM\Debug\decompress.sbr ARM\Debug\Direct3DBase.sbr ARM\Debug\Direct3DContentProvider.sbr ARM\Debug\DirectReader.sbr ARM\Debug\DirtyRect.sbr ARM\Debug\FontInfo.sbr ARM\Debug\GameInfoEx.sbr ARM\Debug\gbk2utf16.sbr ARM\Debug\huffman.sbr ARM\Debug\IExternalStorageNative.sbr ARM\Debug\ImageMeta.sbr ARM\Debug\INI.sbr ARM\Debug\INIRead.sbr ARM\Debug\INI_BASE.sbr ARM\Debug\ItemLine.sbr ARM\Debug\LUAHandler.sbr ARM\Debug\manifestEX.sbr ARM\Debug\NativeCalls.sbr ARM\Debug\NsaReader.sbr ARM\Debug\NSGameSettings.sbr ARM\Debug\ONScripter.sbr ARM\Debug\ONScripterSettings.sbr ARM\Debug\ONScripter_animation.sbr ARM\Debug\ONScripter_command.sbr ARM\Debug\ONScripter_effect.sbr ARM\Debug\ONScripter_effect_breakup.sbr ARM\Debug\ONScripter_event.sbr ARM\Debug\ONScripter_file.sbr ARM\Debug\ONScripter_file2.sbr ARM\Debug\ONScripter_image.sbr ARM\Debug\ONScripter_lut.sbr ARM\Debug\onscripter_main.sbr ARM\Debug\ONScripter_rmenu.sbr ARM\Debug\ONScripter_sound.sbr ARM\Debug\ONScripter_text.sbr ARM\Debug\OpenFile.sbr ARM\Debug\randtable.sbr ARM\Debug\resize_image.sbr ARM\Debug\SarReader.sbr ARM\Debug\ScriptHandler.sbr ARM\Debug\ScriptParser.sbr ARM\Debug\ScriptParser_command.sbr ARM\Debug\SECTION.sbr ARM\Debug\sjis2utf16.sbr ARM\Debug\spewG.sbr ARM\Debug\unzcrash.sbr ARM\Debug\UVEDelegate.sbr ARM\Debug\UVEngineNative.sbr ARM\Debug\pch.sbr ARM\Debug\UVEngineSettings.sbr ARM\Debug\UVE_DX.sbr ARM\Debug\XDLRenderer.sbr
+     1>已完成生成项目“D:\Projects\UVEngine\UVEngineNative\UVEngineNative.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:11.38

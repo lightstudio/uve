@@ -1,0 +1,41 @@
+﻿生成启动时间为 2015/8/2 20:28:30。
+     1>项目“D:\Projects\UVEngine\SDL_mixer\VisualC\timidity\timidity.vcxproj”在节点 6 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /ID:\Projects\UVEngine\\SDL\include /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0600 /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\timidity\common.c ..\..\timidity\ctrlmode.c ..\..\timidity\filter.c ..\..\timidity\instrum.c ..\..\timidity\mix.c ..\..\timidity\output.c ..\..\timidity\playmidi.c ..\..\timidity\readmidi.c ..\..\timidity\resample.c ..\..\timidity\sdl_a.c ..\..\timidity\sdl_c.c ..\..\timidity\tables.c ..\..\timidity\timidity.c
+         common.c
+         ctrlmode.c
+         filter.c
+         instrum.c
+     1>..\..\timidity\instrum.c(558): warning C4244: “=”: 从“uint16”转换到“uint8”，可能丢失数据
+         mix.c
+         output.c
+         playmidi.c
+         readmidi.c
+     1>..\..\timidity\readmidi.c(555): warning C4244: “=”: 从“Sint64”转换到“int32”，可能丢失数据
+     1>..\..\timidity\readmidi.c(570): warning C4244: “=”: 从“Sint64”转换到“int32”，可能丢失数据
+         resample.c
+         sdl_a.c
+         sdl_c.c
+         tables.c
+         timidity.c
+         正在生成代码...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\Lib.exe /OUT:"D:\Projects\UVEngine\ARM\Debug\timidity\timidity.lib" /NOLOGO /MACHINE:ARM ARM\Debug\common.obj
+         ARM\Debug\ctrlmode.obj
+         ARM\Debug\filter.obj
+         ARM\Debug\instrum.obj
+         ARM\Debug\mix.obj
+         ARM\Debug\output.obj
+         ARM\Debug\playmidi.obj
+         ARM\Debug\readmidi.obj
+         ARM\Debug\resample.obj
+         ARM\Debug\sdl_a.obj
+         ARM\Debug\sdl_c.obj
+         ARM\Debug\tables.obj
+         ARM\Debug\timidity.obj
+         timidity.vcxproj -> D:\Projects\UVEngine\ARM\Debug\timidity\timidity.lib
+     1>已完成生成项目“D:\Projects\UVEngine\SDL_mixer\VisualC\timidity\timidity.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:00.59

@@ -1,0 +1,120 @@
+﻿生成启动时间为 2015/8/2 20:28:15。
+     1>项目“D:\Projects\UVEngine\libjpeg-9\libjpeg-9.vcxproj”在节点 4 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /nologo /W1 /WX- /Od /Oy- /D _USRDLL /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"pch.h" /Fp"ARM\Debug\libjpeg-9.pch" /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt pch.cpp
+         pch.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /nologo /W1 /WX- /Od /Oy- /D _USRDLL /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp "libjpeg-9.cpp"
+         libjpeg-9.cpp
+         dllmain.cpp
+         正在生成代码...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /nologo /W1 /WX- /Od /Oy- /D _USRDLL /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt Sources\jaricom.c Sources\jcapimin.c Sources\jcapistd.c Sources\jcarith.c Sources\jccoefct.c Sources\jccolor.c Sources\jcdctmgr.c Sources\jchuff.c Sources\jcinit.c Sources\jcmainct.c Sources\jcmarker.c Sources\jcmaster.c Sources\jcomapi.c Sources\jcparam.c Sources\jcprepct.c Sources\jcsample.c Sources\jctrans.c Sources\jdapimin.c Sources\jdapistd.c Sources\jdarith.c Sources\jdatadst.c Sources\jdatasrc.c Sources\jdcoefct.c Sources\jdcolor.c Sources\jddctmgr.c Sources\jdhuff.c Sources\jdinput.c Sources\jdmainct.c Sources\jdmarker.c Sources\jdmaster.c Sources\jdmerge.c Sources\jdpostct.c Sources\jdsample.c Sources\jerror.c Sources\jfdctflt.c Sources\jfdctfst.c Sources\jfdctint.c Sources\jidctflt.c Sources\jidctfst.c Sources\jidctint.c "Sources\jmem-android.c" Sources\jmemmgr.c Sources\jquant1.c Sources\jquant2.c Sources\jutils.c
+         jutils.c
+         jquant2.c
+         jquant1.c
+         jmemmgr.c
+     1>Sources\jmemmgr.c(1107): warning C4047: “=”:“char *”与“int”的间接级别不同
+         jmem-android.c
+     1>Sources\jmem-android.c(143): warning C4047: “函数”:“size_t”与“char [7]”的间接级别不同
+     1>Sources\jmem-android.c(143): warning C4024: “sprintf_s”: 形参和实参 2 的类型不同
+     1>Sources\jmem-android.c(143): warning C4047: “函数”:“const char *”与“int”的间接级别不同
+     1>Sources\jmem-android.c(143): warning C4024: “sprintf_s”: 形参和实参 3 的类型不同
+         jidctint.c
+         jidctfst.c
+         jidctflt.c
+         jfdctint.c
+         jfdctfst.c
+         jfdctflt.c
+         jerror.c
+         jdsample.c
+         jdpostct.c
+         jdmerge.c
+         jdmaster.c
+         jdmarker.c
+         jdmainct.c
+         jdinput.c
+         jdhuff.c
+         正在生成代码...
+         正在编译...
+         jddctmgr.c
+         jdcolor.c
+         jdcoefct.c
+         jdatasrc.c
+         jdatadst.c
+         jdarith.c
+         jdapistd.c
+         jdapimin.c
+         jctrans.c
+         jcsample.c
+         jcprepct.c
+         jcparam.c
+         jcomapi.c
+         jcmaster.c
+         jcmarker.c
+         jcmainct.c
+         jcinit.c
+         jchuff.c
+         jcdctmgr.c
+         jccolor.c
+         正在生成代码...
+         正在编译...
+         jccoefct.c
+         jcarith.c
+         jcapistd.c
+         jcapimin.c
+         jaricom.c
+         正在生成代码...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\Lib.exe /OUT:"D:\Projects\UVEngine\ARM\Debug\libjpeg-9\libjpeg-9.lib" /NOLOGO /MACHINE:ARM ARM\Debug\dllmain.obj
+         "ARM\Debug\libjpeg-9.obj"
+         ARM\Debug\pch.obj
+         ARM\Debug\jaricom.obj
+         ARM\Debug\jcapimin.obj
+         ARM\Debug\jcapistd.obj
+         ARM\Debug\jcarith.obj
+         ARM\Debug\jccoefct.obj
+         ARM\Debug\jccolor.obj
+         ARM\Debug\jcdctmgr.obj
+         ARM\Debug\jchuff.obj
+         ARM\Debug\jcinit.obj
+         ARM\Debug\jcmainct.obj
+         ARM\Debug\jcmarker.obj
+         ARM\Debug\jcmaster.obj
+         ARM\Debug\jcomapi.obj
+         ARM\Debug\jcparam.obj
+         ARM\Debug\jcprepct.obj
+         ARM\Debug\jcsample.obj
+         ARM\Debug\jctrans.obj
+         ARM\Debug\jdapimin.obj
+         ARM\Debug\jdapistd.obj
+         ARM\Debug\jdarith.obj
+         ARM\Debug\jdatadst.obj
+         ARM\Debug\jdatasrc.obj
+         ARM\Debug\jdcoefct.obj
+         ARM\Debug\jdcolor.obj
+         ARM\Debug\jddctmgr.obj
+         ARM\Debug\jdhuff.obj
+         ARM\Debug\jdinput.obj
+         ARM\Debug\jdmainct.obj
+         ARM\Debug\jdmarker.obj
+         ARM\Debug\jdmaster.obj
+         ARM\Debug\jdmerge.obj
+         ARM\Debug\jdpostct.obj
+         ARM\Debug\jdsample.obj
+         ARM\Debug\jerror.obj
+         ARM\Debug\jfdctflt.obj
+         ARM\Debug\jfdctfst.obj
+         ARM\Debug\jfdctint.obj
+         ARM\Debug\jidctflt.obj
+         ARM\Debug\jidctfst.obj
+         ARM\Debug\jidctint.obj
+         "ARM\Debug\jmem-android.obj"
+         ARM\Debug\jmemmgr.obj
+         ARM\Debug\jquant1.obj
+         ARM\Debug\jquant2.obj
+         ARM\Debug\jutils.obj
+         libjpeg-9.vcxproj -> D:\Projects\UVEngine\ARM\Debug\libjpeg-9\libjpeg-9.lib
+     1>已完成生成项目“D:\Projects\UVEngine\libjpeg-9\libjpeg-9.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:04.46

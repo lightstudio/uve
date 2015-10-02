@@ -1,0 +1,205 @@
+﻿生成启动时间为 2015/8/2 20:28:15。
+     1>项目“D:\Projects\UVEngine\SDL\VisualC-WinPhone\SDL\SDL_VS2012-WinPhone.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>FxCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\fxc.exe /nologo /E"main" /T ps_4_0_level_9_3 /Fo "D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL_D3D11_PixelShader_FixedColor.cso" ..\..\src\render\direct3d11\SDL_D3D11_PixelShader_FixedColor.hlsl 
+         compilation object save succeeded; see D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL_D3D11_PixelShader_FixedColor.cso
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\fxc.exe /nologo /E"main" /T ps_4_0_level_9_3 /Fo "D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL_D3D11_PixelShader_TextureColored.cso" ..\..\src\render\direct3d11\SDL_D3D11_PixelShader_TextureColored.hlsl 
+         compilation object save succeeded; see D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL_D3D11_PixelShader_TextureColored.cso
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\fxc.exe /nologo /E"main" /T vs_4_0_level_9_3 /Fo "D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL_D3D11_VertexShader_Default.cso" ..\..\src\render\direct3d11\SDL_D3D11_VertexShader_Default.hlsl 
+         compilation object save succeeded; see D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL_D3D11_VertexShader_Default.cso
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /I..\..\include /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /nologo /W1 /WX- /Od /Oy- /D _USRDLL /D UNICODE /D _WINDLL /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\atomic\SDL_atomic.c ..\..\src\atomic\SDL_spinlock.c ..\..\src\audio\disk\SDL_diskaudio.c ..\..\src\audio\dummy\SDL_dummyaudio.c ..\..\src\audio\SDL_audio.c ..\..\src\audio\SDL_audiocvt.c ..\..\src\audio\SDL_audiodev.c ..\..\src\audio\SDL_audiotypecvt.c ..\..\src\audio\SDL_mixer.c ..\..\src\audio\SDL_wave.c ..\..\src\core\windows\SDL_windows.c ..\..\src\cpuinfo\SDL_cpuinfo.c ..\..\src\events\SDL_clipboardevents.c ..\..\src\events\SDL_dropevents.c ..\..\src\events\SDL_events.c ..\..\src\events\SDL_gesture.c ..\..\src\events\SDL_keyboard.c ..\..\src\events\SDL_mouse.c ..\..\src\events\SDL_quit.c ..\..\src\events\SDL_touch.c ..\..\src\events\SDL_windowevents.c ..\..\src\file\SDL_rwops.c ..\..\src\haptic\dummy\SDL_syshaptic.c ..\..\src\haptic\SDL_haptic.c ..\..\src\joystick\dummy\SDL_sysjoystick.c ..\..\src\joystick\SDL_gamecontroller.c ..\..\src\joystick\SDL_joystick.c ..\..\src\loadso\windows\SDL_sysloadso.c ..\..\src\render\SDL_render.c ..\..\src\render\SDL_yuv_mmx.c ..\..\src\render\SDL_yuv_sw.c ..\..\src\render\software\SDL_blendfillrect.c ..\..\src\render\software\SDL_blendline.c ..\..\src\render\software\SDL_blendpoint.c ..\..\src\render\software\SDL_drawline.c ..\..\src\render\software\SDL_drawpoint.c ..\..\src\render\software\SDL_render_sw.c ..\..\src\render\software\SDL_rotate.c ..\..\src\SDL.c ..\..\src\SDL_assert.c ..\..\src\SDL_error.c ..\..\src\SDL_fatal.c ..\..\src\SDL_hints.c ..\..\src\SDL_log.c ..\..\src\stdlib\SDL_getenv.c ..\..\src\stdlib\SDL_iconv.c ..\..\src\stdlib\SDL_qsort.c ..\..\src\stdlib\SDL_stdlib.c ..\..\src\stdlib\SDL_string.c ..\..\src\thread\generic\SDL_syssem.c ..\..\src\thread\SDL_thread.c ..\..\src\timer\SDL_timer.c ..\..\src\timer\windows\SDL_systimer.c ..\..\src\video\dummy\SDL_nullevents.c ..\..\src\video\dummy\SDL_nullframebuffer.c ..\..\src\video\dummy\SDL_nullvideo.c ..\..\src\video\SDL_blit.c ..\..\src\video\SDL_blit_0.c ..\..\src\video\SDL_blit_1.c ..\..\src\video\SDL_blit_A.c ..\..\src\video\SDL_blit_auto.c ..\..\src\video\SDL_blit_copy.c ..\..\src\video\SDL_blit_N.c ..\..\src\video\SDL_blit_slow.c ..\..\src\video\SDL_bmp.c ..\..\src\video\SDL_clipboard.c ..\..\src\video\SDL_fillrect.c ..\..\src\video\SDL_pixels.c ..\..\src\video\SDL_rect.c ..\..\src\video\SDL_RLEaccel.c ..\..\src\video\SDL_shape.c ..\..\src\video\SDL_stretch.c ..\..\src\video\SDL_surface.c ..\..\src\video\SDL_video.c
+         SDL_atomic.c
+         SDL_spinlock.c
+         SDL_diskaudio.c
+         SDL_dummyaudio.c
+         SDL_audio.c
+         SDL_audiocvt.c
+         SDL_audiodev.c
+         SDL_audiotypecvt.c
+         SDL_mixer.c
+         SDL_wave.c
+         SDL_windows.c
+         SDL_cpuinfo.c
+         SDL_clipboardevents.c
+         SDL_dropevents.c
+         SDL_events.c
+         SDL_gesture.c
+         SDL_keyboard.c
+         SDL_mouse.c
+         SDL_quit.c
+         SDL_touch.c
+         正在生成代码...
+         正在编译...
+         SDL_windowevents.c
+         SDL_rwops.c
+         SDL_syshaptic.c
+         SDL_haptic.c
+         SDL_sysjoystick.c
+         SDL_gamecontroller.c
+         SDL_joystick.c
+         SDL_sysloadso.c
+         SDL_render.c
+         SDL_yuv_mmx.c
+         SDL_yuv_sw.c
+         SDL_blendfillrect.c
+         SDL_blendline.c
+         SDL_blendpoint.c
+         SDL_drawline.c
+         SDL_drawpoint.c
+         SDL_render_sw.c
+         SDL_rotate.c
+         SDL.c
+     1>..\..\src\SDL.c(96): warning C4029: 声明的形参表不同于定义
+         SDL_assert.c
+         正在生成代码...
+         正在编译...
+         SDL_error.c
+         SDL_fatal.c
+         SDL_hints.c
+         SDL_log.c
+         SDL_getenv.c
+         SDL_iconv.c
+         SDL_qsort.c
+         SDL_stdlib.c
+         SDL_string.c
+         SDL_syssem.c
+         SDL_thread.c
+         SDL_timer.c
+         SDL_systimer.c
+         SDL_nullevents.c
+         SDL_nullframebuffer.c
+         SDL_nullvideo.c
+     1>..\..\src\video\dummy\SDL_nullvideo.c(93): warning C4113: “int (__cdecl *)(SDL_VideoDevice *)”和“int (__cdecl *)(SDL_VideoDevice *,void *)”的参数列表不同
+     1>..\..\src\video\dummy\SDL_nullvideo.c(109): warning C4113: “SDL_VideoDevice *(__cdecl *)(int)”和“SDL_VideoDevice *(__cdecl *)(int,void *)”的参数列表不同
+         SDL_blit.c
+         SDL_blit_0.c
+         SDL_blit_1.c
+         SDL_blit_A.c
+         正在生成代码...
+         正在编译...
+         SDL_blit_auto.c
+         SDL_blit_copy.c
+         SDL_blit_N.c
+         SDL_blit_slow.c
+         SDL_bmp.c
+         SDL_clipboard.c
+         SDL_fillrect.c
+         SDL_pixels.c
+         SDL_rect.c
+         SDL_RLEaccel.c
+         SDL_shape.c
+         SDL_stretch.c
+         SDL_surface.c
+         SDL_video.c
+         正在生成代码...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /I..\..\include /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /nologo /W1 /WX- /Od /Oy- /D _USRDLL /D UNICODE /D _WINDLL /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\audio\xaudio2\SDL_xaudio2.c ..\..\src\thread\stdcpp\SDL_syscond.cpp ..\..\src\thread\stdcpp\SDL_sysmutex.cpp ..\..\src\thread\stdcpp\SDL_systhread.cpp SDL_winphoneevents.cpp SDL_winphone_videodatacpp.cpp
+         SDL_xaudio2.c
+         SDL_syscond.cpp
+         SDL_sysmutex.cpp
+         SDL_systhread.cpp
+         SDL_winphoneevents.cpp
+         SDL_winphone_videodatacpp.cpp
+         正在生成代码...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /I..\..\include /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /ZW /nologo /W1 /WX- /Od /Oy- /D _USRDLL /D UNICODE /D _WINDLL /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TP /FU"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\lib\arm\platform.winmd" /FU"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata\Windows.winmd" /analyze- /errorReport:prompt ..\..\src\audio\xaudio2\SDL_xaudio2_winrthelpers.cpp ..\..\src\core\windowsrt\SDL_winrtpaths.cpp ..\..\src\render\direct3d11\SDL_render_d3d11.cpp Direct3DBase.cpp SDL_winphonevideo.cpp SDL_WinRTApp.cpp
+         SDL_xaudio2_winrthelpers.cpp
+         SDL_winrtpaths.cpp
+         SDL_render_d3d11.cpp
+         Direct3DBase.cpp
+         SDL_winphonevideo.cpp
+         SDL_WinRTApp.cpp
+         正在生成代码...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL-WinPhone.dll" /INCREMENTAL /NOLOGO d3d11.lib xaudio2.lib WindowsPhoneCore.lib RuntimeObject.lib PhoneAppModelHost.lib WindowsPhoneCore.lib RuntimeObject.lib PhoneAppModelHost.lib /NODEFAULTLIB:ole32.lib /MANIFEST:NO /DEBUG /PDB:"D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL-WinPhone.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /WINMD:NO /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL-WinPhone.lib" /MACHINE:ARM /DLL ARM\Debug\SDL_atomic.obj
+         ARM\Debug\SDL_spinlock.obj
+         ARM\Debug\SDL_diskaudio.obj
+         ARM\Debug\SDL_dummyaudio.obj
+         ARM\Debug\SDL_audio.obj
+         ARM\Debug\SDL_audiocvt.obj
+         ARM\Debug\SDL_audiodev.obj
+         ARM\Debug\SDL_audiotypecvt.obj
+         ARM\Debug\SDL_mixer.obj
+         ARM\Debug\SDL_wave.obj
+         ARM\Debug\SDL_xaudio2.obj
+         ARM\Debug\SDL_xaudio2_winrthelpers.obj
+         ARM\Debug\SDL_winrtpaths.obj
+         ARM\Debug\SDL_windows.obj
+         ARM\Debug\SDL_cpuinfo.obj
+         ARM\Debug\SDL_clipboardevents.obj
+         ARM\Debug\SDL_dropevents.obj
+         ARM\Debug\SDL_events.obj
+         ARM\Debug\SDL_gesture.obj
+         ARM\Debug\SDL_keyboard.obj
+         ARM\Debug\SDL_mouse.obj
+         ARM\Debug\SDL_quit.obj
+         ARM\Debug\SDL_touch.obj
+         ARM\Debug\SDL_windowevents.obj
+         ARM\Debug\SDL_rwops.obj
+         ARM\Debug\SDL_syshaptic.obj
+         ARM\Debug\SDL_haptic.obj
+         ARM\Debug\SDL_sysjoystick.obj
+         ARM\Debug\SDL_gamecontroller.obj
+         ARM\Debug\SDL_joystick.obj
+         ARM\Debug\SDL_sysloadso.obj
+         ARM\Debug\SDL_render_d3d11.obj
+         ARM\Debug\SDL_render.obj
+         ARM\Debug\SDL_yuv_mmx.obj
+         ARM\Debug\SDL_yuv_sw.obj
+         ARM\Debug\SDL_blendfillrect.obj
+         ARM\Debug\SDL_blendline.obj
+         ARM\Debug\SDL_blendpoint.obj
+         ARM\Debug\SDL_drawline.obj
+         ARM\Debug\SDL_drawpoint.obj
+         ARM\Debug\SDL_render_sw.obj
+         ARM\Debug\SDL_rotate.obj
+         ARM\Debug\SDL.obj
+         ARM\Debug\SDL_assert.obj
+         ARM\Debug\SDL_error.obj
+         ARM\Debug\SDL_fatal.obj
+         ARM\Debug\SDL_hints.obj
+         ARM\Debug\SDL_log.obj
+         ARM\Debug\SDL_getenv.obj
+         ARM\Debug\SDL_iconv.obj
+         ARM\Debug\SDL_qsort.obj
+         ARM\Debug\SDL_stdlib.obj
+         ARM\Debug\SDL_string.obj
+         ARM\Debug\SDL_syssem.obj
+         ARM\Debug\SDL_thread.obj
+         ARM\Debug\SDL_syscond.obj
+         ARM\Debug\SDL_sysmutex.obj
+         ARM\Debug\SDL_systhread.obj
+         ARM\Debug\SDL_timer.obj
+         ARM\Debug\SDL_systimer.obj
+         ARM\Debug\SDL_nullevents.obj
+         ARM\Debug\SDL_nullframebuffer.obj
+         ARM\Debug\SDL_nullvideo.obj
+         ARM\Debug\SDL_blit.obj
+         ARM\Debug\SDL_blit_0.obj
+         ARM\Debug\SDL_blit_1.obj
+         ARM\Debug\SDL_blit_A.obj
+         ARM\Debug\SDL_blit_auto.obj
+         ARM\Debug\SDL_blit_copy.obj
+         ARM\Debug\SDL_blit_N.obj
+         ARM\Debug\SDL_blit_slow.obj
+         ARM\Debug\SDL_bmp.obj
+         ARM\Debug\SDL_clipboard.obj
+         ARM\Debug\SDL_fillrect.obj
+         ARM\Debug\SDL_pixels.obj
+         ARM\Debug\SDL_rect.obj
+         ARM\Debug\SDL_RLEaccel.obj
+         ARM\Debug\SDL_shape.obj
+         ARM\Debug\SDL_stretch.obj
+         ARM\Debug\SDL_surface.obj
+         ARM\Debug\SDL_video.obj
+         ARM\Debug\Direct3DBase.obj
+         ARM\Debug\SDL_winphoneevents.obj
+         ARM\Debug\SDL_winphonevideo.obj
+         ARM\Debug\SDL_winphone_videodatacpp.obj
+         ARM\Debug\SDL_WinRTApp.obj
+            Creating library D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL-WinPhone.lib and object D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL-WinPhone.exp
+         SDL_VS2012-WinPhone.vcxproj -> D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL-WinPhone.dll
+     1>已完成生成项目“D:\Projects\UVEngine\SDL\VisualC-WinPhone\SDL\SDL_VS2012-WinPhone.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:15.28

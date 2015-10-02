@@ -190,6 +190,9 @@
     <ClCompile Include="gbk2utf16.cpp">
       <Filter>ONS_20130411</Filter>
     </ClCompile>
+    <ClCompile Include="ImageMeta.cpp" />
+    <ClCompile Include="BenchCPU.cpp" />
+    <ClCompile Include="BenchMem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UVEngineNative.h" />
@@ -308,5 +311,8 @@
     <ClInclude Include="Utils.h">
       <Filter>ONS_20130411</Filter>
     </ClInclude>
+    <ClInclude Include="ImageMeta.h" />
+    <ClInclude Include="BenchCPU.h" />
+    <ClInclude Include="BenchMem.h" />
   </ItemGroup>
 </Project>

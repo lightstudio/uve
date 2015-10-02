@@ -1,0 +1,89 @@
+﻿生成启动时间为 2015/8/2 20:28:31。
+     1>项目“D:\Projects\UVEngine\SDL_mixer\VisualC\SDL_mixer.vcxproj”在节点 8 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /ID:\Projects\UVEngine\\SDL\include /ID:\Projects\UVEngine\libmad /I..\timidity /Iexternal\include /ZI /nologo /W3 /WX- /Od /Oy- /D _DEBUG /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D WAV_MUSIC /D MOD_MUSIC /D "MOD_DYNAMIC=\"libmikmod-2.dll\"" /D OGG_MUSIC /D FPM_64BIT /D MP3_MAD_MUSIC /D MID_MUSIC /D USE_TIMIDITY_MIDI /D _VC80_UPGRADE=0x0600 /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt /D OGG_DYNAMIC=\"libvorbisfile-3.dll\" ..\dynamic_flac.c ..\dynamic_fluidsynth.c ..\dynamic_mod.c ..\dynamic_mp3.c ..\dynamic_ogg.c ..\effect_position.c ..\effect_stereoreverse.c ..\effects_internal.c ..\fluidsynth.c ..\load_aiff.c ..\load_flac.c ..\load_ogg.c ..\load_voc.c ..\mixer.c ..\music.c ..\music_cmd.c ..\music_flac.c ..\music_mad.c ..\music_mod.c ..\music_ogg.c ..\wavestream.c
+     1>cl : 命令行 warning D9038: 此平台上不支持 /ZI；请启用 /Zi
+     1>cl : 命令行 warning D9007: “/Gm”需要“/Zi”；选项被忽略
+     1>cl : 命令行 warning D9002: 忽略未知选项“/ZI”
+         dynamic_flac.c
+         dynamic_fluidsynth.c
+         dynamic_mod.c
+         dynamic_mp3.c
+         dynamic_ogg.c
+         effect_position.c
+         effect_stereoreverse.c
+         effects_internal.c
+         fluidsynth.c
+         load_aiff.c
+     1>..\load_aiff.c(131): warning C4244: “=”: 从“Sint64”转换到“long”，可能丢失数据
+     1>..\load_aiff.c(141): warning C4244: “=”: 从“Sint64”转换到“long”，可能丢失数据
+     1>..\load_aiff.c(171): warning C4244: “=”: 从“Sint64”转换到“long”，可能丢失数据
+         load_flac.c
+         load_ogg.c
+     1>..\load_ogg.c(48): warning C4244: “return”: 从“Sint64”转换到“int”，可能丢失数据
+     1>..\load_ogg.c(58): warning C4244: “return”: 从“Sint64”转换到“int”，可能丢失数据
+     1>..\load_ogg.c(63): warning C4244: “return”: 从“Sint64”转换到“long”，可能丢失数据
+         load_voc.c
+         mixer.c
+     1>..\mixer.c(129): warning C4090: “函数”: 不同的“const”限定符
+     1>..\mixer.c(1143): warning C4090: “函数”: 不同的“const”限定符
+         music.c
+     1>..\music.c(170): warning C4090: “函数”: 不同的“const”限定符
+     1>..\music.c(473): warning C4244: “初始化”: 从“Sint64”转换到“int”，可能丢失数据
+     1>..\music.c(626): warning C4244: “初始化”: 从“Sint64”转换到“int”，可能丢失数据
+     1>..\music.c(629): warning C4047: “return”:“Mix_Music *”与“int”的间接级别不同
+     1>..\music.c(1533): warning C4090: “函数”: 不同的“const”限定符
+     1>..\music.c(1561): warning C4013: “getenv”未定义；假设外部返回 int
+     1>..\music.c(1561): warning C4047: “初始化”:“const char *”与“int”的间接级别不同
+     1>..\music.c(1564): warning C4047: “return”:“const char *”与“int”的间接级别不同
+         music_cmd.c
+         music_flac.c
+         music_mad.c
+     1>..\music_mad.c(188): warning C4244: “函数”: 从“unsigned short”转换到“Uint8”，可能丢失数据
+     1>..\music_mad.c(176): warning C4101: “ret”: 未引用的局部变量
+     1>..\music_mad.c(227): warning C4033: “mad_getSamples”必须返回值
+         music_mod.c
+     1>..\music_mod.c(163): warning C4244: “return”: 从“Sint64”转换到“long”，可能丢失数据
+     1>..\music_mod.c(194): warning C4244: “=”: 从“Sint64”转换到“long”，可能丢失数据
+     1>..\music_mod.c(196): warning C4244: “=”: 从“Sint64”转换到“long”，可能丢失数据
+         music_ogg.c
+     1>..\music_ogg.c(61): warning C4244: “return”: 从“Sint64”转换到“int”，可能丢失数据
+     1>..\music_ogg.c(66): warning C4244: “return”: 从“Sint64”转换到“long”，可能丢失数据
+         正在生成代码...
+     1>d:\projects\uvengine\sdl_mixer\music_mad.c(275): warning C4715: “mad_getSamples”: 不是所有的控件路径都返回值
+         正在编译...
+         wavestream.c
+     1>..\wavestream.c(176): warning C4244: “=”: 从“Sint64”转换到“long”，可能丢失数据
+     1>..\wavestream.c(361): warning C4244: “=”: 从“Sint64”转换到“long”，可能丢失数据
+     1>..\wavestream.c(368): warning C4244: “=”: 从“Sint64”转换到“long”，可能丢失数据
+     1>..\wavestream.c(455): warning C4244: “=”: 从“Sint64”转换到“long”，可能丢失数据
+     1>..\wavestream.c(466): warning C4244: “=”: 从“Sint64”转换到“long”，可能丢失数据
+         正在生成代码...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\Lib.exe /OUT:"D:\Projects\UVEngine\ARM\Debug\SDL_mixer\SDL_mixer.lib" /LIBPATH:D:\Projects\UVEngine\Lib\ARM\Debug /NOLOGO /MACHINE:ARM ARM\Debug\dynamic_flac.obj
+         ARM\Debug\dynamic_fluidsynth.obj
+         ARM\Debug\dynamic_mod.obj
+         ARM\Debug\dynamic_mp3.obj
+         ARM\Debug\dynamic_ogg.obj
+         ARM\Debug\effect_position.obj
+         ARM\Debug\effect_stereoreverse.obj
+         ARM\Debug\effects_internal.obj
+         ARM\Debug\fluidsynth.obj
+         ARM\Debug\load_aiff.obj
+         ARM\Debug\load_flac.obj
+         ARM\Debug\load_ogg.obj
+         ARM\Debug\load_voc.obj
+         ARM\Debug\mixer.obj
+         ARM\Debug\music.obj
+         ARM\Debug\music_cmd.obj
+         ARM\Debug\music_flac.obj
+         ARM\Debug\music_mad.obj
+         ARM\Debug\music_mod.obj
+         ARM\Debug\music_ogg.obj
+         ARM\Debug\wavestream.obj
+         SDL_mixer.vcxproj -> D:\Projects\UVEngine\ARM\Debug\SDL_mixer\SDL_mixer.lib
+     1>已完成生成项目“D:\Projects\UVEngine\SDL_mixer\VisualC\SDL_mixer.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:00.95

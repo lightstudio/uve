@@ -128,7 +128,7 @@
     <ClCompile Include="..\..\..\src\winfonts\winfnt.c">
       <Filter>Source Files\FT_MODULES</Filter>
     </ClCompile>
-    <ClCompile Include="..\ftdebug.c">
+    <ClCompile Include="..\..\..\src\base\ftdebug.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

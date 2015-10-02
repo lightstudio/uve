@@ -1,0 +1,236 @@
+﻿生成启动时间为 2015/8/2 20:28:15。
+     1>项目“D:\Projects\UVEngine\lua\lua.vcxproj”在节点 7 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /nologo /W1 /WX- /Od /Oy- /D _LIB /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt all.c lapi.c lauxlib.c lbaselib.c lcode.c ldblib.c ldebug.c ldo.c ldump.c lfunc.c lgc.c linit.c liolib.c llex.c lmathlib.c lmem.c loadlib.c lobject.c lopcodes.c loslib.c lparser.c lstate.c lstring.c lstrlib.c ltable.c ltablib.c ltm.c lua.c luac.c lundump.c lvm.c lzio.c min.c noparser.c print.c
+         print.c
+         noparser.c
+         min.c
+         lzio.c
+         lvm.c
+         lundump.c
+         luac.c
+         lua.c
+     1>lua.c(324): warning C4047: “初始化”:“const char *”与“int”的间接级别不同
+         ltm.c
+         ltablib.c
+         ltable.c
+         lstrlib.c
+         lstring.c
+         lstate.c
+         lparser.c
+         loslib.c
+     1>loslib.c(69): warning C4047: “函数”:“const char *”与“int”的间接级别不同
+     1>loslib.c(69): warning C4024: “lua_pushstring”: 形参和实参 2 的类型不同
+         lopcodes.c
+         lobject.c
+         loadlib.c
+     1>loadlib.c(122): warning C4133: “函数”: 从“char [128]”到“LPWSTR”的类型不兼容
+     1>loadlib.c(135): warning C4133: “函数”: 从“const char *”到“LPCWSTR”的类型不兼容
+     1>loadlib.c(602): warning C4047: “初始化”:“const char *”与“int”的间接级别不同
+         lmem.c
+         正在生成代码...
+         正在编译...
+         lmathlib.c
+         llex.c
+         liolib.c
+     1>liolib.c(178): warning C4047: “=”:“FILE *”与“int”的间接级别不同
+         linit.c
+         lgc.c
+         lfunc.c
+         ldump.c
+         ldo.c
+         ldebug.c
+         ldblib.c
+         lcode.c
+         lbaselib.c
+         lauxlib.c
+         lapi.c
+         all.c
+     1>d:\projects\uvengine\lua\liolib.c(178): warning C4047: “=”:“FILE *”与“int”的间接级别不同
+     1>d:\projects\uvengine\lua\loadlib.c(122): warning C4133: “函数”: 从“char [128]”到“LPWSTR”的类型不兼容
+     1>d:\projects\uvengine\lua\loadlib.c(135): warning C4133: “函数”: 从“const char *”到“LPCWSTR”的类型不兼容
+     1>d:\projects\uvengine\lua\loadlib.c(602): warning C4047: “初始化”:“const char *”与“int”的间接级别不同
+     1>d:\projects\uvengine\lua\loslib.c(69): warning C4047: “函数”:“const char *”与“int”的间接级别不同
+     1>d:\projects\uvengine\lua\loslib.c(69): warning C4024: “lua_pushstring”: 形参和实参 2 的类型不同
+     1>d:\projects\uvengine\lua\lua.c(324): warning C4047: “初始化”:“const char *”与“int”的间接级别不同
+         正在生成代码...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\Lib.exe /OUT:"D:\Projects\UVEngine\ARM\Debug\lua\lua.lib" /NOLOGO /MACHINE:ARM ARM\Debug\all.obj
+         ARM\Debug\lapi.obj
+         ARM\Debug\lauxlib.obj
+         ARM\Debug\lbaselib.obj
+         ARM\Debug\lcode.obj
+         ARM\Debug\ldblib.obj
+         ARM\Debug\ldebug.obj
+         ARM\Debug\ldo.obj
+         ARM\Debug\ldump.obj
+         ARM\Debug\lfunc.obj
+         ARM\Debug\lgc.obj
+         ARM\Debug\linit.obj
+         ARM\Debug\liolib.obj
+         ARM\Debug\llex.obj
+         ARM\Debug\lmathlib.obj
+         ARM\Debug\lmem.obj
+         ARM\Debug\loadlib.obj
+         ARM\Debug\lobject.obj
+         ARM\Debug\lopcodes.obj
+         ARM\Debug\loslib.obj
+         ARM\Debug\lparser.obj
+         ARM\Debug\lstate.obj
+         ARM\Debug\lstring.obj
+         ARM\Debug\lstrlib.obj
+         ARM\Debug\ltable.obj
+         ARM\Debug\ltablib.obj
+         ARM\Debug\ltm.obj
+         ARM\Debug\lua.obj
+         ARM\Debug\luac.obj
+         ARM\Debug\lundump.obj
+         ARM\Debug\lvm.obj
+         ARM\Debug\lzio.obj
+         ARM\Debug\min.obj
+         ARM\Debug\noparser.obj
+         ARM\Debug\print.obj
+     1>luac.obj : warning LNK4006: main already defined in min.obj; second definition ignored
+     1>luac.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>lua.obj : warning LNK4006: main already defined in min.obj; second definition ignored
+     1>lua.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>lparser.obj : warning LNK4006: luaY_parser already defined in noparser.obj; second definition ignored
+     1>lparser.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>llex.obj : warning LNK4006: luaX_init already defined in noparser.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaX_tokens already defined in llex.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaP_opmodes already defined in lopcodes.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaP_opnames already defined in lopcodes.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaO_nilobject_ already defined in lobject.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaT_typenames already defined in ltm.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_ident already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_checkstack already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_xmove already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_setlevel already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_atpanic already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_newthread already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_gettop already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_settop already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_remove already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_insert already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_replace already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_pushvalue already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_type already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_typename already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_iscfunction already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_isnumber already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_isstring already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_isuserdata already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_rawequal already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_equal already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_lessthan already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_tonumber already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_tointeger already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_toboolean already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_tolstring already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_objlen already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_tocfunction already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_touserdata already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_tothread already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_topointer already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_pushnil already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_pushnumber already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_pushinteger already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_pushlstring already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_pushstring already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_pushvfstring already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_pushfstring already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_pushcclosure already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_pushboolean already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_pushlightuserdata already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_pushthread already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_gettable already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_getfield already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_rawget already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_rawgeti already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_createtable already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_getmetatable already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_getfenv already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_settable already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_setfield already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_rawset already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_rawseti already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_setmetatable already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_setfenv already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_call already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_pcall already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_cpcall already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_load already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_dump already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_status already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_gc already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_error already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_next already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_concat already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_getallocf already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_setallocf already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_newuserdata already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_getupvalue already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_setupvalue already defined in lapi.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_sethook already defined in ldebug.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_gethook already defined in ldebug.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_gethookmask already defined in ldebug.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_gethookcount already defined in ldebug.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_getstack already defined in ldebug.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_getlocal already defined in ldebug.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_setlocal already defined in ldebug.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_getinfo already defined in ldebug.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_resume already defined in ldo.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_yield already defined in ldo.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_newstate already defined in lstate.obj; second definition ignored
+     1>all.obj : warning LNK4006: lua_close already defined in lstate.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_argerror already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_typerror already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_where already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_error already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_checkoption already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_newmetatable already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_checkudata already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_checkstack already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_checktype already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_checkany already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_checklstring already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_optlstring already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_checknumber already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_optnumber already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_checkinteger already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_optinteger already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_getmetafield already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_callmeta already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_register already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_openlib already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_gsub already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_findtable already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_prepbuffer already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_addlstring already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_addstring already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_pushresult already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_addvalue already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_buffinit already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_ref already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_unref already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_loadfile already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_loadbuffer already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_loadstring already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_newstate already defined in lauxlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaopen_base already defined in lbaselib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaopen_debug already defined in ldblib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaopen_io already defined in liolib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaL_openlibs already defined in linit.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaopen_math already defined in lmathlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaopen_package already defined in loadlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaopen_os already defined in loslib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaopen_string already defined in lstrlib.obj; second definition ignored
+     1>all.obj : warning LNK4006: luaopen_table already defined in ltablib.obj; second definition ignored
+     1>all.obj : warning LNK4006: main already defined in min.obj; second definition ignored
+     1>all.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         lua.vcxproj -> D:\Projects\UVEngine\ARM\Debug\lua\lua.lib
+     1>已完成生成项目“D:\Projects\UVEngine\lua\lua.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:03.44

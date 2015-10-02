@@ -1,0 +1,55 @@
+﻿生成启动时间为 2015/8/2 20:28:19。
+     1>项目“D:\Projects\UVEngine\SDL_image\VisualC\SDL_image_VS2012.vcxproj”在节点 5 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /ID:\Projects\UVEngine\\SDL\include /Iexternal\include /Zi /nologo /W3 /WX- /Od /Oy- /D _DEBUG /D WIN32 /D _WINDOWS /D LOAD_BMP /D LOAD_GIF /D LOAD_JPG /D "LOAD_JPG_DYNAMIC=\"libjpeg-9.dll\"" /D LOAD_LBM /D LOAD_PCX /D LOAD_PNG /D LOAD_PNM /D LOAD_TGA /D LOAD_TIF /D "LOAD_TIF_DYNAMIC=\"libtiff-5.dll\"" /D LOAD_XPM /D LOAD_XV /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0600 /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ..\IMG.c ..\IMG_bmp.c ..\IMG_gif.c ..\IMG_jpg.c ..\IMG_lbm.c ..\IMG_pcx.c ..\IMG_png.c ..\IMG_pnm.c ..\IMG_tga.c ..\IMG_tif.c ..\IMG_webp.c ..\IMG_xcf.c ..\IMG_xpm.c ..\IMG_xv.c ..\IMG_xxx.c
+         IMG_xxx.c
+         IMG_xv.c
+         IMG_xpm.c
+         IMG_xcf.c
+         IMG_webp.c
+         IMG_tif.c
+         IMG_tga.c
+         IMG_pnm.c
+         IMG_png.c
+     1>..\IMG_png.c(276): warning C4028: 形参 2 与声明不同
+     1>..\IMG_png.c(277): warning C4028: 形参 2 与声明不同
+     1>..\IMG_png.c(279): warning C4028: 形参 1 与声明不同
+     1>..\IMG_png.c(280): warning C4028: 形参 1 与声明不同
+     1>..\IMG_png.c(280): warning C4028: 形参 2 与声明不同
+     1>..\IMG_png.c(281): warning C4028: 形参 1 与声明不同
+     1>..\IMG_png.c(281): warning C4028: 形参 2 与声明不同
+     1>..\IMG_png.c(282): warning C4028: 形参 1 与声明不同
+     1>..\IMG_png.c(283): warning C4028: 形参 1 与声明不同
+     1>..\IMG_png.c(284): warning C4028: 形参 1 与声明不同
+     1>..\IMG_png.c(285): warning C4028: 形参 1 与声明不同
+     1>..\IMG_png.c(286): warning C4028: 形参 1 与声明不同
+     1>..\IMG_png.c(289): warning C4028: 形参 1 与声明不同
+         IMG_pcx.c
+         IMG_lbm.c
+         IMG_jpg.c
+         IMG_gif.c
+         IMG_bmp.c
+         IMG.c
+         正在生成代码...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\Lib.exe /OUT:"ARM\Debug\SDL_image.lib" libpng16.lib zlib.lib /LIBPATH:D:\Projects\UVEngine\Lib\ARM\Debug /NOLOGO /MACHINE:ARM ARM\Debug\IMG.obj
+         ARM\Debug\IMG_bmp.obj
+         ARM\Debug\IMG_gif.obj
+         ARM\Debug\IMG_jpg.obj
+         ARM\Debug\IMG_lbm.obj
+         ARM\Debug\IMG_pcx.obj
+         ARM\Debug\IMG_png.obj
+         ARM\Debug\IMG_pnm.obj
+         ARM\Debug\IMG_tga.obj
+         ARM\Debug\IMG_tif.obj
+         ARM\Debug\IMG_webp.obj
+         ARM\Debug\IMG_xcf.obj
+         ARM\Debug\IMG_xpm.obj
+         ARM\Debug\IMG_xv.obj
+         ARM\Debug\IMG_xxx.obj
+         SDL_image_VS2012.vcxproj -> D:\Projects\UVEngine\SDL_image\VisualC\ARM\Debug\SDL_image.lib
+     1>已完成生成项目“D:\Projects\UVEngine\SDL_image\VisualC\SDL_image_VS2012.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:01.32

@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
-
 static std::string ws2s(const std::wstring& ws)
 {
     std::string curLocale = setlocale(LC_ALL, NULL);        // curLocale = "C";

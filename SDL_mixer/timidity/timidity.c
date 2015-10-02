@@ -282,7 +282,7 @@ static int read_config_file(const char *name)
 
 int Timidity_Init(int rate, int format, int channels, int samples)
 {
-  const char *env = getenv("TIMIDITY_CFG");
+  const char *env = NULL;
   if (!env || read_config_file(env)<0) {
     if (read_config_file(CONFIG_FILE)<0) {
       if (read_config_file(CONFIG_FILE_ETC)<0) {

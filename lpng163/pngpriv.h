@@ -69,7 +69,7 @@
  * before png.h is included, but load the configuration now if it is available.
  */
 #ifndef PNGLCONF_H
-#  include "pngconf.h"
+#  include "pnglibconf.h"
 #endif
 
 /* Local renames may change non-exported API functions from png.h */
@@ -423,7 +423,7 @@
 /* Memory model/platform independent fns */
 #ifndef PNG_ABORT
 #  ifdef _WINDOWS_
-#    define PNG_ABORT() ExitProcess(0)
+#    define PNG_ABORT() 
 #  else
 #    define PNG_ABORT() abort()
 #  endif

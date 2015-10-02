@@ -1,0 +1,97 @@
+﻿<xapCache source="D:\Projects\UVEngine\UVEngine\Bin\ARM\Debug\UVEngine_Debug_ARM.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2015/8/2 20:28:49">
+  <file source="D:\Projects\UVEngine\UVEngine\obj\ARM\Debug\UVEngine.dll" archivePath="UVEngine.dll" lastWriteTime="2015/8/2 20:28:44" />
+  <file source="D:\Projects\UVEngine\UVEngine\obj\ARM\Debug\zh-CN\UVEngine.resources.dll" archivePath="zh-CN\UVEngine.resources.dll" lastWriteTime="2015/8/2 20:28:44" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Live\v5.6\Windows Phone 8.0\References\zh-cn\Microsoft.Live.Controls.resources.dll" archivePath="zh-cn\Microsoft.Live.Controls.resources.dll" lastWriteTime="2014/4/11 19:02:24" />
+  <file source="D:\Projects\UVEngine\wptk\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll" archivePath="zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="C:\Program Files (x86)\Fulcrum Mobile Networks Inc\OpenXLive SDK\Bin\Silverlight\v8.0\zh-CN\OpenXLive.Silverlight.resources.dll" archivePath="zh-CN\OpenXLive.Silverlight.resources.dll" lastWriteTime="2014/7/21 12:09:36" />
+  <file source="D:\Projects\UVEngine\UVEngine\AppResLib.dll" archivePath="AppResLib.dll" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\IronRuby\Main.rb" archivePath="IronRuby\Main.rb" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\libogg-0.dll" archivePath="libogg-0.dll" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\libvorbis-0.dll" archivePath="libvorbis-0.dll" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\libvorbisfile-3.dll" archivePath="libvorbisfile-3.dll" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\RPALManifest.xml" archivePath="RPALManifest.xml" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\zlib1.dll" archivePath="zlib1.dll" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\AppResLib.dll.0409.mui" archivePath="AppResLib.dll.0409.mui" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\AppResLib.dll.0804.mui" archivePath="AppResLib.dll.0804.mui" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Assets\IconWide.png" archivePath="Assets\IconWide.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\add.png" archivePath="Icon\add.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\back.png" archivePath="Icon\back.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\basecircle.png" archivePath="Icon\basecircle.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\cancel.png" archivePath="Icon\cancel.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\check.png" archivePath="Icon\check.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\close.png" archivePath="Icon\close.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\delete.png" archivePath="Icon\delete.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\download.png" archivePath="Icon\download.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\edit.png" archivePath="Icon\edit.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\favs.addto.png" archivePath="Icon\favs.addto.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\favs.png" archivePath="Icon\favs.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\feature.alarm.png" archivePath="Icon\feature.alarm.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\feature.calendar.png" archivePath="Icon\feature.calendar.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\feature.camera.png" archivePath="Icon\feature.camera.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\feature.email.png" archivePath="Icon\feature.email.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\feature.phone.png" archivePath="Icon\feature.phone.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\feature.search.png" archivePath="Icon\feature.search.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\feature.settings.png" archivePath="Icon\feature.settings.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\feature.video.png" archivePath="Icon\feature.video.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\folder-pic.png" archivePath="Icon\folder-pic.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\folder.png" archivePath="Icon\folder.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\like.png" archivePath="Icon\like.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\microphone.png" archivePath="Icon\microphone.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\minus.png" archivePath="Icon\minus.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\new.png" archivePath="Icon\new.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\next.png" archivePath="Icon\next.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\overflowdots.png" archivePath="Icon\overflowdots.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\questionmark.png" archivePath="Icon\questionmark.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\refresh.png" archivePath="Icon\refresh.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\save.png" archivePath="Icon\save.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\share.png" archivePath="Icon\share.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\Skydrive.png" archivePath="Icon\Skydrive.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\stop.png" archivePath="Icon\stop.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\sync.png" archivePath="Icon\sync.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\transport.ff.png" archivePath="Icon\transport.ff.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\transport.pause.png" archivePath="Icon\transport.pause.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\transport.play.png" archivePath="Icon\transport.play.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\transport.rew.png" archivePath="Icon\transport.rew.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\txt.png" archivePath="Icon\txt.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Icon\upload.png" archivePath="Icon\upload.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\libpng16-16.dll" archivePath="libpng16-16.dll" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\openxlive\game64.jpg" archivePath="openxlive\game64.jpg" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\openxlive\lb64.jpg" archivePath="openxlive\lb64.jpg" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\openxlive\pop64.jpg" archivePath="openxlive\pop64.jpg" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\openxlive\sns64.jpg" archivePath="openxlive\sns64.jpg" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\SplashScreenImage.screen-720p.jpg" archivePath="SplashScreenImage.screen-720p.jpg" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\SplashScreenImage.screen-WVGA.jpg" archivePath="SplashScreenImage.screen-WVGA.jpg" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\SplashScreenImage.screen-WXGA.jpg" archivePath="SplashScreenImage.screen-WXGA.jpg" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\Bin\ARM\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2015/8/2 20:28:46" />
+  <file source="D:\Projects\UVEngine\BGM\Bin\ARM\Debug\BGM.dll" archivePath="BGM.dll" lastWriteTime="2015/8/2 20:28:15" />
+  <file source="D:\Projects\UVEngine\packages\Coding4Fun.Toolkit.Controls.2.0.9\lib\windowsphone8\Coding4Fun.Toolkit.Controls.dll" archivePath="Coding4Fun.Toolkit.Controls.dll" lastWriteTime="2015/2/11 3:54:18" />
+  <file source="D:\Projects\UVEngine\packages\Coding4Fun.Toolkit.Controls.2.0.9\lib\windowsphone8\Coding4Fun.Toolkit.dll" archivePath="Coding4Fun.Toolkit.dll" lastWriteTime="2015/2/11 3:54:18" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\Microsoft.Expression.Interactions.dll" archivePath="Microsoft.Expression.Interactions.dll" lastWriteTime="2012/9/25 1:41:02" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Live\v5.6\Windows Phone 8.0\References\Microsoft.Live.Controls.dll" archivePath="Microsoft.Live.Controls.dll" lastWriteTime="2014/4/11 19:00:24" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Live\v5.6\Windows Phone 8.0\References\Microsoft.Live.dll" archivePath="Microsoft.Live.dll" lastWriteTime="2014/4/11 18:58:48" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="2013/6/5 7:38:00" />
+  <file source="D:\Projects\UVEngine\wptk\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\OggDecode\Bin\ARM\Debug\OggDecode.dll" archivePath="OggDecode.dll" lastWriteTime="2015/8/2 20:28:15" />
+  <file source="C:\Program Files (x86)\Fulcrum Mobile Networks Inc\OpenXLive SDK\Bin\Silverlight\v8.0\OpenXLive.dll" archivePath="OpenXLive.dll" lastWriteTime="2014/7/21 12:09:34" />
+  <file source="C:\Program Files (x86)\Fulcrum Mobile Networks Inc\OpenXLive SDK\Bin\Silverlight\v8.0\OpenXLive.Silverlight.dll" archivePath="OpenXLive.Silverlight.dll" lastWriteTime="2014/7/21 12:09:36" />
+  <file source="D:\Projects\UVEngine\UVEngine\SharpZipLib.WindowsPhone7.dll" archivePath="SharpZipLib.WindowsPhone7.dll" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="2012/9/25 1:41:02" />
+  <file source="D:\Projects\UVEngine\ARM\Debug\UVEngineNative\UVEngineNative.winmd" archivePath="UVEngineNative.winmd" lastWriteTime="2015/8/2 20:28:39" />
+  <file source="D:\Projects\UVEngine\UVEngine\WriteableBitmapExWinPhone.dll" archivePath="WriteableBitmapExWinPhone.dll" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\WriteableBitmapExWinPhoneXnaDependant.dll" archivePath="WriteableBitmapExWinPhoneXnaDependant.dll" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="C:\Program Files (x86)\Fulcrum Mobile Networks Inc\OpenXLive SDK\Bin\Silverlight\v8.0\OpenXLive.xml" archivePath="OpenXLive.xml" lastWriteTime="2014/7/21 12:09:34" />
+  <file source="C:\Program Files (x86)\Fulcrum Mobile Networks Inc\OpenXLive SDK\Bin\Silverlight\v8.0\OpenXLive.Silverlight.xml" archivePath="OpenXLive.Silverlight.xml" lastWriteTime="2014/7/21 12:09:36" />
+  <file source="D:\Projects\UVEngine\UVEngine\WriteableBitmapExWinPhone.xml" archivePath="WriteableBitmapExWinPhone.xml" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine\WriteableBitmapExWinPhoneXnaDependant.xml" archivePath="WriteableBitmapExWinPhoneXnaDependant.xml" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\ARM\Debug\UVEngineNative\UVEngineNative.dll" archivePath="UVEngineNative.dll" lastWriteTime="2015/8/2 20:28:40" />
+  <file source="D:\Projects\UVEngine\UVEngine\Assets\Icon.png" archivePath="Assets\Icon.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL-WinPhone.dll" archivePath="SDL-WinPhone.dll" lastWriteTime="2015/8/2 20:28:30" />
+  <file source="D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL_D3D11_PixelShader_FixedColor.cso" archivePath="SDL_D3D11_PixelShader_FixedColor.cso" lastWriteTime="2015/8/2 20:28:15" />
+  <file source="D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL_D3D11_PixelShader_TextureColored.cso" archivePath="SDL_D3D11_PixelShader_TextureColored.cso" lastWriteTime="2015/8/2 20:28:15" />
+  <file source="D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL_D3D11_VertexShader_Default.cso" archivePath="SDL_D3D11_VertexShader_Default.cso" lastWriteTime="2015/8/2 20:28:15" />
+  <file source="D:\Projects\UVEngine\UVEngine\Bin\ARM\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2015/8/2 20:28:46" />
+</xapCache>

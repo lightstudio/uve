@@ -501,12 +501,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\wptk\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
     </Reference>
-    <Reference Include="OpenXLive">
-      <HintPath>..\..\..\OpenXLive\OpenXLive.dll</HintPath>
-    </Reference>
-    <Reference Include="OpenXLive.Silverlight">
-      <HintPath>..\..\..\OpenXLive\OpenXLive.Silverlight.dll</HintPath>
-    </Reference>
+    <Reference Include="OpenXLive, Version=1.2.0.0, Culture=neutral, PublicKeyToken=504c25bea0398335, processorArchitecture=MSIL" />
+    <Reference Include="OpenXLive.Silverlight, Version=1.1.0.0, Culture=neutral, PublicKeyToken=504c25bea0398335, processorArchitecture=MSIL" />
     <Reference Include="SharpZipLib.WindowsPhone7">
       <HintPath>.\SharpZipLib.WindowsPhone7.dll</HintPath>
     </Reference>
@@ -528,7 +524,7 @@
       <Name>OggDecode</Name>
     </ProjectReference>
     <ProjectReference Include="..\UVEngineNative\UVEngineNative.vcxproj">
-      <Project>{4CE737C8-6D88-4C09-A56F-D21F6602DFB1}</Project>
+      <Project>{4ce737c8-6d88-4c09-a56f-d21f6602dfb1}</Project>
       <Name>UVEngineNative</Name>
     </ProjectReference>
   </ItemGroup>

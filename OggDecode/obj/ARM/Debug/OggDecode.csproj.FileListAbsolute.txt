@@ -1,0 +1,4 @@
+D:\Projects\UVEngine\OggDecode\Bin\ARM\Debug\OggDecode.dll
+D:\Projects\UVEngine\OggDecode\Bin\ARM\Debug\OggDecode.pdb
+D:\Projects\UVEngine\OggDecode\obj\ARM\Debug\OggDecode.dll
+D:\Projects\UVEngine\OggDecode\obj\ARM\Debug\OggDecode.pdb

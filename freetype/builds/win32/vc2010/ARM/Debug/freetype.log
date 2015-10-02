@@ -1,0 +1,92 @@
+﻿生成启动时间为 2015/8/2 20:28:15。
+     1>项目“D:\Projects\UVEngine\freetype\builds\win32\vc2010\freetype.vcxproj”在节点 3 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /I..\..\..\include /Zi /nologo /W4 /WX- /MP /Od /Oy- /D _DEBUG /D WIN32 /D _LIB /D _CRT_SECURE_NO_WARNINGS /D FT_DEBUG_LEVEL_TRACE /D FT2_BUILD_LIBRARY /D _MBCS /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Za /Zc:wchar_t /Zc:forScope /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TC /wd4001 /analyze- /errorReport:prompt ..\..\..\src\autofit\autofit.c ..\..\..\src\base\ftdebug.c ..\..\..\src\bdf\bdf.c ..\..\..\src\cff\cff.c ..\..\..\src\base\ftbase.c ..\..\..\src\base\ftbitmap.c ..\..\..\src\cache\ftcache.c ..\..\..\src\base\ftfstype.c ..\..\..\src\base\ftgasp.c ..\..\..\src\base\ftglyph.c ..\..\..\src\gzip\ftgzip.c ..\..\..\src\base\ftinit.c ..\..\..\src\lzw\ftlzw.c ..\..\..\src\base\ftstroke.c ..\..\..\src\base\ftsystem.c ..\..\..\src\smooth\smooth.c ..\..\..\src\base\ftbbox.c ..\..\..\src\base\ftmm.c ..\..\..\src\base\ftpfr.c ..\..\..\src\base\ftsynth.c ..\..\..\src\base\fttype1.c ..\..\..\src\base\ftwinfnt.c ..\..\..\src\base\ftxf86.c ..\..\..\src\base\ftlcdfil.c ..\..\..\src\base\ftgxval.c ..\..\..\src\base\ftotval.c ..\..\..\src\base\ftpatent.c ..\..\..\src\pcf\pcf.c ..\..\..\src\pfr\pfr.c ..\..\..\src\psaux\psaux.c ..\..\..\src\pshinter\pshinter.c ..\..\..\src\psnames\psmodule.c ..\..\..\src\raster\raster.c ..\..\..\src\sfnt\sfnt.c ..\..\..\src\truetype\truetype.c ..\..\..\src\type1\type1.c ..\..\..\src\cid\type1cid.c ..\..\..\src\type42\type42.c ..\..\..\src\winfonts\winfnt.c
+         autofit.c
+         ftdebug.c
+         bdf.c
+         cff.c
+         ftbase.c
+         ftbitmap.c
+         ftcache.c
+         ftfstype.c
+     1>..\..\..\src\base\ftdebug.c(164): warning C4013: “getenv”未定义；假设外部返回 int
+     1>..\..\..\src\base\ftdebug.c(164): warning C4047: “初始化”:“const char *”与“int”的间接级别不同
+         ftgasp.c
+     1>d:\projects\uvengine\freetype\src\autofit\afcjk.c(1940): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\..\..\src\autofit\autofit.c)
+         ftglyph.c
+         ftgzip.c
+         ftinit.c
+         ftlzw.c
+         ftstroke.c
+         ftsystem.c
+         smooth.c
+         ftbbox.c
+         ftmm.c
+         ftpfr.c
+         ftsynth.c
+         fttype1.c
+         ftwinfnt.c
+         ftxf86.c
+         ftlcdfil.c
+         ftgxval.c
+         ftotval.c
+         ftpatent.c
+         pcf.c
+         pfr.c
+         psaux.c
+         pshinter.c
+         psmodule.c
+         raster.c
+         sfnt.c
+         truetype.c
+         type1.c
+         type1cid.c
+         type42.c
+         winfnt.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\Lib.exe /OUT:"D:\Projects\UVEngine\ARM\Debug\freetype\freetype.lib" /NOLOGO /MACHINE:ARM ARM\Debug\autofit.obj
+         ARM\Debug\ftdebug.obj
+         ARM\Debug\bdf.obj
+         ARM\Debug\cff.obj
+         ARM\Debug\ftbase.obj
+         ARM\Debug\ftbitmap.obj
+         ARM\Debug\ftcache.obj
+         ARM\Debug\ftfstype.obj
+         ARM\Debug\ftgasp.obj
+         ARM\Debug\ftglyph.obj
+         ARM\Debug\ftgzip.obj
+         ARM\Debug\ftinit.obj
+         ARM\Debug\ftlzw.obj
+         ARM\Debug\ftstroke.obj
+         ARM\Debug\ftsystem.obj
+         ARM\Debug\smooth.obj
+         ARM\Debug\ftbbox.obj
+         ARM\Debug\ftmm.obj
+         ARM\Debug\ftpfr.obj
+         ARM\Debug\ftsynth.obj
+         ARM\Debug\fttype1.obj
+         ARM\Debug\ftwinfnt.obj
+         ARM\Debug\ftxf86.obj
+         ARM\Debug\ftlcdfil.obj
+         ARM\Debug\ftgxval.obj
+         ARM\Debug\ftotval.obj
+         ARM\Debug\ftpatent.obj
+         ARM\Debug\pcf.obj
+         ARM\Debug\pfr.obj
+         ARM\Debug\psaux.obj
+         ARM\Debug\pshinter.obj
+         ARM\Debug\psmodule.obj
+         ARM\Debug\raster.obj
+         ARM\Debug\sfnt.obj
+         ARM\Debug\truetype.obj
+         ARM\Debug\type1.obj
+         ARM\Debug\type1cid.obj
+         ARM\Debug\type42.obj
+         ARM\Debug\winfnt.obj
+         freetype.vcxproj -> D:\Projects\UVEngine\ARM\Debug\freetype\freetype.lib
+     1>已完成生成项目“D:\Projects\UVEngine\freetype\builds\win32\vc2010\freetype.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:02.18

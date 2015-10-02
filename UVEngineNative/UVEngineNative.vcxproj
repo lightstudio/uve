@@ -60,56 +60,58 @@
   <PropertyGroup>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
-    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
-    <IncludePath>$(SolutionDir)\SDL\include;$(IncludePath);$(SolutionDir)\SDL_ttf;$(SolutionDir)\SDL_mixer;$(SolutionDir)\SDL_image;$(SolutionDir)\lua;$(SolutionDir)\SDL\src;$(SolutionDir)\smpeg_include</IncludePath>
-    <LibraryPath>$(LibraryPath);$(SolutionDir)\LIB_ARM</LibraryPath>
-    <ReferencePath>$(WP80ToolSetPath)lib\arm</ReferencePath>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ReferencePath>$(WP80ToolSetPath)lib;$(ProjectDir)\include;</ReferencePath>
-    <LibraryPath>$(WP80ToolSetPath)lib;$(WindowsSDK_LibraryPath_x86);$(ProjectDir)\Library</LibraryPath>
-    <IncludePath>$(WP80ToolSetPath)include;$(WindowsSDK_IncludePath);;$(SolutionDir)\smpeg_include</IncludePath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(SolutionDir)\DavidLudwig-sdl-25883bdf3cab\include;$(IncludePath);$(SolutionDir)\smpeg_include</IncludePath>
+    <IncludePath>$(SolutionDir)\SDL\include;$(SolutionDir)\SDL_ttf;$(SolutionDir)\SDL_mixer;$(SolutionDir)\SDL_image;$(SolutionDir)\lua;$(SolutionDir)\SDL\src;$(SolutionDir)\smpeg_include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <IncludePath>$(WP80ToolSetPath)include;$(WindowsSDK_IncludePath);;$(SolutionDir)\smpeg_include</IncludePath>
+    <LibraryPath>$(SolutionDir)Lib\ARM;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\SDL\include;$(SolutionDir)\SDL_ttf;$(SolutionDir)\SDL_mixer;$(SolutionDir)\SDL_image;$(SolutionDir)\lua;$(SolutionDir)\SDL\src;$(SolutionDir)\smpeg_include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <IncludePath>$(SolutionDir)\SDL\include;$(SolutionDir)\SDL_ttf;$(SolutionDir)\SDL_mixer;$(SolutionDir)\SDL_image;$(SolutionDir)\lua;$(SolutionDir)\SDL\src;$(SolutionDir)\smpeg_include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <LibraryPath>$(SolutionDir)Lib\ARM;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\SDL\include;$(SolutionDir)\SDL_ttf;$(SolutionDir)\SDL_mixer;$(SolutionDir)\SDL_image;$(SolutionDir)\lua;$(SolutionDir)\SDL\src;$(SolutionDir)\smpeg_include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
       <CompileAsWinRT>true</CompileAsWinRT>
-      <AdditionalOptions>/D "_CRT_SECURE_NO_WARNINGS" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)SDL\include;$(SolutionDir)SDL_ttf;$(SolutionDir)SDL_mixer;$(SolutionDir)SDL_image;$(SolutionDir)lua;$(SolutionDir)SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;msvcrt.lib;ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <AdditionalDependencies>D3D11.lib;xaudio2.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>_WINRT_DLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_WINRT_DLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
       <CompileAsWinRT>true</CompileAsWinRT>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalOptions>/D "_CRT_SECURE_NO_DEPRECATE" %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories);$(SolutionDir)\DavidLudwig-sdl-25883bdf3cab\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)SDL\include;$(SolutionDir)SDL_ttf;$(SolutionDir)SDL_mixer;$(SolutionDir)SDL_image;$(SolutionDir)lua;$(SolutionDir)SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <AdditionalDependencies>D3D11.lib;xaudio2.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
@@ -120,16 +122,15 @@
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
       <CompileAsWinRT>true</CompileAsWinRT>
       <BrowseInformation>true</BrowseInformation>
+      <AdditionalIncludeDirectories>$(SolutionDir)SDL\include;$(SolutionDir)SDL_ttf;$(SolutionDir)SDL_mixer;$(SolutionDir)SDL_image;$(SolutionDir)lua;$(SolutionDir)SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;msvcrt.lib;ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <AdditionalDependencies>D3D11.lib;xaudio2.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <Bscmake>
-      <PreserveSbr>true</PreserveSbr>
-    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
@@ -138,9 +139,8 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
       <CompileAsWinRT>true</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories);$(SolutionDir)\SDL\include;$(SolutionDir)\SDL_ttf;$(SolutionDir)\SDL_mixer;$(SolutionDir)\SDL_image;$(SolutionDir)\lua;$(SolutionDir)\SDL\src</AdditionalIncludeDirectories>
-      <Optimization>Disabled</Optimization>
-      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)SDL\include;$(SolutionDir)SDL_ttf;$(SolutionDir)SDL_mixer;$(SolutionDir)SDL_image;$(SolutionDir)lua;$(SolutionDir)SDL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -155,6 +155,8 @@
     <ClInclude Include="BaseReader.h" />
     <ClInclude Include="BasicGameInfo.h" />
     <ClInclude Include="BasicTimer.h" />
+    <ClInclude Include="BenchCPU.h" />
+    <ClInclude Include="BenchMem.h" />
     <ClInclude Include="ButtonLink.h" />
     <ClInclude Include="bzlib.h" />
     <ClInclude Include="bzlib_private.h" />
@@ -168,8 +170,9 @@
     <ClInclude Include="FontInfo.h" />
     <ClInclude Include="GameInfoEx.h" />
     <ClInclude Include="gbk2utf16.h" />
-    <ClInclude Include="ICallBack.h" />
+    <ClInclude Include="ICallback.h" />
     <ClInclude Include="IExternalStorageNative.h" />
+    <ClInclude Include="ImageMeta.h" />
     <ClInclude Include="INativeCalls.h" />
     <ClInclude Include="INI.h" />
     <ClInclude Include="INIRead.h" />
@@ -201,6 +204,8 @@
   <ItemGroup>
     <ClCompile Include="AnimationInfo.cpp" />
     <ClCompile Include="BasicGameInfo.cpp" />
+    <ClCompile Include="BenchCPU.cpp" />
+    <ClCompile Include="BenchMem.cpp" />
     <ClCompile Include="blocksort.cpp" />
     <ClCompile Include="bzip2.cpp" />
     <ClCompile Include="bzlib.cpp" />
@@ -217,6 +222,7 @@
     <ClCompile Include="gbk2utf16.cpp" />
     <ClCompile Include="huffman.cpp" />
     <ClCompile Include="IExternalStorageNative.cpp" />
+    <ClCompile Include="ImageMeta.cpp" />
     <ClCompile Include="INI.cpp" />
     <ClCompile Include="INIRead.cpp" />
     <ClCompile Include="INI_BASE.cpp" />
@@ -268,13 +274,13 @@
     <ProjectReference Include="..\libmad\msvc++\libmad.vcxproj">
       <Project>{f2b5f26b-f826-64d1-d807-84c31ad8b790}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\libogg-1.3.1\libogg-1.3.1\win32\VS2010\libogg_static.vcxproj">
+    <ProjectReference Include="..\libogg-1.3.1\win32\VS2010\libogg_static.vcxproj">
       <Project>{15cbfeff-7965-41f5-b4e2-21e8795c9159}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\libvorbis-1.3.3\libvorbis-1.3.3\win32\VS2010\libvorbisfile\libvorbisfile_static.vcxproj">
+    <ProjectReference Include="..\libvorbis-1.3.3\win32\VS2010\libvorbisfile\libvorbisfile_static.vcxproj">
       <Project>{cebde98b-a6aa-46e6-bc79-faaf823db9ec}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\libvorbis-1.3.3\libvorbis-1.3.3\win32\VS2010\libvorbis\libvorbis_static.vcxproj">
+    <ProjectReference Include="..\libvorbis-1.3.3\win32\VS2010\libvorbis\libvorbis_static.vcxproj">
       <Project>{3a214e06-b95e-4d61-a291-1f8df2ec10fd}</Project>
     </ProjectReference>
     <ProjectReference Include="..\lua\lua.vcxproj">
@@ -297,6 +303,9 @@
     <Reference Include="platform">
       <HintPath>D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\lib\arm\platform.winmd</HintPath>
       <IsWinMDFile>true</IsWinMDFile>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
     </Reference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

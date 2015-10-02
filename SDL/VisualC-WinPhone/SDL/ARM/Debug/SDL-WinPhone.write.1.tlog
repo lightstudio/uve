@@ -1,0 +1,11 @@
+^..\..\src\render\direct3d11\SDL_D3D11_PixelShader_FixedColor.hlsl
+^..\..\src\render\direct3d11\SDL_D3D11_PixelShader_TextureColored.hlsl
+^..\..\src\render\direct3d11\SDL_D3D11_VertexShader_Default.hlsl
+D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL_D3D11_PixelShader_FixedColor.cso
+D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL_D3D11_PixelShader_TextureColored.cso
+D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL_D3D11_VertexShader_Default.cso
+^D:\Projects\UVEngine\SDL\VisualC-WinPhone\SDL\SDL_VS2012-WinPhone.vcxproj
+D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL-WinPhone.lib
+D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL-WinPhone.lib
+D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL-WinPhone.exp
+D:\Projects\UVEngine\ARM\Debug\SDL_VS2012-WinPhone\SDL-WinPhone.exp

@@ -48,6 +48,9 @@ rmdir /S /Q obj
 cd ../UVEngine
 rmdir /S /Q bin
 rmdir /S /Q obj
+cd ../UVEngine2_1
+rmdir /S /Q bin
+rmdir /S /Q obj
 cd ../SlXnaApp1Lib
 rmdir /S /Q bin
 rmdir /S /Q obj

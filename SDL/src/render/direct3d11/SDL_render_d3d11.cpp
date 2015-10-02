@@ -275,7 +275,7 @@ D3D11_CreateDeviceResources(SDL_Renderer * renderer)
     D3DSharedData *data = (D3DSharedData *) renderer->driverdata;
     // This flag adds support for surfaces with a different color channel ordering
     // than the API default. It is required for compatibility with Direct2D.
-    //UINT creationFlags = D3D11_CREATE_DEVICE_BGRA_SUPPORT;
+    UINT creationFlags = D3D11_CREATE_DEVICE_BGRA_SUPPORT;
 
 #if defined(_DEBUG)
     // If the project is in a debug build, enable debugging via SDK Layers with this flag.

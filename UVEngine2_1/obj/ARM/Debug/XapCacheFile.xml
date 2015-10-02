@@ -1,0 +1,25 @@
+﻿<xapCache source="D:\Projects\UVEngine\UVEngine2_1\Bin\ARM\Debug\UVEngine2_1_Debug_ARM.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2015/8/2 20:28:21">
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Bin\ARM\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="2015/8/2 20:28:17" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\obj\ARM\Debug\UVEngine2_1.dll" archivePath="UVEngine2_1.dll" lastWriteTime="2015/8/2 20:28:16" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Assets\SplashScreen.png" archivePath="Assets\SplashScreen.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Assets\SquareTile150x150.png" archivePath="Assets\SquareTile150x150.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Assets\SquareTile71x71.png" archivePath="Assets\SquareTile71x71.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Assets\StoreLogo.png" archivePath="Assets\StoreLogo.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Assets\WideLogo.png" archivePath="Assets\WideLogo.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Bin\ARM\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2015/8/2 20:28:20" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Bin\ARM\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Bin\ARM\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="2015/2/10 8:53:48" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\Microsoft.Expression.Drawing.dll" archivePath="Microsoft.Expression.Drawing.dll" lastWriteTime="2012/9/25 1:41:02" />
+  <file source="D:\Projects\UVEngine\ARM\Debug\UVEngineNative\UVEngineNative.winmd" archivePath="UVEngineNative.winmd" lastWriteTime="2015/8/2 20:27:00" />
+  <file source="D:\Projects\UVEngine\ARM\Debug\UVEngineNative\UVEngineNative.dll" archivePath="UVEngineNative.dll" lastWriteTime="2015/8/2 20:27:00" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Bin\ARM\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2015/8/2 20:28:20" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\obj\ARM\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="2015/8/2 20:28:20" />
+  <file source="D:\Projects\UVEngine\UVEngine2_1\Bin\ARM\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="2015/8/2 20:28:19" />
+</xapCache>

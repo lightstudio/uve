@@ -53,16 +53,14 @@ namespace UVEngine
         }
         public bool Extract(Stream stream, string destinationPath)
         {
-            try
-            {
                 //Stream stream = storage.OpenFile(sourceFilePath, System.IO.FileMode.Open);
                 this.Dispatcher.BeginInvoke(() => { file_extracting.Text = UVEngine.Resources.UVEngine.analyzing; });
-                byte[] bytes = new byte[4096];
+                byte[] bytes = new byte[524288];
                 int position = 0;
                 do
                 {
-                    stream.Read(bytes, 0, 4096);
-                    for (int i = 0; i < 4096; i++)
+                    stream.Read(bytes, 0, 524288);
+                    for (int i = 0; i < 524288; i++)
                     {
                         if (bytes[i] == 0x50 &&
                             bytes[i + 1] == 0x4b &&
@@ -132,14 +130,6 @@ namespace UVEngine
                     }
                 }
                 stream.Close();
-            }
-            catch (System.Exception Ex)
-            {
-                this.Dispatcher.BeginInvoke(() =>
-                {
-                    MessageBox.Show(Ex.Message, UVEngine.Resources.UVEngine.error, MessageBoxButton.OK);
-                });
-            }
             return true;
         }
 

@@ -24,8 +24,6 @@
 extern "C" {
 # endif
 
-# define FPM_INTEL
-
 
 
 # define SIZEOF_INT 4
